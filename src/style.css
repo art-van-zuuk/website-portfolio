@@ -1,0 +1,55 @@
+body {
+    /* Variables */
+    --primary-color: #aaa;
+    --footer-color: #222;
+    --text-color: #555;
+
+    --site-width: 1000px;
+    --block-padding: 80px;
+
+    max-width: 100%;
+    overflow-x: hidden;
+    
+    margin: 0;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Montserrat' 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    font-weight: normal;
+    line-height: 24px;
+    color: var(--text-color)
+}
+
+.site-width{
+    width: 100%;
+    max-width: var(--site-width);
+    display: block;
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+h2 {
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+h3 {
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+h4 {
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
