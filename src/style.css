@@ -9,14 +9,28 @@ body {
 
     max-width: 100%;
     overflow-x: hidden;
-    
+
     margin: 0;
 
-    font-family: -apple-system, BlinkMacSystemFont, 'Montserrat' 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Montserrat''Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.site-width {
+    width: 100%;
+    max-width: var(--site-width);
+    display: block;
+}
+
+.col-width {
+    width: 90vw;
+    max-width: 500px;
+    background-color: red;
 }
 
 p {
@@ -27,27 +41,32 @@ p {
     color: var(--text-color)
 }
 
-.site-width{
-    width: 100%;
-    max-width: var(--site-width);
-    display: block;
+b {
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    line-height: 24px;
+    color: var(--text-color)
 }
 
-h1{
+h1 {
     font-size: 60px;
     font-family: 'Montserrat';
     font-weight: 800;
 }
+
 h2 {
     font-size: 40px;
     font-family: 'Montserrat';
     font-weight: 600;
 }
+
 h3 {
     font-size: 30px;
     font-family: 'Montserrat';
     font-weight: 800;
 }
+
 h4 {
     font-size: 18px;
     font-family: 'Montserrat';

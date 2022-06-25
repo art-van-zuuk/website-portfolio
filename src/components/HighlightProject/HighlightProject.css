@@ -1,5 +1,18 @@
 .highlight-div{
-    background-color: antiquewhite;
     width: 100%;
-    height: 400px;
+    padding: var(--block-padding);
+    display: block;
+}
+
+.highlight-project-image{
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.btn-secondary{
+    color: black !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    border-width: 0 !important;
 }

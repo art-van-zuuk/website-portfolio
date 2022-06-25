@@ -2,12 +2,9 @@
     width: 100%;
     background-color: #ddd;
     padding: clamp(10px, var(--block-padding), 5%);
-    float: left;
 }
 .CVDescription{
-    width: 100%;
     padding: clamp(10px, var(--block-padding), 5%);
-    clear: both;
 }
 
 .CVImage{

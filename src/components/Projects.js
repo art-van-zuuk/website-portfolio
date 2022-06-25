@@ -17,6 +17,7 @@ var projectList = []
 
 projectList.push({
     name: 'Braun Parch',
+    explanation: 'Quick Food Dehydration using vacuum',
     type: 'Bachelor End Project',
     year: '2020',
     image: "/images/Braun Parch no BG.png",
@@ -25,6 +26,7 @@ projectList.push({
 
 projectList.push({
     name: 'Slide to Light',
+    explanation: 'Quick Food Dehydration using vacuum',
     type: 'Bachelor Project',
     year: '2018',
     image: "/images/Render with Hand no BG.png",
@@ -33,6 +35,7 @@ projectList.push({
 
 projectList.push({
     name: 'Camera Slider',
+    explanation: 'Quick Food Dehydration using vacuum',
     type: 'Personal Project',
     year: '2016',
     image: "/images/_DSC9096.jpg",

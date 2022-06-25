@@ -17,8 +17,8 @@ const FullSizeVideo = () => {
             </div>
             <ScrollPage page={0} className="align-items-center justify-content-center">
                 <Animator animation={batch(StickyIn(), Fade(), Move())}>
-                    <h3 className='white-text'>A portfolio</h3>
-                    <h4 className='white-text'>By Art van Zuuk</h4>
+                    <h2 className='white-text'>A portfolio</h2>
+                    <h4 className='white-text handwritten'>By Art van Zuuk</h4>
                 </Animator>
             </ScrollPage>
 
