@@ -1,14 +1,24 @@
-.inner-carousel{
-    display: flex;
+.card-carousel-div {
+    width: 100%;
+    padding-top: var(--block-padding);
+    padding-bottom: 0px;
 }
 
-.carousel{
+.carousel {
     cursor: grab;
-    overflow: hidden;
     padding: 20px;
+    cursor: pointer;
 }
 
-.title{
-    width: 1000px;
-    height: 100px;
+.testimonial-group>.row {
+    flex-wrap: nowrap;
+
 }
+
+.titleImage {
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+

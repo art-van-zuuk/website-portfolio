@@ -23,6 +23,8 @@ const App = () => {
         <HighlightProject projectList={projectList} project='Slide to Light'/>
         <HighlightProject projectList={projectList} project='Camera Slider'/>
         <CardCarousel projectList={projectList}/>
+        <CardCarousel projectList={projectList}/>
+        <CardCarousel projectList={projectList}/>
         <Footer />
         
         </>

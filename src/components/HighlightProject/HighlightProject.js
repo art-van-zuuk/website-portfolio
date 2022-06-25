@@ -23,7 +23,7 @@ function HighlightProject(props) {
                 <Container className="site-width">
                     <Row className="align-items-center justify-content-center gx-5 gy-5">
                         <Col md='auto' className='col-12'>
-                            <img className='highlight-project-image' draggable="false" src={selectedProject.image}></img>
+                            <img className='highlight-project-image' draggable="false" src={"/images/Projects/" + props.project + "/thumbnail.png"}></img>
                         </Col>
                         <Col className="col-md-6 col-12">
                             <h2> {selectedProject.name} </h2>

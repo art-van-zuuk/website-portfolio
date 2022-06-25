@@ -40,14 +40,14 @@ function ExpendableCard(props) {
                 onMouseDown={e => mouseDownCoords(e)}
                 onMouseUp={e => clickOrDrag(e)}
             >
-                <div className="imgDiv" style={{backgroundColor: props.backgroundColor}}>
-                    <img draggable="false" className="image" src={props.image}></img>
+                <div className="imgDiv" style={{backgroundColor: props.project.backgroundColor}}>
+                    <img draggable="false" className="image" src={"/images/Projects/" + props.project.name + "/thumbnail.png"}></img>
                 </div>
 
                 <div className="text">
-                    <h4 > {props.name} </h4>
-                    <p> {props.type} </p>
-                    <p> {props.year} </p>
+                    <h4 className="bold-text" > {props.project.name} </h4>
+                    <p> {props.project.explanation} </p>
+                    <b> {props.project.type} in {props.project.year} </b>
                 </div>
 
 

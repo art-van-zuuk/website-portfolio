@@ -3,23 +3,15 @@ body{
     /* line-height: 8px; */
 }
 
-.App{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .card{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
     width: var(--card-width);
-    margin: 10px;
     border-radius: 10px;
+    border-width: 0;
     overflow: hidden;
-    
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
     transition: box-shadow .2s;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
 
     
 }
@@ -30,24 +22,28 @@ body{
 
 .imgDiv{
     height: var(--card-width);
-        width: var(--card-width);
+    width: var(--card-width);
     display: flex;
     align-items: center;
-        justify-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    
 }
 
 .image{
     height: var(--card-width);
     width: var(--card-width);
-    object-fit: cover;
+    object-fit: contain;
+    
+    
     
 }
 .text{
     background-color: white;
     padding: 15px;
-    padding-top: 0;
 }
 
-p{
-    color: black;
+.bold-text{
+    font-weight: bold !important;
 }
