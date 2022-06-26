@@ -22,9 +22,9 @@ const App = () => {
         <HighlightProject projectList={projectList} project='Braun Parch'/>
         <HighlightProject projectList={projectList} project='Slide to Light'/>
         <HighlightProject projectList={projectList} project='Camera Slider'/>
-        <CardCarousel projectList={projectList}/>
-        <CardCarousel projectList={projectList}/>
-        <CardCarousel projectList={projectList}/>
+        <CardCarousel projectList={projectList} title={'designProjectsTitle'}/>
+        {/* <CardCarousel projectList={projectList}/>
+        <CardCarousel projectList={projectList}/> */}
         <Footer />
         
         </>

@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap'
 
 import "./CardCarousel.css";
 import ExpendableCard from '../ExpendableCard/ExpendableCard';
-import img from "./designProjectsTitle.png";
+
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -37,13 +37,13 @@ function CardCarousel(props) {
     stepList.push(stepSize*(i));
   }
 
-    console.log(totalStepTime);
+    console.log(props.title);
 
 
   return (
     <div className="App card-carousel-div">
       <Row>
-        <img draggable="false" className="titleImage" src={img}></img>
+        <img draggable="false" className="titleImage" src={"/images/website/" + props.title + ".png"}></img>
       </Row>
       <motion.div ref={carousel} className="carousel" whileTap={{ cursor: "grabbing" }}>
 
@@ -61,9 +61,9 @@ function CardCarousel(props) {
 
         >
           <Row className="justify-content-center">
-            {props.projectList.map(project => {
+            {props.projectList.map((project, index) => {
               return (
-                <Col className="col-auto">
+                <Col key={index} className="col-auto">
 
                   <ExpendableCard
                     project={project}

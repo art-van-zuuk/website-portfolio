@@ -12,7 +12,8 @@ function TimelineItem(props) {
             <p className={"CVTitle text-" + props.alignment}> {props.title}</p>
             {props.work?.map(work => {
                 return (
-                    <p className={"CVWork text-" + props.alignment}> {work}</p>
+                    
+                    <p key={work} className={"CVWork text-" + props.alignment}> {work}</p>
                 );
             })}
             <br/>
