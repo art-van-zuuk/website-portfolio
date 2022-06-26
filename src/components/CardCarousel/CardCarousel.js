@@ -12,14 +12,32 @@ import "slick-carousel/slick/slick-theme.css";
 
 function CardCarousel(props) {
 
-
   const [width, setWidth] = useState(0);
   const carousel = useRef();
 
+
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, []); 
+  }, []);
   ///TODO: When resize happens, constraints still stay the same
+
+  const stepList = [];
+  const stepSize = 200;
+  const stepCount = Math.ceil(width/stepSize);
+  const stepTime = 4;
+  const totalStepTime = stepTime*stepCount*3;
+  
+
+  //Left movement
+  for (let i = 0; i < stepCount; i++) {
+    stepList.push(stepSize*(i));
+  }
+  //Right movement
+  for (let i = stepCount; i >= -stepCount; i--) {
+    stepList.push(stepSize*(i));
+  }
+
+    console.log(totalStepTime);
 
 
   return (
@@ -31,10 +49,17 @@ function CardCarousel(props) {
 
         <motion.div
           className="testimonial-group"
-          // className="inner-carousel"
           drag='x'
-          dragConstraints={{ right: width, left: -width }}>
+          dragConstraints={{ right: width, left: -width }}
 
+          animate={{ x: [-width, width] }}
+          transition={{
+            duration: totalStepTime,
+            repeat: Infinity,
+            repeatType: 'reverse'
+          }}
+
+        >
           <Row className="justify-content-center">
             {props.projectList.map(project => {
               return (
@@ -47,46 +72,13 @@ function CardCarousel(props) {
               );
             })}
           </Row>
-
-
         </motion.div>
       </motion.div>
-
     </div>
 
 
 
   );
-}
-
-function SliderDrag() {
-  const slider = document.querySelector('.outer-carousel');
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
-  slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('active');
-  });
-  slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('active');
-  });
-  slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1; //scroll-fast
-    slider.scrollLeft = scrollLeft - walk;
-    console.log(walk);
-  });
 }
 
 export default CardCarousel;
