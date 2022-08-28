@@ -41,8 +41,8 @@ function CardCarousel(props) {
 
 
   return (
-    <div className="App card-carousel-div">
-      <Row>
+    <div className="App card-carousel-div" >
+      <Row className="justify-content-center">
         <img draggable="false" className="titleImage" src={"/images/website/" + props.title + ".png"}></img>
       </Row>
       <motion.div ref={carousel} className="carousel" whileTap={{ cursor: "grabbing" }}>

@@ -1,6 +1,6 @@
 body {
     /* Variables */
-    --primary-color: #aaa;
+    --primary-color: #ddd;
     --footer-color: #222;
     --text-color: #555;
 
@@ -48,7 +48,7 @@ b {
     font-size: small;
     font-weight: bold;
     line-height: 24px;
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 h1 {
@@ -74,3 +74,20 @@ h4 {
     font-family: 'Montserrat';
     font-weight: 400;
 }
+
+.btn-link {
+    color: black !important;
+    text-decoration: none !important;
+}
+.btn-link:focus{
+    background-color: var(--primary-color);
+    outline: none !important;
+        box-shadow: none;
+}
+
+.btn-secondary {
+    color: black !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    border-width: 0 !important;
+}
+

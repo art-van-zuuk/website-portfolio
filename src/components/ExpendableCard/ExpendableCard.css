@@ -34,7 +34,7 @@ body{
 .image{
     height: var(--card-width);
     width: var(--card-width);
-    object-fit: contain;
+    object-fit: cover;
     
     
     

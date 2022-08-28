@@ -39,6 +39,15 @@ projectList.push({
     backgroundColor: '#eee',
 })
 projectList.push({
+    name: 'Chess Board',
+    explanation: 'A gift for my sisters 27th birthday',
+    type: 'Personal Project',
+    year: '2021',
+    backgroundColor: '#eee',
+})
+
+
+projectList.push({
     name: 'Braun Parch',
     explanation: 'Quick Food Dehydration using vacuum',
     type: 'Bachelor End Project',

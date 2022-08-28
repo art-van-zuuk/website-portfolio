@@ -11,8 +11,3 @@
     object-fit: contain;
 }
 
-.btn-secondary{
-    color: black !important;
-    background-color: rgba(0, 0, 0, 0.15) !important;
-    border-width: 0 !important;
-}

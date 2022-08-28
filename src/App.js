@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { Suspense } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+// import Home from "./pages/Home.js";
+// import BraunParch from "./pages/projects/BraunParch";
+
+const Home = React.lazy(() => import("./pages/Home"));
+const BraunParch = React.lazy(() => import("./pages/projects/BraunParch"));
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          index
+          element={
+            <React.Suspense fallback={<>...</>}>
+              <Home />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="braun-parch"
+          element={
+            <React.Suspense fallback={<>...</>}>
+              <BraunParch />
+            </React.Suspense>
+          }
+        />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
