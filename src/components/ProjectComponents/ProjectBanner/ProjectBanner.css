@@ -1,0 +1,12 @@
+.ProjectBannerBackground{
+    padding-top: var(--block-padding);
+    padding-bottom: var(--block-padding);
+}
+
+.ProjectBannerImage {
+    height: 400px;
+    max-width: 100%;
+    object-fit: contain;
+    /* margin-bottom: calc( -1 * var(--block-padding)); */
+    /* background-color: red; */
+}

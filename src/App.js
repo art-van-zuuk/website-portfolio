@@ -2,6 +2,7 @@ import "./App.css";
 import React, { Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SlideToLight from "./pages/projects/SlideToLight";
 
 // import Home from "./pages/Home.js";
 // import BraunParch from "./pages/projects/BraunParch";
@@ -26,6 +27,14 @@ const App = () => {
           element={
             <React.Suspense fallback={<>...</>}>
               <BraunParch />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="slide-to-light"
+          element={
+            <React.Suspense fallback={<>...</>}>
+              <SlideToLight />
             </React.Suspense>
           }
         />

@@ -37,9 +37,6 @@ function CardCarousel(props) {
     stepList.push(stepSize*(i));
   }
 
-    console.log(props.title);
-
-
   return (
     <div className="App card-carousel-div" >
       <Row className="justify-content-center">

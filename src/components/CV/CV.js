@@ -30,7 +30,7 @@ function CV() {
         {/* Person description with photo */}
         <div className="personDescription">
           <Container className="site-width">
-            <Row className="align-items-center justify-content-center gx-5">
+            <Row className="align-items-center text-left justify-content-center gx-5">
               <Col className="col-md-6 col-12">
                 <h1> Hello! </h1>
                 <p>
@@ -68,20 +68,20 @@ function CV() {
                   alignment="right"
                 />
                 <TimelineItem
-                  date="2021 - 2022"
-                  title="Design Engineer at Project MARCH"
-                  work={[
-                    "Designing covers of the exoskelton",
-                    "Designing the input device",
-                  ]}
-                  alignment="right"
-                />
-                <TimelineItem
                   date="2017 - current"
                   title="René van Zuuk Architects"
                   work={[
                     "Building App for municipality of Almere",
                     "Promotional work",
+                  ]}
+                  alignment="right"
+                />
+                <TimelineItem
+                  date="2021 - 2022"
+                  title="Design Engineer at Project MARCH"
+                  work={[
+                    "Designing covers of the exoskelton",
+                    "Designing the input device",
                   ]}
                   alignment="right"
                 />
@@ -105,7 +105,7 @@ function CV() {
                 />
               </Col>
               <Col className="col-md-6 col-12">
-                <h3 className="CVType"> Education</h3>
+                <h3 className="CVType text-left"> Education</h3>
 
                 <TimelineItem
                   date="2020 - current"

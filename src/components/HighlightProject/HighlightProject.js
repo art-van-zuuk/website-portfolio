@@ -1,5 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Container, Row, Col, Button } from 'react-bootstrap'
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 import "./HighlightProject.css";
 
@@ -18,12 +20,13 @@ function HighlightProject(props) {
 
     //opens link
     const open = (url) => {
-      window.open(url, "_blank", "noopener,noreferrer");
+      window.open(url, "_self", "noopener,noreferrer");
     };
 
     //changes name of project to URL format
     var URLLink = selectedProject.name.replace(/\s/g, "-");
     URLLink = URLLink.toLowerCase();
+
 
     return (
       <div className="App">
@@ -32,7 +35,7 @@ function HighlightProject(props) {
           style={{ backgroundColor: selectedProject.backgroundColor }}
         >
           <Container className="site-width">
-            <Row className="align-items-center justify-content-center gx-5 gy-5">
+            <Row className="text-left align-items-center justify-content-center gx-5 gy-5">
               <Col md="auto" className="col-12">
                 <img
                   className="highlight-project-image"
@@ -58,7 +61,8 @@ function HighlightProject(props) {
                 <p> </p>
                 <Button
                   variant="secondary rounded-pill"
-                  onClick={() => open(URLLink)}>
+                  onClick={() => open(URLLink)}
+                >
                   Learn more
                 </Button>{" "}
               </Col>
