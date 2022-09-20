@@ -7,10 +7,13 @@ import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/Proj
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
 import ImageTextStrip from "../../components/ProjectComponents/InformationStrip/ImageTextStrip";
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
+import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
+
+import { photos } from "../../components/ProjectComponents/ImageGallery/IGBraunParch";
 
 
 
-const BraunParch = () => {
+const BraunParch = () => { 
   return (
     <>
       <NavBar />
@@ -26,6 +29,8 @@ const BraunParch = () => {
         image="Braun Parch/exploded_view.png"
       />
       <FullWidthImage image="Braun Parch/step_explaination.png" />
+      <ImageGallery project="Braun Parch" photos={photos}/>
+
       <Footer />
     </>
   );
