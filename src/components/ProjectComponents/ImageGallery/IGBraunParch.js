@@ -1,3 +1,4 @@
+///Image gallery of photos from Braun Parch
 export const photos = [
   {
     src: "back.png",

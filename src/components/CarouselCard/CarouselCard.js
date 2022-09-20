@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "../../style.css";
-import "../Button/Button.css"
-import "./ExpendableCard.css";
+import "./CarouselCard.css";
 
-
-function ExpendableCard(props) {
-  
+///Card inside the carousel. Requires: name of project
+function CarouselCard(props) {
   //opens link
   const open = (url) => {
     window.open(url, "_self", "noopener,noreferrer");
@@ -16,7 +14,7 @@ function ExpendableCard(props) {
   var URLLink = props.project.name.replace(/\s/g, "-");
   URLLink = URLLink.toLowerCase();
 
-  //Checks if carousel is draged or card is pressed
+  //Checks if carousel is dragged or card is pressed
   const mouseDownCoords = (e) => {
     window.checkForDrag = e.clientX;
   };
@@ -32,6 +30,7 @@ function ExpendableCard(props) {
 
   return (
     <div className="App">
+      {/* Animates while hover */}
       <motion.div
         className="text-left card"
         whileHover={{ scale: 1.03 }}
@@ -63,4 +62,4 @@ function ExpendableCard(props) {
   );
 };
 
-export default ExpendableCard;
+export default CarouselCard;

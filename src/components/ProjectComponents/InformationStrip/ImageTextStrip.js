@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import "../../../style.css";
 
+///Text + Image strip with image on the left side. Requires: image, title and text
 function ImageTextStrip(props) {
   return (
     <div className="App">

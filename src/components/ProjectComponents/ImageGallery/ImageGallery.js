@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
+///Image gallery with horizontal image rows. Requires: project and list of photos
 import Gallery from "react-photo-gallery";
-
 
 ///Creates a grid of images in rows. Requires: list of photos with src, width & height and name of project
 function ImageGallery(props) {

@@ -4,6 +4,7 @@ import { Container, Button, Row, Col } from 'react-bootstrap'
 import '../../style.css'
 import './NavBar.css'
 
+///Navigation bar on the top of the site
 const NavBar = () => {
 
     // Change nav color when scrolling

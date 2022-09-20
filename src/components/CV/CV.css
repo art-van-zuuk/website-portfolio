@@ -1,10 +1,6 @@
 .personDescription{
     width: 100%;
     background-color: #ddd;
-    padding: clamp(10px, var(--block-padding), 5%);
-}
-.CVDescription{
-    padding: clamp(10px, var(--block-padding), 5%);
 }
 
 .CVImage{

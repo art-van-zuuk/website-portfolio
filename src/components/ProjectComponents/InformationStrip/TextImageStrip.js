@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import "../../../style.css";
 
-
+///Text + Image strip with image on the right side. Requires: image, title and text
 function TextImageStrip(props) {
 
   return (

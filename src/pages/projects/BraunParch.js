@@ -28,7 +28,7 @@ const BraunParch = () => {
         text="With this assigment, Braun aimed to make a change in the increasing problem of food waste. I found that a big part of this waste happens at the consumption and espesially at the conservation of food"
         image="Braun Parch/exploded_view.png"
       />
-      <FullWidthImage image="Braun Parch/step_explaination.png" />
+      <FullWidthImage project="Braun Parch" image="step_explaination.png" />
       <ImageGallery project="Braun Parch" photos={photos}/>
 
       <Footer />

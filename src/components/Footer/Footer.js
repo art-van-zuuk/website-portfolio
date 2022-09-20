@@ -2,6 +2,7 @@ import React from 'react';
 import '../../style.css'
 import './Footer.css'
 
+///Footer at the bottom of pages
 const Footer = () => {
     return(
         <div className='footer'>

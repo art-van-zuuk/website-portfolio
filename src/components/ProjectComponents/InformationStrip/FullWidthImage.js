@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import "../../../style.css";
 
+///Full with image. Requires: name of image and project
 function FullWidthImage(props) {
   return (
     <div className="App">
@@ -12,7 +13,7 @@ function FullWidthImage(props) {
           <Col className="col-12">
             <img
               draggable="false"
-              src={"/images/Projects/" + props.image}
+              src={"/images/Projects/" + props.project + "/" + props.image}
               width="100%"
             ></img>
           </Col>

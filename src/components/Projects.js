@@ -1,17 +1,4 @@
-
-
-// class Project{
-//     constructor(name,type, year){
-//         this.name = name;
-//         this.type = type;
-//         this.year = year
-//     }    
-// }
-
-
-// const braunParch = new Project(
-//     'Braun Parch', 
-//     'Bachelor End Project');
+///List with all projects 
 
 var projectList = []
 

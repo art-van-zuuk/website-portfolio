@@ -7,7 +7,9 @@ import "./ProjectBanner.css";
 
 import projectList from "../../Projects.js";
 
+///Banner at top of project. Requires: project
 function ProjectBanner(props) {
+  
   //checks projects and chooses right one
   var selectedProject = {};
 
