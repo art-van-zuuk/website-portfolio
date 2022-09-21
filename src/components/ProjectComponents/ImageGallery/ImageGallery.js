@@ -13,14 +13,13 @@ function ImageGallery(props) {
   });
 
   return (
-    <Container className="site-width block-padding">
+    <Container className={"site-width " + props.padding}>
       <Row className="align-items-center justify-content-center gx-5">
         <Col className="col-12">
           <Gallery photos={props.photos} key="1" />
         </Col>
       </Row>
     </Container>
-
   );}
 
   export default ImageGallery;

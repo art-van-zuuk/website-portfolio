@@ -8,11 +8,10 @@ import "../../../style.css";
 function ImageTextStrip(props) {
   return (
     <div className="App">
-      <Container className="site-width block-padding">
+      <Container className={"site-width " + props.padding}>
         <Row className="align-items-center justify-content-center gx-5">
           <Col className="col-lg-6 col-10">
             <img
-              // className="ProjectBannerImage"
               draggable="false"
               src={"/images/Projects/" + props.image}
               style={{ maxHeight: "300px", maxWidth: "400px" }}

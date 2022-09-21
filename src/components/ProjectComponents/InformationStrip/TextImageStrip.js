@@ -9,7 +9,7 @@ function TextImageStrip(props) {
 
   return (
     <div className="App">
-      <Container className="site-width block-padding">
+      <Container className={"site-width " + props.padding}>
         <Row className="align-items-center justify-content-center gx-5">
           <Col className=" col-lg-6 col-10 text-md-left text-lg-end">
             <h2>{props.title}</h2>

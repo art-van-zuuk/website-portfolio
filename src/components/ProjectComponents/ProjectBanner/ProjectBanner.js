@@ -26,9 +26,9 @@ function ProjectBanner(props) {
         className="ProjectBannerBackground"
         style={{ backgroundColor: selectedProject.backgroundColor }}
       >
-        <Container className="site-width">
+        <Container className="site-width top-bottom-padding">
           <Row className="align-items-center justify-content-center gx-5">
-            <Col className="text-left col-lg-6 col-10">
+            <Col className="text-start col-lg-6 col-10">
               <h1>{selectedProject.name}</h1>
               <h4> {selectedProject.explanation} </h4>
               <p>

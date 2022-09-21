@@ -39,8 +39,8 @@ function CV() {
       <div className="fullWidthDiv">
         {/* Person description with photo */}
         <div className="personDescription">
-          <Container className="site-width block-padding">
-            <Row className="align-items-center text-left justify-content-center gx-5">
+          <Container className="site-width top-bottom-padding">
+            <Row className="align-items-center text-start justify-content-center gx-5">
               <Col className="col-md-6 col-12 text-md-start text-center">
                 <h1> Hello! </h1>
                 <p className="text-md-start text-center">
@@ -62,7 +62,7 @@ function CV() {
           </Container>
         </div>
         {/* CV */}
-        <Container className="site-width block-padding">
+        <Container className="site-width top-bottom-padding">
           <Row>
             <h1 className="text-center"> Curriculum vitae </h1>{" "}
           </Row>
@@ -73,7 +73,7 @@ function CV() {
               <TimelineItem
                 date="2022 - current"
                 title="Art van Zuuk Design (Freelance)"
-                work={["Making promotional videos"]}
+                work={["Making promotional videos", "Making graphic designs"]}
                 alignment="end"
               />
               <TimelineItem

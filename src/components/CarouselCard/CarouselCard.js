@@ -32,7 +32,7 @@ function CarouselCard(props) {
     <div className="App">
       {/* Animates while hover */}
       <motion.div
-        className="text-left card"
+        className="text-start card"
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
         onMouseDown={(e) => mouseDownCoords(e)}
