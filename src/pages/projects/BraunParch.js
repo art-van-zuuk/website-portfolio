@@ -12,7 +12,7 @@ import SkillImages from "../../components/ProjectComponents/SkillImages/SkillIma
 
 import { photos } from "../../components/ProjectComponents/ImageGallery/IGBraunParch";
 import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
-import MediumTitle from "../../components/ProjectComponents/Titles/MediumTitle";
+import MediumTitle from "../../components/ProjectComponents/Title/Title";
 
 
 
@@ -36,7 +36,12 @@ const BraunParch = () => {
         image="Braun Parch/thumbnail.png"
         padding="bottom-padding"
       />
-      <MediumTitle title="How does it work?" alignment="center" padding="" />
+      <MediumTitle
+        title="How does it work?"
+        size="h3"
+        alignment="center"
+        padding=""
+      />
       <FullWidthImage
         project="Braun Parch"
         image="step_explaination.png"
@@ -52,6 +57,11 @@ const BraunParch = () => {
         title="Old heritage, new style"
         text="With this assigment, Braun aimed to make a change in the increasing problem of food waste. I found that a big part of this waste happens at the consumption and espesially at the conservation of food"
         image="Braun Parch/thumbnail.png"
+        padding="bottom-padding"
+      />
+      <FullWidthImage
+        project="Braun Parch"
+        image="sketches.png"
         padding="bottom-padding"
       />
       <ImageGallery

@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-///Creates a grid of images in rows. Requires: list of photos with src, width & height and name of project
+///Creates a title with variable size and alignment
 function MediumTitle(props) {
+
   return (
     <Container className={"site-width " + props.padding}>
       <Row className="align-items-center justify-content-center gx-5">
-        <h2 className={"text-center text-md-" + props.alignment}>{props.title}</h2>
+        <props.size className={"text-center text-md-" + props.alignment}>{props.title}</props.size>
       </Row>
     </Container>
   );
