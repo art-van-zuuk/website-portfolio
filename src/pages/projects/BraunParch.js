@@ -12,7 +12,7 @@ import SkillImages from "../../components/ProjectComponents/SkillImages/SkillIma
 
 import { photos } from "../../components/ProjectComponents/ImageGallery/IGBraunParch";
 import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
-import MediumTitle from "../../components/ProjectComponents/Title/Title";
+import Title from "../../components/ProjectComponents/Title/Title";
 
 
 
@@ -26,25 +26,37 @@ const BraunParch = () => {
       />
       <TextImageStrip
         title="Food waste..."
-        text="With this assignment Braun asked us to design something to lower the consumers food waste. A big portion of this waste happens during the conservation or even worse, lack of conservation of leftover food."
+        text="With this assignment Braun asked us to design something to lower the consumer's food waste. A big portion of this waste happens during the conservation or even worse, lack of conservation of leftover food."
         image="Braun Parch/thumbnail.png"
         padding="top-bottom-padding"
       />
       <ImageTextStrip
         title="Good taste..."
-        text="With this assignment Braun asked us to design something to lower the consumers food waste. A big portion of this waste happens during the conservation or even worse, lack of conservation of food."
+        text="This leftover food often still is an excellent source of nutritions. An ancient but mostly forgotten method to preserve this is by dehydration. Braun Parch brings new life to the word of food dehydration at home by using vacuum."
         image="Braun Parch/thumbnail.png"
         padding="bottom-padding"
       />
-      <MediumTitle
-        title="How does it work?"
-        size="h3"
+      <Title
+        title="Drying food with the power of vacuum..."
+        size="h2"
         alignment="center"
-        padding=""
+        padding="top-bottom-padding"
       />
       <FullWidthImage
         project="Braun Parch"
         image="step_explaination.png"
+        padding=""
+      />
+      <Title
+        title="This leftover food often still is an excellent source of nutritions. Therefore, preserving it"
+        size="p"
+        alignment="center"
+        padding="bottom-padding"
+      />
+      <Title
+        title="ADVANTAGES"
+        size="p"
+        alignment="center"
         padding="bottom-padding"
       />
       <ImageTextStrip
@@ -58,6 +70,17 @@ const BraunParch = () => {
         text="With this assigment, Braun aimed to make a change in the increasing problem of food waste. I found that a big part of this waste happens at the consumption and espesially at the conservation of food"
         image="Braun Parch/thumbnail.png"
         padding="bottom-padding"
+      />
+      <FullWidthImage
+        project="Braun Parch"
+        image="inspiration.jpg"
+        padding=""
+      />
+      <Title
+        title="Source: Braun"
+        size="p"
+        alignment="start"
+        padding="padding-bottom"
       />
       <FullWidthImage
         project="Braun Parch"
