@@ -1,6 +1,5 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, {  } from "react";
 import { Container, Row, Col, Button } from 'react-bootstrap'
-import { useNavigate, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import HandleURL from "../../scripts/HandleURL";

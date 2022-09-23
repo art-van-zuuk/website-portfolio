@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import "../../style.css";
 import "./CarouselCard.css";
 import HandleURL from "../../scripts/HandleURL";

@@ -30,7 +30,7 @@ function ProjectBanner(props) {
           <Row className="align-items-center justify-content-center gx-5">
             <Col className="text-start col-lg-6 col-10">
               <h1>{selectedProject.name}</h1>
-              <h4> {selectedProject.explanation} </h4>
+              <h4> {selectedProject.description} </h4>
               <p>
                 {" "}
                 With this assigment, Braun aimed to make a change in the

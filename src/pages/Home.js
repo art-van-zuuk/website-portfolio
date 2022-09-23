@@ -2,7 +2,6 @@ import React, { useContext, useEffect} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../style.css'
 
-import NavBar from '../components/NavBar/NavBar';
 import SiteVideoBanner from "../components/SiteVideoBanner/SiteVideoBanner";
 import CV from '../components/CV/CV';
 import CardCarousel from '../components/CardCarousel/CardCarousel';
@@ -17,7 +16,6 @@ const Home = () => {
 
   return (
     <>
-      <NavBar />
       <SiteVideoBanner company="VanMoof" />
       <CV />
       <HighlightProject projectList={projectList} project="Braun Parch" />

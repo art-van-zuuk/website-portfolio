@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
@@ -20,7 +19,6 @@ const BraunParch = () => {
 
   return (
     <>
-      <NavBar />
       <ProjectBanner project="Braun Parch" />
       <SkillImages
         skills={["photoshop", "illustrator", "solidworks", "3dprinting"]}
