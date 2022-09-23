@@ -21,7 +21,6 @@ const Chessboard = () => {
       selectedProject = projectList[index];
     }
   });
-  console.log(selectedProject)
 
   return (
     <>

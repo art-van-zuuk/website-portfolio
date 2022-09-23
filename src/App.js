@@ -8,6 +8,7 @@ const Home = React.lazy(() => import("./pages/Home"));
 const BraunParch = React.lazy(() => import("./pages/projects/BraunParch"));
 const SlideToLight = React.lazy(() => import("./pages/projects/SlideToLight"));
 const Chessboard = React.lazy(() => import("./pages/projects/Chessboard"));
+const Posters = React.lazy(() => import("./pages/projects/Posters"));
 
 const TestCompany = React.lazy(() => import("./pages/company/TestCompany"));
 
@@ -50,6 +51,15 @@ const App = () => {
             element={
               <React.Suspense fallback={<>...</>}>
                 <Chessboard />
+              </React.Suspense>
+            }
+          />
+
+          <Route
+            path="posters"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <Posters />
               </React.Suspense>
             }
           />
