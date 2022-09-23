@@ -1,6 +1,6 @@
 ///List with all projects 
 
-var projectList = []
+var projectList = [];
 
 projectList.push({
   name: "Braun Parch",

@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "../../style.css";
 import "./CarouselCard.css";
+import HandleURL from "../../scripts/HandleURL";
+
 
 ///Card inside the carousel. Requires: name of project
 function CarouselCard(props) {
-  //opens link
-  const open = (url) => {
-    window.open(url, "_self", "noopener,noreferrer");
-  };
 
   //changes name of project to URL format
   var URLLink = props.project.name.replace(/\s/g, "-");
@@ -24,7 +22,7 @@ function CarouselCard(props) {
       mouseUp < window.checkForDrag + 5 &&
       mouseUp > window.checkForDrag - 5
     ) {
-      open(URLLink);
+      HandleURL(URLLink);
     }
   };
 

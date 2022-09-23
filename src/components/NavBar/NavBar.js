@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
-import { Container, Button, Row, Col } from 'react-bootstrap'
+import React, { useContext, useEffect, useState } from 'react'
+import { Button } from 'react-bootstrap'
+import { useNavigate, useLocation } from "react-router-dom"
 
+import HandleURL from "../../scripts/HandleURL";
 import '../../style.css'
 import './NavBar.css'
 
 ///Navigation bar on the top of the site
-const NavBar = () => {
+const NavBar = (props) => {
+
 
   //opens link
   const open = (url) => {
@@ -30,24 +33,16 @@ const NavBar = () => {
         className="website-logo"
         alt=""
         src={require("../../assets/images/website/website-logo.png")}
-        onClick={() => open("./")}
+        onClick={() => HandleURL("/")}
       />
       <div className="navbar-text">
         <Button
-          className="rounded-pill btn-sm"
+          className="hover-button rounded-pill btn-sm"
           variant="link"
-          to="/pathLink#yourAnchorTag"
+          onClick={() => HandleURL("/")}
         >
           {" "}
           All projects{" "}
-        </Button>
-        <Button
-          className="rounded-pill btn-sm"
-          variant="link"
-          onClick={() => open("./")}
-        >
-          {" "}
-          About me{" "}
         </Button>
       </div>
     </nav>

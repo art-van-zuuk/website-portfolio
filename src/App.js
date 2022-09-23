@@ -1,44 +1,62 @@
 import "./App.css";
-import React, { Suspense } from "react";
+import React, { useState, useMemo } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import NavBar from "./components/NavBar/NavBar";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const BraunParch = React.lazy(() => import("./pages/projects/BraunParch"));
 const SlideToLight = React.lazy(() => import("./pages/projects/SlideToLight"));
 
+const TestCompany = React.lazy(() => import("./pages/company/TestCompany"));
+
 const App = () => {
+
   return (
-    ///Router to have multi-page setup
-    <Router>
-      <Routes>
-        {/* Set Home.js as landing page */}
-        <Route
-          index
-          element={
-            <React.Suspense fallback={<>...</>}>
-              <Home />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path="braun-parch"
-          element={
-            <React.Suspense fallback={<>...</>}>
-              <BraunParch />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path="slide-to-light"
-          element={
-            <React.Suspense fallback={<>...</>}>
-              <SlideToLight />
-            </React.Suspense>
-          }
-        />
-      </Routes>
-    </Router>
+    <>
+        <NavBar />
+        {/* Router to have multi-page setup */}
+        <Router>
+          <Routes>
+            {/* Set Home.js as landing page */}
+            <Route
+              index
+              element={
+                <React.Suspense fallback={<>...</>}>
+                  <Home />
+                </React.Suspense>
+              }
+            />
+            {/* Projects */}
+            <Route
+              path="braun-parch"
+              element={
+                <React.Suspense fallback={<>...</>}>
+                  <BraunParch />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path="slide-to-light"
+              element={
+                <React.Suspense fallback={<>...</>}>
+                  <SlideToLight />
+                </React.Suspense>
+              }
+            />
+
+            {/* Companies */}
+            <Route
+              path="test-company"
+              element={
+                <React.Suspense fallback={<>...</>}>
+                  <TestCompany />
+                </React.Suspense>
+              }
+            />
+          </Routes>
+        </Router>
+    </>
   );
 };
 

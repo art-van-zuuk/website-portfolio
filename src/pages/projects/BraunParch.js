@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import NavBar from "../../components/NavBar/NavBar";
@@ -15,8 +15,9 @@ import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/Fu
 import Title from "../../components/ProjectComponents/Title/Title";
 
 
+const BraunParch = () => {
 
-const BraunParch = () => { 
+
   return (
     <>
       <NavBar />

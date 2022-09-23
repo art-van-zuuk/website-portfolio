@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../style.css'
 
@@ -11,22 +11,24 @@ import Footer from '../components/Footer/Footer';
 import HighlightProject from '../components/HighlightProject/HighlightProject';
 
 
-
 const Home = () => {
-    return (
-      <>
-        <NavBar />
-        <SiteVideoBanner company="VanMoof" />
-        <CV />
-        <HighlightProject projectList={projectList} project="Braun Parch" />
-        <HighlightProject projectList={projectList} project="Slide to Light" />
-        <HighlightProject projectList={projectList} project="Camera Slider" />
-        <CardCarousel projectList={projectList} title={"designProjectsTitle"} />
-        {/* <CardCarousel projectList={projectList}/>
+
+  
+
+  return (
+    <>
+      <NavBar />
+      <SiteVideoBanner company="VanMoof" />
+      <CV />
+      <HighlightProject projectList={projectList} project="Braun Parch" />
+      <HighlightProject projectList={projectList} project="Slide to Light" />
+      <HighlightProject projectList={projectList} project="Camera Slider" />
+      <CardCarousel projectList={projectList} title={"designProjectsTitle"} />
+      {/* <CardCarousel projectList={projectList}/>
         <CardCarousel projectList={projectList}/> */}
-        <Footer />
-      </>
-    );
+      <Footer />
+    </>
+  );
 }
 
 export default Home;
