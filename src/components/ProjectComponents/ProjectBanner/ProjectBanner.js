@@ -10,7 +10,7 @@ import GetProjectInfo from "../../../scripts/GetProjectInfo";
 function ProjectBanner(props) {
 
   //gets information about project
-  var projectInfo = GetProjectInfo(props.project);
+  var projectInfo = GetProjectInfo(props.projectList ,props.project);
 
   return (
     <div className="App">

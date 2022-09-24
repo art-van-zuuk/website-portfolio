@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Row, Col } from 'react-bootstrap'
 
-import CarouselCard from "../CarouselCard/CarouselCard";
+import CarouselCard from "./CarouselCard";
 
 import "./CardCarousel.css";
 import "slick-carousel/slick/slick.css";
@@ -34,25 +34,34 @@ function CardCarousel(props) {
     stepList.push(stepSize*(i));
   }
 
+  //Converts title into image format
+  var image = props.title ;
+  image = image.replace(/\s+/g, "");
+  image = "/images/website/" + image + "Title.png";
+
   return (
-    <div className="App card-carousel-div" >
+    <div className="App card-carousel-div">
       {/* Title above carousel */}
       <Row className="justify-content-center">
-        <img draggable="false" className="titleImage" src={"/images/website/" + props.title + ".png"}></img>
+        <img draggable="false" className="titleImage" src={image}></img>
       </Row>
       {/* Carousel */}
-      <motion.div ref={carousel} className="carousel" whileTap={{ cursor: "grabbing" }}>
+      <motion.div
+        ref={carousel}
+        className="carousel"
+        whileTap={{ cursor: "grabbing" }}
+      >
         <motion.div
           className="testimonial-group"
-          drag='x'
+          drag="x"
           dragConstraints={{ right: width, left: -width }}
-
           animate={{ x: [-width, width] }}
           transition={{
             duration: totalStepTime,
             repeat: Infinity,
-            repeatType: 'reverse'
-          }}>
+            repeatType: "reverse",
+          }}
+        >
           <Row className="justify-content-center">
             {props.projectList.map((project, index) => {
               return (
@@ -65,9 +74,6 @@ function CardCarousel(props) {
         </motion.div>
       </motion.div>
     </div>
-
-
-
   );
 }
 

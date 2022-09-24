@@ -5,7 +5,8 @@ import '../style.css'
 import SiteVideoBanner from "../components/SiteVideoBanner/SiteVideoBanner";
 import CV from '../components/CV/CV';
 import CardCarousel from '../components/CardCarousel/CardCarousel';
-import projectList from "../components/Projects";
+import designProjectList from "../information/DesignProjects";
+import graphicProjectList from "../information/GraphicProjects";
 import Footer from '../components/Footer/Footer';
 import HighlightProject from '../components/HighlightProject/HighlightProject';
 
@@ -18,12 +19,23 @@ const Home = () => {
     <>
       <SiteVideoBanner company="VanMoof" />
       <CV />
-      <HighlightProject projectList={projectList} project="Braun Parch" />
-      <HighlightProject projectList={projectList} project="Slide to Light" />
-      <HighlightProject projectList={projectList} project="Camera Slider" />
-      <CardCarousel projectList={projectList} title={"designProjectsTitle"} />
-      {/* <CardCarousel projectList={projectList}/>
-        <CardCarousel projectList={projectList}/> */}
+      <HighlightProject 
+        projectList={designProjectList} 
+        project="Braun Parch" 
+        />
+      <HighlightProject
+        projectList={designProjectList}
+        project="Slide to Light"
+      />
+      <HighlightProject
+        projectList={designProjectList}
+        project="Camera Slider"
+      />
+      <CardCarousel projectList={designProjectList} title={"Design Projects"} />
+      <CardCarousel
+        projectList={graphicProjectList}
+        title={"Graphic Projects"}
+      />
       <Footer />
     </>
   );

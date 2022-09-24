@@ -6,11 +6,10 @@ import HandleURL from "../../scripts/HandleURL";
 import "./HighlightProject.css";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 
-
 function HighlightProject(props) {
 
   //gets information about project
-  var projectInfo = GetProjectInfo(props.project);
+  var projectInfo = GetProjectInfo(props.projectList, props.project);
 
   return (
     <div className="App">

@@ -4,15 +4,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../../components/Footer/Footer";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 
-import { photos } from "../../components/ProjectComponents/ImageGallery/IGPosters";
+import { photos } from "../../components/ProjectComponents/ImageGallery/IGChessboard";
 import Title from "../../components/ProjectComponents/Title/Title";
-
 import GetProjectInfo from "../../scripts/GetProjectInfo";
+import designProjectList from "../../information/DesignProjects";
 
-const Posters = () => {
+
+const Chessboard = () => {
 
   //gets information about project
-  var projectInfo = GetProjectInfo("Posters");
+  var projectInfo = GetProjectInfo(designProjectList,"Chessboard");
 
   return (
     <>
@@ -38,4 +39,4 @@ const Posters = () => {
   );
 };
 
-export default Posters;
+export default Chessboard;

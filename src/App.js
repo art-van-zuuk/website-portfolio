@@ -5,10 +5,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar/NavBar";
 
 const Home = React.lazy(() => import("./pages/Home"));
-const BraunParch = React.lazy(() => import("./pages/projects/BraunParch"));
-const SlideToLight = React.lazy(() => import("./pages/projects/SlideToLight"));
-const Chessboard = React.lazy(() => import("./pages/projects/Chessboard"));
-const Posters = React.lazy(() => import("./pages/projects/Posters"));
+const BraunParch = React.lazy(() => import("./pages/designProjects/BraunParch"));
+const SlideToLight = React.lazy(() =>
+  import("./pages/designProjects/SlideToLight")
+);
+const Chessboard = React.lazy(() =>
+  import("./pages/designProjects/Chessboard")
+);
+const Posters = React.lazy(() => import("./pages/graphicProjects/Posters"));
 
 const TestCompany = React.lazy(() => import("./pages/company/TestCompany"));
 

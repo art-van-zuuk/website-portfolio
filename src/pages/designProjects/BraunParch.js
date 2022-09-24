@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Footer from "../../components/Footer/Footer";
@@ -13,17 +13,20 @@ import { photos } from "../../components/ProjectComponents/ImageGallery/IGBraunP
 import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
 import Title from "../../components/ProjectComponents/Title/Title";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
-
-
+import designProjectList from "../../information/DesignProjects";
 
 const BraunParch = () => {
+  // console.log("list: " + designProjectList);
 
   //gets information about project
-  var projectInfo = GetProjectInfo("Braun Parch");
+  var projectInfo = GetProjectInfo(designProjectList, "Braun Parch");
 
   return (
     <>
-      <ProjectBanner project={projectInfo.name} />
+      <ProjectBanner
+        projectList={designProjectList}
+        project={projectInfo.name}
+      />
       <SkillImages
         skills={["photoshop", "illustrator", "solidworks", "3dprinting"]}
       />

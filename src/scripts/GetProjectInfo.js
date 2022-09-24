@@ -1,12 +1,11 @@
-import projectList from "../components/Projects.js";
+function GetProjectInfo(designProjectList, chosenProject) {
 
-function GetProjectInfo(chosenProject) {
   //checks projects and chooses right one
   var projectInfo = {};
 
-  projectList.map((project, index) => {
+  designProjectList.map((project, index) => {
     if (Object.values(project)[0] == chosenProject) {
-      projectInfo = projectList[index];
+      projectInfo = designProjectList[index];
     }
   });
 

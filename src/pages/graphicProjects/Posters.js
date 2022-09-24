@@ -4,15 +4,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../../components/Footer/Footer";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 
-import { photos } from "../../components/ProjectComponents/ImageGallery/IGChessboard";
+import { photos } from "../../components/ProjectComponents/ImageGallery/IGPosters";
 import Title from "../../components/ProjectComponents/Title/Title";
+
 import GetProjectInfo from "../../scripts/GetProjectInfo";
+import graphicProjectList from "../../information/GraphicProjects";
 
-
-const Chessboard = () => {
+const Posters = () => {
 
   //gets information about project
-  var projectInfo = GetProjectInfo("Chessboard");
+  var projectInfo = GetProjectInfo(graphicProjectList, "Posters");
 
   return (
     <>
@@ -29,7 +30,7 @@ const Chessboard = () => {
         padding=""
       />
       <ImageGallery
-        project={projectInfo.description}
+        project={projectInfo.name}
         photos={photos}
         padding="bottom-padding"
       />
@@ -38,4 +39,4 @@ const Chessboard = () => {
   );
 };
 
-export default Chessboard;
+export default Posters;
