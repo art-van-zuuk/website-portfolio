@@ -1,5 +1,4 @@
 ///List with all projects 
-
 var projectList = [];
 
 // DESIGN PROJECTS
