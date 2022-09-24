@@ -7,36 +7,29 @@ import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageG
 import { photos } from "../../components/ProjectComponents/ImageGallery/IGPosters";
 import Title from "../../components/ProjectComponents/Title/Title";
 
-import projectList from "../../components/Projects.js";
+import GetProjectInfo from "../../scripts/GetProjectInfo";
 
-const Chessboard = () => {
-  ///TODO: Make function of this. ALSO IN HIGHLIGHTPROJECT, BANNER and more
-  //checks projects and chooses right one
-  var chosenProject = "Posters";
-  var selectedProject = {};
+const Posters = () => {
 
-  projectList.map((project, index) => {
-    if (Object.values(project)[0] == chosenProject) {
-      selectedProject = projectList[index];
-    }
-  });
+  //gets information about project
+  var projectInfo = GetProjectInfo("Posters");
 
   return (
     <>
       <Title
-        title="Posters"
+        title={projectInfo.name}
         size="h1"
         alignment="start"
         padding="top-padding"
       />
       <Title
-        title={selectedProject.description}
+        title={projectInfo.description}
         size="p"
         alignment="start"
         padding=""
       />
       <ImageGallery
-        project="Posters"
+        project={projectInfo.name}
         photos={photos}
         padding="bottom-padding"
       />
@@ -45,4 +38,4 @@ const Chessboard = () => {
   );
 };
 
-export default Chessboard;
+export default Posters;

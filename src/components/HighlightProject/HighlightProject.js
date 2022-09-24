@@ -4,24 +4,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import HandleURL from "../../scripts/HandleURL";
 import "./HighlightProject.css";
-
+import GetProjectInfo from "../../scripts/GetProjectInfo";
 
 
 function HighlightProject(props) {
-  //checks projects and chooses right one
-  var selectedProject = {};
 
-  props.projectList.map((project, index) => {
-    if (Object.values(project)[0] == props.project) {
-      selectedProject = props.projectList[index];
-    }
-  });
+  //gets information about project
+  var projectInfo = GetProjectInfo(props.project);
 
   return (
     <div className="App">
       <div
         className="highlight-div"
-        style={{ backgroundColor: selectedProject.backgroundColor }}
+        style={{ backgroundColor: projectInfo.backgroundColor }}
       >
         <Container className="site-width">
           <Row className="text-start align-items-center justify-content-center gx-5 gy-5">
@@ -33,8 +28,8 @@ function HighlightProject(props) {
               ></img>
             </Col>
             <Col className="col-md-6 col-12">
-              <h2> {selectedProject.name} </h2>
-              <h4> {selectedProject.explanation} </h4>
+              <h2> {projectInfo.name} </h2>
+              <h4> {projectInfo.explanation} </h4>
               <p>
                 {" "}
                 With this assigment, Braun aimed to make a change in the
@@ -45,12 +40,12 @@ function HighlightProject(props) {
               <p> </p>
               <b>
                 {" "}
-                {selectedProject.type} in {selectedProject.year}{" "}
+                {projectInfo.type} in {projectInfo.year}{" "}
               </b>
               <p> </p>
               <Button
                 variant="secondary rounded-pill"
-                onClick={() => HandleURL(selectedProject.name)}
+                onClick={() => HandleURL(projectInfo.name)}
               >
                 Learn more
               </Button>{" "}

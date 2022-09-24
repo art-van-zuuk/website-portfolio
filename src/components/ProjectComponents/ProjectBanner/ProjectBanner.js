@@ -4,33 +4,25 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import "../../../style.css";
 import "./ProjectBanner.css";
-
-import projectList from "../../Projects.js";
+import GetProjectInfo from "../../../scripts/GetProjectInfo";
 
 ///Banner at top of project. Requires: project
 function ProjectBanner(props) {
-  
-  //checks projects and chooses right one
-  var selectedProject = {};
 
-  projectList.map((project, index) => {
-    if (Object.values(project)[0] == props.project) {
-      selectedProject = projectList[index];
-      
-    }
-  });
+  //gets information about project
+  var projectInfo = GetProjectInfo(props.project);
 
   return (
     <div className="App">
       <div
         className="ProjectBannerBackground"
-        style={{ backgroundColor: selectedProject.backgroundColor }}
+        style={{ backgroundColor: projectInfo.backgroundColor }}
       >
         <Container className="site-width top-bottom-padding">
           <Row className="align-items-center justify-content-center gx-5">
             <Col className="text-start col-lg-6 col-10">
-              <h1>{selectedProject.name}</h1>
-              <h4> {selectedProject.description} </h4>
+              <h1>{projectInfo.name}</h1>
+              <h4> {projectInfo.description} </h4>
               <p>
                 {" "}
                 With this assigment, Braun aimed to make a change in the
@@ -41,17 +33,15 @@ function ProjectBanner(props) {
               <p> </p>
               <b>
                 {" "}
-                {selectedProject.type} in {selectedProject.year}{" "}
+                {projectInfo.type} in {projectInfo.year}{" "}
               </b>
-              <p> {selectedProject.team} </p>
+              <p> {projectInfo.team} </p>
             </Col>
             <Col className="col-lg-6 col-10">
               <img
                 className="ProjectBannerImage"
                 draggable="false"
-                src={
-                  "/images/Projects/" + selectedProject.name + "/thumbnail.png"
-                }
+                src={"/images/Projects/" + projectInfo.name + "/thumbnail.png"}
               ></img>
             </Col>
           </Row>

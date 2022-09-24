@@ -12,14 +12,18 @@ import SkillImages from "../../components/ProjectComponents/SkillImages/SkillIma
 import { photos } from "../../components/ProjectComponents/ImageGallery/IGBraunParch";
 import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
 import Title from "../../components/ProjectComponents/Title/Title";
+import GetProjectInfo from "../../scripts/GetProjectInfo";
+
 
 
 const BraunParch = () => {
 
+  //gets information about project
+  var projectInfo = GetProjectInfo("Braun Parch");
 
   return (
     <>
-      <ProjectBanner project="Braun Parch" />
+      <ProjectBanner project={projectInfo.name} />
       <SkillImages
         skills={["photoshop", "illustrator", "solidworks", "3dprinting"]}
       />
@@ -42,7 +46,7 @@ const BraunParch = () => {
         padding="top-bottom-padding"
       />
       <FullWidthImage
-        project="Braun Parch"
+        project={projectInfo.name}
         image="step_explaination.png"
         padding=""
       />
@@ -71,7 +75,7 @@ const BraunParch = () => {
         padding="bottom-padding"
       />
       <FullWidthImage
-        project="Braun Parch"
+        project={projectInfo.name}
         image="inspiration.jpg"
         padding=""
       />
@@ -82,12 +86,12 @@ const BraunParch = () => {
         padding="padding-bottom"
       />
       <FullWidthImage
-        project="Braun Parch"
+        project={projectInfo.name}
         image="sketches.png"
         padding="bottom-padding"
       />
       <ImageGallery
-        project="Braun Parch"
+        project={projectInfo.name}
         photos={photos}
         padding="top-padding"
       />
