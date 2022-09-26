@@ -17,7 +17,7 @@ function TextImageStrip(props) {
           </Col>
           <Col className="col-lg-6 col-10">
             <img
-              // className="ProjectBannerImage"
+              className= {props.rounded ? "rounded-element" : "" }
               draggable="false"
               src={"/images/Projects/" + props.image}
               style={{ maxHeight: "300px", maxWidth: "400px" }}

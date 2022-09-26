@@ -102,7 +102,6 @@ const BraunParch = () => {
         video="https://www.youtube.com/embed/cGzrci__Vho"
         padding="bottom-padding"
       />
-      <Footer />
     </>
   );
 };

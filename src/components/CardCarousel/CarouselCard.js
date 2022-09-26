@@ -48,12 +48,11 @@ function CarouselCard(props) {
         </div>
 
         <div className="text">
-          <h4 className="bold-text"> {props.project.name} </h4>
-          <p> {props.project.explanation} </p>
-          <b>
+          <h4 className="bold-text text-center"> {props.project.name} </h4>
+          <p className="text-center">
             {" "}
             {props.project.type} in {props.project.year}{" "}
-          </b>
+          </p>
         </div>
       </motion.div>
     </div>

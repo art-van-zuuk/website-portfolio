@@ -34,7 +34,6 @@ const Chessboard = () => {
         photos={photos}
         padding="bottom-padding"
       />
-      <Footer />
     </>
   );
 };

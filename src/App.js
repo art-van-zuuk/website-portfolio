@@ -3,6 +3,8 @@ import React, { useState, useMemo } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar/NavBar";
+import MARCHVII from "./pages/designProjects/MARCHVII";
+import Footer from "./components/Footer/Footer";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const BraunParch = React.lazy(() => import("./pages/designProjects/BraunParch"));
@@ -58,6 +60,14 @@ const App = () => {
               </React.Suspense>
             }
           />
+          <Route
+            path="march-vii"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <MARCHVII />
+              </React.Suspense>
+            }
+          />
 
           <Route
             path="posters"
@@ -79,6 +89,7 @@ const App = () => {
           />
         </Routes>
       </Router>
+      <Footer />
     </>
   );
 };

@@ -9,7 +9,6 @@ const SlideToLight = () => {
   return (
     <>
       <ProjectBanner projectList={designProjectList} project="Slide to Light" />
-      <Footer />
     </>
   );
 };

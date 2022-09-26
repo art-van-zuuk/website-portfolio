@@ -3,6 +3,14 @@ var designProjectList = [];
 
 // DESIGN PROJECTS
 designProjectList.push({
+  name: "MARCH VII",
+  description: "Quick Food Dehydration using vacuum",
+  type: "Project MARCH",
+  year: "2022",
+  team: "Team project",
+  backgroundColor: "#8799ae",
+});
+designProjectList.push({
   name: "Braun Parch",
   description: "Quick Food Dehydration using vacuum",
   type: "Bachelor End Project",
@@ -36,15 +44,6 @@ designProjectList.push({
   team: "Individual project",
   backgroundColor: "#eee",
 });
-designProjectList.push({
-  name: "MARCH VII",
-  description: "Quick Food Dehydration using vacuum",
-  type: "Bachelor End Project",
-  year: "2020",
-  team: "Individual project",
-  backgroundColor: "#eee",
-});
-
 designProjectList.push({
   name: "Input Device",
   description: "Quick Food Dehydration using vacuum",

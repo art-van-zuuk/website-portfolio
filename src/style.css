@@ -115,3 +115,7 @@ iframe {
 .hover-button:hover{
     text-decoration: underline !important;
 }
+
+.rounded-element{
+    border-radius: 20px;
+}

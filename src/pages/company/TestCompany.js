@@ -15,12 +15,15 @@ const TestCompany = () => {
 
   return (
     <>
-      <SiteVideoBanner />
+      <SiteVideoBanner company="Test Company" />
       <CV />
       <HighlightProject project="Braun Parch" />
       <HighlightProject project="Slide to Light" />
       <HighlightProject project="Camera Slider" />
-      <CardCarousel projectList={designProjectList} title={"designProjectsTitle"} />
+      <CardCarousel
+        projectList={designProjectList}
+        title={"designProjectsTitle"}
+      />
       {/* <CardCarousel projectList={projectList}/>
         <CardCarousel projectList={projectList}/> */}
       <Footer />
