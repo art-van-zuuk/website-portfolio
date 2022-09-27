@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar/NavBar";
 import MARCHVII from "./pages/designProjects/MARCHVII";
 import Footer from "./components/Footer/Footer";
+import InputDevice from "./pages/designProjects/InputDevice";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const BraunParch = React.lazy(() => import("./pages/designProjects/BraunParch"));
@@ -65,6 +66,14 @@ const App = () => {
             element={
               <React.Suspense fallback={<>...</>}>
                 <MARCHVII />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="input-device"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <InputDevice />
               </React.Suspense>
             }
           />

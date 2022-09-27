@@ -14,6 +14,7 @@ import HorizonalImageTextCard from "../../components/ProjectComponents/Card/Hori
 import { photos } from "../../components/ProjectComponents/ImageGallery/IGMARCHVII";
 import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
 import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
+import TextVideoStrip from "../../components/ProjectComponents/InformationStrip/TextVideoStrip";
 
 
 
@@ -64,21 +65,29 @@ const MARCHVII = () => {
         title="Starting over, with knowledge from last years"
         size="h3"
         alignment="start"
-        padding=""
+        padding="top-padding"
       />
-      <Title title="Initial sketches" size="h4" alignment="start" padding="" />
+      <Title title="Idea sketches" size="h4" alignment="start" padding="" />
       <FullWidthImage
         project={projectInfo.name}
         image="Drawings.jpg"
         padding=""
       />
+      <Title
+        title="With inspiration from last years exoskeletons and exoskeletons that were already on the market, we created some ideas on what look and feel our exoskeleton should express."
+        size="p"
+        alignment="start"
+        padding="bottom-padding"
+      />
+
+      <Title title="Concept sketches" size="h4" alignment="start" padding="" />
       <FullWidthImage
         project={projectInfo.name}
         image="Concepts.jpg"
         padding=""
       />
       <Title
-        title="Drawings made together with Iza Bosch"
+        title="To get a better understanding of how these details would translate to a full exoskeleton, we made four different concepts. For each style we created a collage for inspiration. The final design took inspiration from different elements of the concepts. Two of these concepts were made by Iza Bosch. "
         size="p"
         alignment="start"
         padding="bottom-padding"
@@ -87,7 +96,7 @@ const MARCHVII = () => {
         title="Main focus points"
         size="h2"
         alignment="center"
-        padding=""
+        padding="top-padding"
       />
       <CardColumns
         cardInfo={[
@@ -112,11 +121,12 @@ const MARCHVII = () => {
         ]}
         imageHeight="200px"
         cardWidth="4"
+        padding="bottom-padding"
       />
-      <TextImageStrip
+      <TextVideoStrip
         title="Making it visible"
-        text="During the year, I wanted to challenge myself by learning to render in Blender."
-        image="MARCH VII/PuttingOnCovers.jpg"
+        text="During the year, I wanted to challenge myself by learning to render in Blender. I spend a full month learning the program and rendering shot by shot. For a better experience turn on the music and watch on full-screen!"
+        video="sgKixViuUBE"
         padding="top-bottom-padding"
         rounded={true}
       />
@@ -156,7 +166,7 @@ const MARCHVII = () => {
         padding="top-padding"
       />
       <FullWidthVideo
-        video="https://www.youtube.com/embed/Bm6ndmPpysY"
+        video="Bm6ndmPpysY"
         padding=""
       />
       <Title

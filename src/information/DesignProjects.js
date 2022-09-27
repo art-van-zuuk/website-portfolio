@@ -11,6 +11,14 @@ designProjectList.push({
   backgroundColor: "#8799ae",
 });
 designProjectList.push({
+  name: "Input Device",
+  description: "Quick Food Dehydration using vacuum",
+  type: "Project MARCH",
+  year: "2022",
+  team: "Team project",
+  backgroundColor: "#D7D6CA",
+});
+designProjectList.push({
   name: "Braun Parch",
   description: "Quick Food Dehydration using vacuum",
   type: "Bachelor End Project",
@@ -44,15 +52,6 @@ designProjectList.push({
   team: "Individual project",
   backgroundColor: "#eee",
 });
-designProjectList.push({
-  name: "Input Device",
-  description: "Quick Food Dehydration using vacuum",
-  type: "Bachelor Project",
-  year: "2018",
-  team: "Individual project",
-  backgroundColor: "#D7D6CA",
-});
-
 designProjectList.push({
   name: "Band Aid Dispenser",
   description: "Quick Food Dehydration using vacuum",

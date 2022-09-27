@@ -16,7 +16,7 @@ function CardColumns(props) {
             >
               <Card className="shadow rounded-element border-0 w-100 ">
                 <img
-                  className="card-img-top rounded-element"
+                  className={"card-img-top rounded-element p-" + props.imagePadding}
                   src={"images/Projects/" + card.image}
                   style={{
                     height: props.imageHeight,

@@ -14,6 +14,7 @@ import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/Fu
 import Title from "../../components/ProjectComponents/Title/Title";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 import designProjectList from "../../information/DesignProjects";
+import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
 
 const BraunParch = () => {
   // console.log("list: " + designProjectList);
@@ -33,25 +34,22 @@ const BraunParch = () => {
       <TextImageStrip
         title="Food waste..."
         text="With this assignment Braun asked us to design something to lower the consumer's food waste. A big portion of this waste happens during the conservation or even worse, lack of conservation of leftover food."
-        image="Braun Parch/thumbnail.png"
+        image="Braun Parch/FoodWaste.jpg"
         padding="top-bottom-padding"
+        rounded={true}
       />
       <ImageTextStrip
         title="Good taste..."
         text="This leftover food often still is an excellent source of nutritions. An ancient but mostly forgotten method to preserve this is by dehydration. Braun Parch brings new life to the word of food dehydration at home by using vacuum."
-        image="Braun Parch/thumbnail.png"
-        padding="bottom-padding"
+        image="Braun Parch/GoodTaste.jpg"
+        padding="top-bottom-padding"
+        rounded={true}
       />
       <Title
         title="Drying food with the power of vacuum..."
         size="h2"
         alignment="center"
-        padding="top-bottom-padding"
-      />
-      <FullWidthImage
-        project={projectInfo.name}
-        image="step_explaination.png"
-        padding=""
+        padding="top-padding"
       />
       <Title
         title="This leftover food often still is an excellent source of nutritions. Therefore, preserving it"
@@ -59,17 +57,49 @@ const BraunParch = () => {
         alignment="center"
         padding="bottom-padding"
       />
+      <FullWidthImage
+        project={projectInfo.name}
+        image="step_explaination.png"
+        padding="top-bottom-padding"
+      />
+
       <Title
-        title="ADVANTAGES"
-        size="p"
+        title="A better design in many ways"
+        size="h2"
         alignment="center"
+        padding="top-padding"
+      />
+      <CardColumns
+        cardInfo={[
+          {
+            title: "Quick",
+            text: "By using vacuum, the process can be sped up while keeping the temperature relatively low.",
+            image: "Braun Parch/quick.png",
+            objectFit: "contain",
+          },
+          {
+            title: "Nutricious",
+            text: "Because of the low temperature, the nutricients in the food stay intact keeping it more healthy.",
+            image: "Braun Parch/nutricious.png",
+            objectFit: "contain",
+          },
+          {
+            title: "Easy",
+            text: "The pre-programmed settings per type of food make this tedious task as simple as it could be.",
+            image: "Braun Parch/easy.png",
+            objectFit: "contain",
+          },
+        ]}
+        imageHeight="150px"
+        imagePadding="3"
+        cardWidth="4"
         padding="bottom-padding"
       />
       <ImageTextStrip
         title="Form follows functions"
         text="With this assigment, Braun aimed to make a change in the increasing problem of food waste. I found that a big part of this waste happens at the consumption and espesially at the conservation of food"
         image="Braun Parch/exploded_view.png"
-        padding="bottom-padding"
+        padding="top-bottom-padding"
       />
       <ImageTextStrip
         title="Old heritage, new style"
@@ -98,10 +128,7 @@ const BraunParch = () => {
         photos={photos}
         padding="top-padding"
       />
-      <FullWidthVideo
-        video="https://www.youtube.com/embed/cGzrci__Vho"
-        padding="bottom-padding"
-      />
+      <FullWidthVideo video="cGzrci__Vho" padding="bottom-padding" />
     </>
   );
 };

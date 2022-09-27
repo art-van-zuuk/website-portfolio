@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ReactPlayer from "react-player";
 
 import "../../../style.css";
+import PlayVideo from "../../../scripts/PlayVideo";
 
 
 ///Full with image. Requires: name of image and project
@@ -14,12 +15,7 @@ function FullWidthVideo(props) {
       <Container className={"site-width " + props.padding}>
         <Row className="align-items-center justify-content-center gx-5">
           <Col className="col-12">
-            <iframe
-              src={props.video}
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-              title="video"
-            />
+            <PlayVideo video={props.video} rounded={props.rounded} />
           </Col>
         </Row>
       </Container>

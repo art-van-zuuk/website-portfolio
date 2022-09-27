@@ -10,7 +10,7 @@ function ImageTextStrip(props) {
     <div className="App">
       <Container className={"site-width " + props.padding}>
         <Row className="align-items-center justify-content-center gx-5">
-          <Col className="col-lg-6 col-10">
+          <Col className="col-lg-6 col-12">
             <img
               className={props.rounded ? "rounded-element" : ""}
               draggable="false"
@@ -18,7 +18,7 @@ function ImageTextStrip(props) {
               style={{ maxHeight: "300px", maxWidth: "400px" }}
             ></img>
           </Col>
-          <Col className="text-lg-start col-lg-6 col-10">
+          <Col className="text-lg-start col-lg-6 col-12">
             <h2>{props.title}</h2>
             <p className="text-lg-start text-center">{props.text}</p>
           </Col>

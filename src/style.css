@@ -119,3 +119,11 @@ iframe {
 .rounded-element{
     border-radius: 20px;
 }
+
+.video{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.inner-video{
+    aspect-ratio: 16/9;
+}
