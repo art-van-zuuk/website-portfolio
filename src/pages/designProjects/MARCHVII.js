@@ -35,7 +35,7 @@ const MARCHVII = () => {
         title="What is Project MARCH?"
         text="Project MARCH is a non-profit DreamTeam. The goal of the team is to make someone with a spinal-cord-injury walk again by building an exoskeleton. The team, consisting of 26 students with different deciplines and background, work full time on this project for over a year. We were the seventh team."
         image="MARCH VII/TeamPhoto.jpg"
-        padding="bottom-padding"
+        padding="top-bottom-padding"
       />
       <TextImageStrip
         title="Designing the covers of an exoskeleton"

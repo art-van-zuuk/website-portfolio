@@ -3,8 +3,6 @@ import { Container, Row, Col, Card, CardColumn } from "react-bootstrap";
 
 ///Creates a row of cards with image, title and text
 function CardColumns(props) {
-
-    console.log("test " + props.cardInfo)
   return (
     <Container className={"site-width " + props.padding}>
       <Row className="justify-content-center mt-4 gx-4">
@@ -12,9 +10,9 @@ function CardColumns(props) {
           return (
             <Col
               key={index}
-              className={"col-12 d-flex mb-4 col-md-" + props.cardWidth}
+              className={"col-12 d-flex col-md-" + props.cardWidth}
             >
-              <Card className="shadow rounded-element border-0 w-100 ">
+              <Card className="rounded-element border-0 w-100 ">
                 <img
                   className={"card-img-top rounded-element p-" + props.imagePadding}
                   src={"images/Projects/" + card.image}

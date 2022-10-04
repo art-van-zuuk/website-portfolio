@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar/NavBar";
 import MARCHVII from "./pages/designProjects/MARCHVII";
 import Footer from "./components/Footer/Footer";
 import InputDevice from "./pages/designProjects/InputDevice";
+import CameraSlider from "./pages/designProjects/CameraSlider";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const BraunParch = React.lazy(() => import("./pages/designProjects/BraunParch"));
@@ -74,6 +75,14 @@ const App = () => {
             element={
               <React.Suspense fallback={<>...</>}>
                 <InputDevice />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="camera-Slider"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <CameraSlider />
               </React.Suspense>
             }
           />

@@ -5,7 +5,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 function HorizonalImageTextCard(props) {
   return (
     <Container className={"site-width " + props.padding}>
-      <Card className="shadow bg-light rounded-element border-0">
+      <Card className="shadow rounded-element">
         <Row className="no-gutters align-items-center justify-content-center gx-5">
           <Col className="col-md-5">
             <img

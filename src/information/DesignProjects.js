@@ -16,7 +16,7 @@ designProjectList.push({
   type: "Project MARCH",
   year: "2022",
   team: "Team project",
-  backgroundColor: "#D7D6CA",
+  backgroundColor: "#e5e5de",
 });
 designProjectList.push({
   name: "Braun Parch",
@@ -42,7 +42,7 @@ designProjectList.push({
   type: "Personal Project",
   year: "2016",
   team: "Individual project",
-  backgroundColor: "#eee",
+  backgroundColor: "#dcdbdd",
 });
 designProjectList.push({
   name: "Chessboard",
