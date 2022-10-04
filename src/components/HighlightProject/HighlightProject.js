@@ -11,6 +11,10 @@ function HighlightProject(props) {
   //gets information about project
   var projectInfo = GetProjectInfo(props.projectList, props.project);
 
+  if (projectInfo.textColor != null) {
+    var textOpacity = "0.8";
+  }
+
   return (
     <div className="App">
       <div
@@ -27,22 +31,27 @@ function HighlightProject(props) {
               ></img>
             </Col>
             <Col className="col-md-6 col-12">
-              <h2> {projectInfo.name} </h2>
-              <h4> {projectInfo.explanation} </h4>
-              <p>
+              <h2 style={{ color: projectInfo.textColor }}>
                 {" "}
-                With this assigment, Braun aimed to make a change in the
-                increasing problem of food waste. I found that a big part of
-                this waste happens at the consumption and espesially at the
-                conservation of food.{" "}
+                {projectInfo.name}{" "}
+              </h2>
+              <h4
+                style={{ color: projectInfo.textColor, opacity: textOpacity }}
+              >
+                {" "}
+                {projectInfo.description}{" "}
+              </h4>
+              <p style={{ color: projectInfo.textColor, opacity: textOpacity }}>
+                {projectInfo.explanation}
               </p>
               <p> </p>
-              <b>
+              <b style={{ color: projectInfo.textColor, opacity: textOpacity }}>
                 {" "}
                 {projectInfo.type} in {projectInfo.year}{" "}
               </b>
               <p> </p>
               <Button
+                style={{ color: projectInfo.textColor }}
                 variant="secondary rounded-pill"
                 onClick={() => HandleURL(projectInfo.name)}
               >

@@ -15,6 +15,7 @@ import { photos } from "../../components/ProjectComponents/ImageGallery/IGMARCHV
 import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
 import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
 import TextVideoStrip from "../../components/ProjectComponents/InformationStrip/TextVideoStrip";
+import AnimatedCardColumns from "../../components/ProjectComponents/Card/AnimatedCardColumns";
 
 
 
@@ -33,7 +34,7 @@ const MARCHVII = () => {
       <SkillImages skills={["photoshop", "catia", "blender", "3dprinting"]} />
       <HorizonalImageTextCard
         title="What is Project MARCH?"
-        text="Project MARCH is a non-profit DreamTeam. The goal of the team is to make someone with a spinal-cord-injury walk again by building an exoskeleton. The team, consisting of 26 students with different deciplines and background, work full time on this project for over a year. We were the seventh team."
+        text="Project MARCH is a non-profit DreamTeam, that aims to make someone with a spinal-cord-injury walk again by building an exoskeleton. The group, consisting of 26 students with different deciplines and background, work full time on this project for over a year. We were the seventh team."
         image="MARCH VII/TeamPhoto.jpg"
         padding="top-bottom-padding"
       />
@@ -56,9 +57,41 @@ const MARCHVII = () => {
         alignment="start"
         padding=""
       />
-      <FullWidthImage
-        project={projectInfo.name}
-        image="AllExos.jpg"
+      <AnimatedCardColumns
+        cardInfo={[
+          {
+            title: "MARCH I",
+            image: "MARCH VII/Old Exos/MARCH I.jpg",
+            objectFit: "contain",
+          },
+          {
+            title: "MARCH II",
+            image: "MARCH VII/Old Exos/MARCH II.jpg",
+            objectFit: "cover",
+          },
+          {
+            title: "MARCH III",
+            image: "MARCH VII/Old Exos/MARCH III.jpg",
+            objectFit: "cover",
+          },
+          {
+            title: "MARCH IV",
+            image: "MARCH VII/Old Exos/MARCH IV.jpg",
+            objectFit: "contain",
+          },
+          {
+            title: "MARCH V",
+            image: "MARCH VII/Old Exos/MARCH V.jpg",
+            objectFit: "cover",
+          },
+          {
+            title: "MARCH VI",
+            image: "MARCH VII/Old Exos/MARCH VI.jpg",
+            objectFit: "cover",
+          },
+        ]}
+        imageHeight="150px"
+        cardWidth="2"
         padding="bottom-padding"
       />
       <Title
@@ -165,10 +198,7 @@ const MARCHVII = () => {
         photos={photos}
         padding="top-padding"
       />
-      <FullWidthVideo
-        video="Bm6ndmPpysY"
-        padding=""
-      />
+      <FullWidthVideo video="Bm6ndmPpysY" padding="" />
       <Title
         title="Video by: Dreux"
         size="p"

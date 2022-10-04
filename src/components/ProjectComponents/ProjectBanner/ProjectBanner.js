@@ -12,6 +12,11 @@ function ProjectBanner(props) {
   //gets information about project
   var projectInfo = GetProjectInfo(props.projectList ,props.project);
 
+  if(projectInfo.textColor != null){
+    var textOpacity = "0.8";
+  }
+  
+
   return (
     <div className="App">
       <div
@@ -21,21 +26,27 @@ function ProjectBanner(props) {
         <Container className="site-width top-bottom-padding">
           <Row className="align-items-center justify-content-center gx-5">
             <Col className="text-start col-lg-6 col-10">
-              <h1>{projectInfo.name}</h1>
-              <h4> {projectInfo.description} </h4>
-              <p>
+              <h1 style={{ color: projectInfo.textColor }}>
+                {projectInfo.name}
+              </h1>
+              <h4
+                style={{ color: projectInfo.textColor, opacity: textOpacity }}
+              >
                 {" "}
-                With this assigment, Braun aimed to make a change in the
-                increasing problem of food waste. I found that a big part of
-                this waste happens at the consumption and espesially at the
-                conservation of food.{" "}
+                {projectInfo.description}{" "}
+              </h4>
+              <p style={{ color: projectInfo.textColor, opacity: textOpacity }}>
+                {projectInfo.explanation}
               </p>
               <p> </p>
-              <b>
+              <b style={{ color: projectInfo.textColor, opacity: textOpacity }}>
                 {" "}
                 {projectInfo.type} in {projectInfo.year}{" "}
               </b>
-              <p> {projectInfo.team} </p>
+              <p style={{ color: projectInfo.textColor, opacity: textOpacity }}>
+                {" "}
+                {projectInfo.team}{" "}
+              </p>
             </Col>
             <Col className="col-lg-6 col-10">
               <img

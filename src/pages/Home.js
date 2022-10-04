@@ -19,14 +19,10 @@ const Home = () => {
     <>
       <SiteVideoBanner company="reader" />
       <CV />
-      <HighlightProject 
-        projectList={designProjectList} 
-        project="Braun Parch" 
-        />
-      <HighlightProject
-        projectList={designProjectList}
-        project="Slide to Light"
-      />
+      <HighlightProject projectList={designProjectList} project="MARCH VII" />
+      <HighlightProject projectList={designProjectList} project="Input Device" />
+      <HighlightProject projectList={designProjectList} project="Braun Parch" />
+
       <HighlightProject
         projectList={designProjectList}
         project="Camera Slider"

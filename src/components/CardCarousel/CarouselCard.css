@@ -3,20 +3,23 @@ body{
     /* line-height: 8px; */
 }
 
-.card{
+.smallCard{
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
     width: var(--card-width);
-    border-radius: 10px;
+    border-radius: var(--rounded-elements);
     border-width: 0;
     overflow: hidden;
     transition: box-shadow .2s;
+    z-index: 0 !important;
     
 }
 
-.card:hover{
+.smallCard:hover{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .2); 
+    z-index: 100 !important;
+   
 }
 
 .imgDiv{
@@ -33,7 +36,7 @@ body{
 .image{
     height: var(--card-width);
     width: var(--card-width);
-    object-fit: cover;
+    object-fit: contain;
     
     
     

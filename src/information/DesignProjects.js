@@ -4,15 +4,18 @@ var designProjectList = [];
 // DESIGN PROJECTS
 designProjectList.push({
   name: "MARCH VII",
-  description: "Quick Food Dehydration using vacuum",
+  description: "Covering up an exoskeleton",
+  explanation:
+    "Every year, Project MARCH builds an exoskeleton for someone with a spinal cord injury. In 2022, another industrial design student and I were responsible for creating the covers of the MARCH VII exoskeleton. Our main focus was usability, safety and looks.",
   type: "Project MARCH",
   year: "2022",
   team: "Team project",
-  backgroundColor: "#8799ae",
+  backgroundColor: "#b7c0c7",
 });
 designProjectList.push({
   name: "Input Device",
   description: "Quick Food Dehydration using vacuum",
+  explanation: "",
   type: "Project MARCH",
   year: "2022",
   team: "Team project",

@@ -7,6 +7,8 @@ body {
     --site-width: 1000px;
     --block-padding: 80px;
 
+    --rounded-elements: 20px;
+
     max-width: 100%;
     overflow-x: hidden;
 
@@ -117,7 +119,7 @@ iframe {
 }
 
 .rounded-element{
-    border-radius: 20px;
+    border-radius: var(--rounded-elements);
 }
 
 .video{

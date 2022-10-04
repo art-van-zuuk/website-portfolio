@@ -43,12 +43,12 @@ const CameraSlider = () => {
       <FullWidthImage
         project={projectInfo.name}
         image="TopView.jpg"
-        padding=""
+        padding="bottom-padding"
       />
       <FullWidthImage
         project={projectInfo.name}
         image="CloseUp.jpg"
-        padding=""
+        padding="bottom-padding"
       />
       <FullWidthImage
         project={projectInfo.name}
