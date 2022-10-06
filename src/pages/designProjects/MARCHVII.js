@@ -34,7 +34,7 @@ const MARCHVII = () => {
       <SkillImages skills={["photoshop", "catia", "blender", "3dprinting"]} />
       <HorizonalImageTextCard
         title="What is Project MARCH?"
-        text="Project MARCH is a non-profit DreamTeam, that aims to make someone with a spinal-cord-injury walk again by building an exoskeleton. The group, consisting of 26 students with different deciplines and background, work full time on this project for over a year. We were the seventh team."
+        text="Project MARCH is a non-profit DreamTeam, that aims to make someone with a spinal-cord-injury walk again by building an exoskeleton. The group, consisting of 26 students with different disciplines and backgrounds, worked full-time on this project for over a year. We were the seventh team."
         image="MARCH VII/TeamPhoto.jpg"
         padding="top-bottom-padding"
       />
@@ -46,13 +46,13 @@ const MARCHVII = () => {
         rounded={true}
       />
       <Title
-        title="A different design every year"
-        size="h3"
+        title="A unique design every year"
+        size="h2"
         alignment="start"
         padding="top-padding"
       />
       <Title
-        title="From 2015 on, the MARCH exoskeletons have developed to be more functional and human centered"
+        title="From 2015 on, the MARCH exoskeletons have developed to be more functional and human-centered"
         size="h4"
         alignment="start"
         padding=""
@@ -96,35 +96,36 @@ const MARCHVII = () => {
       />
       <Title
         title="Starting over, with knowledge from last years"
-        size="h3"
+        size="h2"
         alignment="start"
         padding="top-padding"
       />
       <Title title="Idea sketches" size="h4" alignment="start" padding="" />
+      <Title
+        title="By gathering inspiration from last year’s exoskeletons and exoskeletons that were already on the market, we created some ideas for the look and feel of our exoskeleton."
+        size="p"
+        alignment="start"
+        padding=""
+      />
       <FullWidthImage
         project={projectInfo.name}
         image="Drawings.jpg"
-        padding=""
-      />
-      <Title
-        title="With inspiration from last years exoskeletons and exoskeletons that were already on the market, we created some ideas on what look and feel our exoskeleton should express."
-        size="p"
-        alignment="start"
         padding="bottom-padding"
       />
 
       <Title title="Concept sketches" size="h4" alignment="start" padding="" />
+      <Title
+        title="To get a better understanding of how these details would translate to a full exoskeleton, we made four different concepts. For each style we created a collage for inspiration. The final design took inspiration from different elements of these concepts. Two of these concepts were made by Iza Bosch."
+        size="p"
+        alignment="start"
+        padding=""
+      />
       <FullWidthImage
         project={projectInfo.name}
         image="Concepts.jpg"
-        padding=""
-      />
-      <Title
-        title="To get a better understanding of how these details would translate to a full exoskeleton, we made four different concepts. For each style we created a collage for inspiration. The final design took inspiration from different elements of the concepts. Two of these concepts were made by Iza Bosch. "
-        size="p"
-        alignment="start"
         padding="bottom-padding"
       />
+
       <Title
         title="Main focus points"
         size="h2"
@@ -135,19 +136,19 @@ const MARCHVII = () => {
         cardInfo={[
           {
             title: "Organic and small design",
-            text: "The internal size of the exoskeleton has been increasing year after year, and with that the bulkiness. We aimed to visually overcome this by making use of a black innerline. Next to that, smart use of organic curves and details also create an illusion, making the covers appear smaller than they are.",
+            text: "The big motors, frame, and electronics could quickly lead to a bulky looking design. We aimed to overcome this by using some visual tricks. The black inside, and smart use of organic curves and details create an illusion, making the covers appear smaller than they are.",
             image: "MARCH VII/thumbnail.png",
             objectFit: "contain",
           },
           {
-            title: "Focus on the user",
-            text: "In the past, putting on the covers was a tidious task. By implementing magnets inside of the covers, this was made a lot easier. The team could put a cover at the right place and it would snap into place. Another big frustration was caused by the lack of cable managment. We greatly improved this by rethinking cable routes and tighening them down to the frame.",
+            title: "Focus on the users",
+            text: "In the past, putting on the covers was a tedious task. By incorporating magnets inside of the covers, they would always align and snap into place. Another big frustration was caused by the lack of cable management. We improved this by rethinking cable routes and tightening them down to the frame.",
             image: "MARCH VII/CAD.jpg",
             objectFit: "cover",
           },
           {
             title: "Eye on safety",
-            text: "One of the main functions of the covers is protecting both the team, the user and the electronics. A lot of testing was done to ensure the ergomics for the user, strength of the covers and protection for the components.",
+            text: "One of the main functions of the covers is to protect the team, the user, and the internals. A lot of testing was done to ensure the ergonomics for the user, strength of the covers and protection for the components.",
             image: "MARCH VII/CAD.jpg",
             objectFit: "cover",
           },
@@ -158,40 +159,24 @@ const MARCHVII = () => {
       />
       <TextVideoStrip
         title="Making it visible"
-        text="During the year, I wanted to challenge myself by learning to render in Blender. I spend a full month learning the program and rendering shot by shot. For a better experience turn on the music and watch on full-screen!"
+        text="During the year, I wanted to challenge myself by learning to render in Blender. I spent a full month learning the program and rendering shot by shot. For a better experience turn on the music and watch it on full screen!"
         video="sgKixViuUBE"
         padding="top-bottom-padding"
         rounded={true}
       />
       <ImageTextStrip
         title="Testing with 3D-printed prototypes"
-        text="As one of the two design engineers I was asked to design, test and build the covers for the new exoskeleton. Our goal was to create a good look and feel, a safe design for the user and team and a better user user experience."
+        text="To validate whether our digital designs worked as expected, we build tons of prototypes using 3D-printers. Every part was iterated multiple times to get the most functional and good-looking design."
         image="MARCH VII/PuttingOnCovers.jpg"
         padding="top-bottom-padding"
         rounded={true}
       />
-      <Title
-        title="It's all in the details"
-        size="h2"
-        alignment="center"
-        padding="top-padding"
-      />
-      <FullWidthImage
-        project={projectInfo.name}
-        image="Drawings.jpg"
-        padding=""
-      />
-      <Title
-        title="Image of design last years | 4 concepts Iza and me, with design goals: thinner looking | Prototyping | Render video, with explaination | The details | Better User experience: Magnets, cable management | Safety | Images | Final video"
-        size="p"
-        alignment="center"
-        padding="bottom-padding"
-      />
-      <Title
-        title="Image of design last years | 4 concepts Iza and me, with design goals: thinner looking | Prototyping | Render video, with explaination | The details | Better User experience: Magnets, cable management | Safety | Images | Final video"
-        size="p"
-        alignment="center"
-        padding="bottom-padding"
+      <TextImageStrip
+        title="Designing for manufacturing"
+        text="The final covers were made in PA12 using SLS-printing. This gave immense design freedom while being strong and precise. All while being relatively cheap for a single produced product."
+        image="MARCH VII/PuttingOnCovers.jpg"
+        padding="top-bottom-padding"
+        rounded={true}
       />
       <ImageGallery
         project={projectInfo.name}
@@ -199,12 +184,7 @@ const MARCHVII = () => {
         padding="top-padding"
       />
       <FullWidthVideo video="Bm6ndmPpysY" padding="" />
-      <Title
-        title="Video by: Dreux"
-        size="p"
-        alignment="start"
-        padding="bottom-padding"
-      />
+      <Title title="Video by: Dreux" size="p" alignment="start" padding="" />
     </>
   );
 };

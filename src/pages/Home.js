@@ -32,7 +32,6 @@ const Home = () => {
         projectList={graphicProjectList}
         title={"Graphic Projects"}
       />
-      <Footer />
     </>
   );
 }

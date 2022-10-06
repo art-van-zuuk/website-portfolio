@@ -6,7 +6,7 @@ designProjectList.push({
   name: "MARCH VII",
   description: "Covering up an exoskeleton",
   explanation:
-    "Every year, Project MARCH builds an exoskeleton for someone with a spinal cord injury. In 2022, another industrial design student and I were responsible for creating the covers of the MARCH VII exoskeleton. Our main focus was usability, safety and looks.",
+    "Every year, Project MARCH builds an exoskeleton for someone with a spinal cord injury. In 2022, another industrial designer and I were responsible for creating the covers of the MARCH VII exoskeleton. Our focus was usability, safety and looks.",
   type: "Project MARCH",
   year: "2022",
   team: "Team project",
@@ -14,8 +14,9 @@ designProjectList.push({
 });
 designProjectList.push({
   name: "Input Device",
-  description: "Quick Food Dehydration using vacuum",
-  explanation: "",
+  description: "Controllings an exoskeleton with a single hand",
+  explanation:
+    "he user of the project MARCH exoskeleton uses an input device on one of the crutches to control it. The design needed a serious update in terms of physical & cognitive ergonomics, simplicity and repairability. Therefore, the new design incorporates a smartphone and is built from a single piece.",
   type: "Project MARCH",
   year: "2022",
   team: "Team project",

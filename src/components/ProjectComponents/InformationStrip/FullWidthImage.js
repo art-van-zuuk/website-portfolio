@@ -12,6 +12,7 @@ function FullWidthImage(props) {
         <Row className="align-items-center justify-content-center gx-5">
           <Col className="col-12">
             <img
+              className={props.rounded ? "rounded-element" : "" }
               draggable="false"
               src={"/images/Projects/" + props.project + "/" + props.image}
               width="100%"

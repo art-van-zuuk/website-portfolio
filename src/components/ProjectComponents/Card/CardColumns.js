@@ -5,7 +5,7 @@ import { Container, Row, Col, Card, CardColumn } from "react-bootstrap";
 function CardColumns(props) {
   return (
     <Container className={"site-width " + props.padding}>
-      <Row className="justify-content-center mt-4 gx-4">
+      <Row className="justify-content-center mt-4 gx-3">
         {props.cardInfo.map((card, index) => {
           return (
             <Col
@@ -14,7 +14,9 @@ function CardColumns(props) {
             >
               <Card className="rounded-element border-0 w-100 ">
                 <img
-                  className={"card-img-top rounded-element p-" + props.imagePadding}
+                  className={
+                    "card-img-top rounded-element p-" + props.imagePadding
+                  }
                   src={"images/Projects/" + card.image}
                   style={{
                     height: props.imageHeight,
@@ -22,7 +24,7 @@ function CardColumns(props) {
                   }}
                 ></img>
 
-                <div className="card-body">
+                <div className="p-2 pt-3">
                   <h5 className="text-center card-title"> {card.title} </h5>
                   <p className="text-center card-text">{card.text}</p>
                 </div>

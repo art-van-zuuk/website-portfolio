@@ -40,7 +40,7 @@ function CV() {
         {/* Person description with photo */}
         <div className="personDescription">
           <Container className="site-width top-bottom-padding">
-            <Row className="align-items-center text-start justify-content-center gx-5">
+            <Row className="align-items-center justify-content-center gx-5">
               <Col className="col-md-6 col-12 text-md-start text-center">
                 <h1> Hello! </h1>
                 <p className="text-md-start text-center">

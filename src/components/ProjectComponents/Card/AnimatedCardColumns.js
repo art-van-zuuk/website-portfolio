@@ -19,10 +19,10 @@ function AnimatedCardColumns(props) {
             >
               <motion.div
                 className="animatedCard"
-                whileHover={{ scale: 1.2 }}
+                whileHover={{ scale: 1.3 }}
                 whileTap={{ scale: 1.1 }}
               >
-                <Card className=" rounded-element border-0 w-100 ">
+                <Card className="bg-transparent rounded-element border-0 w-100 ">
                   <img
                     className={
                       "card-img-top rounded-element p-" + props.imagePadding

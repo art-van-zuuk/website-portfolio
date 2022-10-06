@@ -32,7 +32,7 @@ const InputDevice = () => {
       />
       <HorizonalImageTextCard
         title="What is Project MARCH?"
-        text="Project MARCH is a non-profit DreamTeam. The goal of the team is to make someone with a spinal-cord-injury walk again by building an exoskeleton. The team, consisting of 26 students with different deciplines and background, work full time on this project for over a year. We were the seventh team."
+        text="Project MARCH is a non-profit DreamTeam, that aims to make someone with a spinal-cord-injury walk again by building an exoskeleton. The group, consisting of 26 students with different disciplines and backgrounds, worked full-time on this project for over a year. We were the seventh team."
         image="MARCH VII/TeamPhoto.jpg"
         padding="bottom-padding"
       />
@@ -53,28 +53,47 @@ const InputDevice = () => {
         cardInfo={[
           {
             title: "Integrated smartphone",
-            text: "",
+            text: "We decided to use a smartphone since it has a great screen, stable wireless connectivity, integrated actuators such as a vibration motor and speakers and allows for easy to program interfaces.",
             image: "MARCH VII/thumbnail.png",
             objectFit: "contain",
           },
           {
             title: "Ergonomic input",
-            text: "In the past, putting on the covers was a tidious task. By implementing magnets inside of the covers, this was made a lot easier. The team could put a cover at the right place and it would snap into place. Another big frustration was caused by the lack of cable managment. We greatly improved this by rethinking cable routes and tighening them down to the frame.",
+            text: "By testing, we found that the index finger is the most free-moving finger, while putting pressure on the crutches. To move through and select the options on the screen, the new input device uses a custom clickable scroll wheel placed at the index finger.",
             image: "Input Device/ErgonomicsKoen.jpg",
             objectFit: "cover",
           },
           {
             title: "Keeping it simple",
-            text: "One of the main functions of the covers is protecting both the team, the user and the electronics. A lot of testing was done to ensure the ergomics for the user, strength of the covers and protection for the components.",
+            text: "The base of the new design is built from one piece. Since it is made from flexible TPU, it directly functions as a phone case. All electronics are connected to a plate, which can be screwed onto the base. Taking it apart now only takes minutes instead of hours.",
             image: "MARCH VII/CAD.jpg",
             objectFit: "cover",
           },
         ]}
-        imageHeight="150px"
+        imageHeight="200px"
         cardWidth="4"
         padding="bottom-padding"
       />
-      <Title title="Prototyping" size="h2" alignment="center" padding="" />
+      <ImageTextStrip
+        title="Repairability"
+        text="The design of the input device stayed the same for many years. As a new team, we soon realized that it was outdated and too difficult to use for both the user as well as the team."
+        image="Input Device/RepairableIPD.jpg"
+        rounded={true}
+        padding="top-bottom-padding"
+      />
+      <TextImageStrip
+        title="Interface, only the essentials"
+        text="The design of the input device stayed the same for many years. As a new team, we soon realized that it was outdated and too difficult to use for both the user as well as the team."
+        image="Input Device/Interface.jpg"
+        rounded={true}
+        padding="top-bottom-padding"
+      />
+      <Title
+        title="Prototyping"
+        size="h2"
+        alignment="center"
+        padding="top-padding"
+      />
       <CardColumns
         cardInfo={[
           {
@@ -91,7 +110,7 @@ const InputDevice = () => {
           },
           {
             title: "Final prototype",
-            text: "One of the main functions of the covers is protecting both the team, the user and the electronics. A lot of testing was done to ensure the ergomics for the user, strength of the covers and protection for the components.",
+            text: "The base of the new design is built from one piece. Since it is made from flexible TPU, it directly functions as a phone case. All electronics are connected to a plate, which can be screwed onto the base. Taking it apart now only takes minutes instead of hours.",
             image: "Input Device/Prototype3.jpg",
             objectFit: "cover",
           },
@@ -109,11 +128,19 @@ const InputDevice = () => {
       />
       <TextImageStrip
         title="Flexible SLS-printing"
-        text="The design of the input device stayed the same for many years. As a new team, we soon realized that it was outdated and too difficult to use for both the user as well as the team."
+        text=""
         image="Input Device/OldDesign.jpg"
         rounded={true}
         padding="top-bottom-padding"
       />
+
+      <FullWidthImage
+        project={projectInfo.name}
+        image="IPDInNature.jpg"
+        rounded={true}
+        padding="top-padding"
+      />
+      <Title title="Image by: Dreux" size="p" alignment="start" padding="" />
     </>
   );
 };

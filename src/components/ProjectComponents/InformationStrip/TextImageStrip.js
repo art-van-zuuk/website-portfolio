@@ -11,13 +11,13 @@ function TextImageStrip(props) {
     <div className="App">
       <Container className={"site-width " + props.padding}>
         <Row className="align-items-center justify-content-center gx-5">
-          <Col className=" col-lg-6 col-12 text-md-left text-lg-end">
+          <Col className="text-lg-end col-lg-6 col-md-6">
             <h2>{props.title}</h2>
             <p className="text-lg-end">{props.text}</p>
           </Col>
           <Col className="col-lg-6 col-12">
             <img
-              className= {props.rounded ? "rounded-element" : "" }
+              className={props.rounded ? "rounded-element" : ""}
               draggable="false"
               src={"/images/Projects/" + props.image}
               style={{ maxHeight: "300px", maxWidth: "400px" }}
