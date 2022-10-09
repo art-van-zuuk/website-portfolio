@@ -11,6 +11,7 @@ designProjectList.push({
   year: "2022",
   team: "Team project",
   backgroundColor: "#b7c0c7",
+  backgroundColor2: "#cad2d9",
 });
 designProjectList.push({
   name: "Input Device",
@@ -21,6 +22,24 @@ designProjectList.push({
   year: "2022",
   team: "Team project",
   backgroundColor: "#e5e5de",
+});
+designProjectList.push({
+  name: "La Selce",
+  description: "Bring back passion in the future kitchen",
+  type: "Group Project",
+  year: "2021",
+  textColor: "#f5f5f5",
+  backgroundColor: "#323232",
+});
+designProjectList.push({
+  name: "HANA",
+  description: "Giving the visually impaired direction",
+  explanation: "HANA is a navigation device for visually impaired people with guide dog. Using a tactile dot, it navigates them from one orientation point to the next.",
+  type: "Personal Project",
+  year: "2016",
+  textColor: "black",
+  backgroundColor: "#d0e3f2",
+  backgroundColor2: "#adcfea",
 });
 designProjectList.push({
   name: "Braun Parch",
@@ -80,19 +99,6 @@ designProjectList.push({
   team: "Individual project",
   backgroundColor: "#eee",
 });
-designProjectList.push({
-  name: "La Selce",
-  description: "Quick Food Dehydration using vacuum",
-  type: "Personal Project",
-  year: "2016",
-  backgroundColor: "#eee",
-});
-designProjectList.push({
-  name: "HANA",
-  description: "Quick Food Dehydration using vacuum",
-  type: "Personal Project",
-  year: "2016",
-  backgroundColor: "#eee",
-});
+
 
 export default designProjectList;

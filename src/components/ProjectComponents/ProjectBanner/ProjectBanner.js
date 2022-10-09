@@ -15,13 +15,19 @@ function ProjectBanner(props) {
   if(projectInfo.textColor != null){
     var textOpacity = "0.8";
   }
-  
+
+  var backgroundColor2 = projectInfo.backgroundColor;
+  if(projectInfo.backgroundColor2 != null){
+    backgroundColor2 = projectInfo.backgroundColor2;
+  }
+
 
   return (
     <div className="App">
       <div
         className="ProjectBannerBackground"
-        style={{ backgroundColor: projectInfo.backgroundColor }}
+        // style={{ backgroundColor: projectInfo.backgroundColor }}
+        style={{ background: "linear-gradient(" + projectInfo.backgroundColor + ", " + backgroundColor2 + ")" }}
       >
         <Container className="site-width top-bottom-padding">
           <Row className="align-items-center justify-content-center gx-5">

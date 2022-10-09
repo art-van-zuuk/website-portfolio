@@ -51,7 +51,7 @@ function HighlightProject(props) {
               </b>
               <p> </p>
               <Button
-                style={{ color: projectInfo.textColor }}
+                style={{ color: projectInfo.textColor + " !imortant" }}
                 variant="secondary rounded-pill"
                 onClick={() => HandleURL(projectInfo.name)}
               >

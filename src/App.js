@@ -7,6 +7,8 @@ import MARCHVII from "./pages/designProjects/MARCHVII";
 import Footer from "./components/Footer/Footer";
 import InputDevice from "./pages/designProjects/InputDevice";
 import CameraSlider from "./pages/designProjects/CameraSlider";
+import HANA from "./pages/designProjects/HANA";
+import LaSelce from "./pages/designProjects/LaSelce";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const BraunParch = React.lazy(() => import("./pages/designProjects/BraunParch"));
@@ -75,6 +77,22 @@ const App = () => {
             element={
               <React.Suspense fallback={<>...</>}>
                 <InputDevice />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="la-selce"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <LaSelce />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="hana"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <HANA />
               </React.Suspense>
             }
           />

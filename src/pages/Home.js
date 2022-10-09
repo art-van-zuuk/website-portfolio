@@ -20,13 +20,16 @@ const Home = () => {
       <SiteVideoBanner company="reader" />
       <CV />
       <HighlightProject projectList={designProjectList} project="MARCH VII" />
-      <HighlightProject projectList={designProjectList} project="Input Device" />
-      <HighlightProject projectList={designProjectList} project="Braun Parch" />
-
       <HighlightProject
         projectList={designProjectList}
-        project="Camera Slider"
+        project="Input Device"
       />
+      <HighlightProject
+        projectList={designProjectList}
+        project="La Selce"
+      />
+      <HighlightProject projectList={designProjectList} project="HANA" />
+
       <CardCarousel projectList={designProjectList} title={"Design Projects"} />
       <CardCarousel
         projectList={graphicProjectList}
