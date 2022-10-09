@@ -16,7 +16,7 @@ designProjectList.push({
   name: "Input Device",
   description: "Controllings an exoskeleton with a single hand",
   explanation:
-    "he user of the project MARCH exoskeleton uses an input device on one of the crutches to control it. The design needed a serious update in terms of physical & cognitive ergonomics, simplicity and repairability. Therefore, the new design incorporates a smartphone and is built from a single piece.",
+    "The user of the project MARCH exoskeleton uses an input device on one of the crutches to control it. The design needed a serious update in terms of physical & cognitive ergonomics, simplicity and repairability. Therefore, the new design incorporates a smartphone and is built from a single piece. I was responsible for all the hardware and electronic design.",
   type: "Project MARCH",
   year: "2022",
   team: "Team project",

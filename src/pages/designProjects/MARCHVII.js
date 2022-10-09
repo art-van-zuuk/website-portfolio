@@ -137,19 +137,19 @@ const MARCHVII = () => {
           {
             title: "Organic and small design",
             text: "The big motors, frame, and electronics could quickly lead to a bulky looking design. We aimed to overcome this by using some visual tricks. The black inside, and smart use of organic curves and details create an illusion, making the covers appear smaller than they are.",
-            image: "MARCH VII/thumbnail.png",
-            objectFit: "contain",
+            image: "MARCH VII/BlackLine.jpg",
+            objectFit: "cover",
           },
           {
             title: "Focus on the users",
             text: "In the past, putting on the covers was a tedious task. By incorporating magnets inside of the covers, they would always align and snap into place. Another big frustration was caused by the lack of cable management. We improved this by rethinking cable routes and tightening them down to the frame.",
-            image: "MARCH VII/CAD.jpg",
+            image: "MARCH VII/Magnets.jpg",
             objectFit: "cover",
           },
           {
             title: "Eye on safety",
             text: "One of the main functions of the covers is to protect the team, the user, and the internals. A lot of testing was done to ensure the ergonomics for the user, strength of the covers and protection for the components.",
-            image: "MARCH VII/CAD.jpg",
+            image: "MARCH VII/Hip.jpg",
             objectFit: "cover",
           },
         ]}
@@ -174,7 +174,7 @@ const MARCHVII = () => {
       <TextImageStrip
         title="Designing for manufacturing"
         text="The final covers were made in PA12 using SLS-printing. This gave immense design freedom while being strong and precise. All while being relatively cheap for a single produced product."
-        image="MARCH VII/PuttingOnCovers.jpg"
+        image="MARCH VII/Manufacturing.jpg"
         padding="top-bottom-padding"
         rounded={true}
       />
