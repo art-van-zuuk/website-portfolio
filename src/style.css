@@ -89,6 +89,9 @@ h4 {
     font-family: 'Montserrat';
     font-weight: 400;
 }
+h6{
+    font-style: italic;
+}
 
 .btn-link {
     color: black !important;

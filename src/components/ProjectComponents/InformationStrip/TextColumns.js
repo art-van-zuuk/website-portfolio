@@ -9,7 +9,7 @@ function TextColumns(props) {
         {props.texts.map((text, index) => {
           return (
             <Col key={index} className={"col-12 col-md-" + props.columnWidth}>
-              <props.size className={"text-center text-md-" + props.alignment}>
+              <props.size className={"text-" + props.alignment + " text-md-" + props.alignment}>
                 {text}
               </props.size>
             </Col>

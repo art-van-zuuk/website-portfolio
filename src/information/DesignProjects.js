@@ -35,11 +35,20 @@ designProjectList.push({
   name: "HANA",
   description: "Giving the visually impaired direction",
   explanation: "HANA is a navigation device for visually impaired people with guide dog. Using a tactile dot, it navigates them from one orientation point to the next.",
-  type: "Personal Project",
-  year: "2016",
+  type: "Individual Project",
+  year: "2021",
   textColor: "black",
   backgroundColor: "#d0e3f2",
   backgroundColor2: "#adcfea",
+});
+designProjectList.push({
+  name: "Chessboard",
+  description:
+    "As a gift for my sisters 27th birthday, I made her a wooden chessboard. This was all constructed of mahogany wood and timber plywood, and later varnished. Details have been engraved using a lasercutter. The board can fold in two, so the chesspieces can be stored inside. A hinge together with magnets holds the two pieces together. when it is stored. The self-designed pieces are made using a SLA 3D-printer and also stay in position by magnets.",
+  type: "Personal Project",
+  year: "2021",
+  team: "Individual project",
+  backgroundColor: "#eee",
 });
 designProjectList.push({
   name: "Braun Parch",
@@ -67,14 +76,7 @@ designProjectList.push({
   team: "Individual project",
   backgroundColor: "#dcdbdd",
 });
-designProjectList.push({
-  name: "Chessboard",
-  description: "As a gift for my sisters 27th birthday, I made her a wooden chessboard. This was all constructed of mahogany wood and timber plywood, and later varnished. Details have been engraved using a lasercutter. The board can fold in two, so the chesspieces can be stored inside. A hinge together with magnets holds the two pieces together. when it is stored. The self-designed pieces are made using a SLA 3D-printer and also stay in position by magnets.",
-  type: "Personal Project",
-  year: "2021",
-  team: "Individual project",
-  backgroundColor: "#eee",
-});
+
 designProjectList.push({
   name: "Band Aid Dispenser",
   description: "Quick Food Dehydration using vacuum",
