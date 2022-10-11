@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Fade from "react-reveal/Fade";
 
 import "../../../style.css";
 import "./ProjectBanner.css";
@@ -27,7 +28,14 @@ function ProjectBanner(props) {
       <div
         className="ProjectBannerBackground"
         // style={{ backgroundColor: projectInfo.backgroundColor }}
-        style={{ background: "linear-gradient(" + projectInfo.backgroundColor + ", " + backgroundColor2 + ")" }}
+        style={{
+          background:
+            "linear-gradient(" +
+            projectInfo.backgroundColor +
+            ", " +
+            backgroundColor2 +
+            ")",
+        }}
       >
         <Container className="site-width top-bottom-padding">
           <Row className="align-items-center justify-content-center gx-5">
@@ -55,11 +63,15 @@ function ProjectBanner(props) {
               </p>
             </Col>
             <Col className="col-lg-6 col-10">
-              <img
-                className="ProjectBannerImage"
-                draggable="false"
-                src={"/images/Projects/" + projectInfo.name + "/thumbnail.png"}
-              ></img>
+              <Fade right delay="500" duration="2000" distance="100px">
+                <img
+                  className="ProjectBannerImage"
+                  draggable="false"
+                  src={
+                    "/images/Projects/" + projectInfo.name + "/thumbnail.png"
+                  }
+                ></img>
+              </Fade>
             </Col>
           </Row>
         </Container>

@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactPlayer from "react-player";
 import YouTube from "react-youtube";
+import Fade from "react-reveal/Fade";
 
 import "../../../style.css";
 import PlayVideo from "../../../scripts/PlayVideo";
@@ -31,7 +32,9 @@ function TextVideoStrip(props) {
             <p className="text-lg-end">{props.text}</p>
           </Col>
           <Col className="col-lg-7 col-12">
-            <PlayVideo video={props.video} rounded={props.rounded}/>
+            <Fade right distance="50px">
+              <PlayVideo video={props.video} rounded={props.rounded} />
+            </Fade>
           </Col>
         </Row>
       </Container>

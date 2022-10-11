@@ -9,7 +9,7 @@ import "../../../style.css";
 function FullWidthImage(props) {
   return (
     <div className="App">
-      <Fade bottom>
+      <Fade>
         <Container className={"site-width " + props.padding}>
           <Row className="align-items-center justify-content-center gx-5">
             <Col className="col-12">

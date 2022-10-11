@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Slide from "react-reveal/Slide";
 
 import "../../style.css";
 import "./CV.css";
@@ -54,7 +55,9 @@ function CV() {
                 </p>
               </Col>
               <Col md="auto" className="col-12 text-center">
-                <img className="CVImage" draggable="false" src={image}></img>
+                <Slide right>
+                  <img className="CVImage" draggable="false" src={image}></img>
+                </Slide>
               </Col>
             </Row>
           </Container>

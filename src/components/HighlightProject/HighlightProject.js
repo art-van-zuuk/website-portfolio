@@ -1,6 +1,7 @@
 import React, {  } from "react";
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import "bootstrap/dist/css/bootstrap.min.css";
+import Fade from "react-reveal/Fade"
 
 import HandleURL from "../../scripts/HandleURL";
 import "./HighlightProject.css";
@@ -24,11 +25,13 @@ function HighlightProject(props) {
         <Container className="site-width">
           <Row className="text-start align-items-center justify-content-center gx-5 gy-5">
             <Col md="auto" className="col-12">
-              <img
-                className="highlight-project-image"
-                draggable="false"
-                src={"/images/Projects/" + props.project + "/thumbnail.png"}
-              ></img>
+              <Fade bottom distance="50px" delay="250">
+                <img
+                  className="highlight-project-image"
+                  draggable="false"
+                  src={"/images/Projects/" + props.project + "/thumbnail.png"}
+                ></img>
+              </Fade>
             </Col>
             <Col className="col-md-6 col-12">
               <h2 style={{ color: projectInfo.textColor }}>

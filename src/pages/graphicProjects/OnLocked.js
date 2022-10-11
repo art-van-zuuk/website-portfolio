@@ -25,13 +25,18 @@ const OnLocked = () => {
         alignment="start"
         padding=""
       />
-
+      <Title
+        title="First itteration"
+        size="h2"
+        alignment="start"
+        padding=""
+      />
       <AnimatedCardColumns
         cardInfo={[
           {
             title: "Stopwatch",
             image: "OnLocked/Onlocked Clock.png",
-            objectFit: "contain",
+            objectFit: "cover",
           },
           {
             title: "Playful",
@@ -46,7 +51,7 @@ const OnLocked = () => {
           {
             title: "Square",
             image: "OnLocked/Onlocked Modern square.png",
-            objectFit: "contain",
+            objectFit: "cover",
           },
           {
             title: "Space",

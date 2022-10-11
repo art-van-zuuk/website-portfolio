@@ -12,7 +12,7 @@ function ImageTextStrip(props) {
       <Container className={"site-width " + props.padding}>
         <Row className="align-items-center justify-content-center gx-5 flex-column-reverse flex-lg-row">
           <Col className="col-lg-6 col-12">
-            <Fade bottom>
+            <Fade left distance="50px">
               <img
                 className={props.rounded ? "rounded-element" : ""}
                 draggable="false"
@@ -23,8 +23,8 @@ function ImageTextStrip(props) {
           </Col>
 
           <Col className="text-lg-start col-lg-6 col-md-6">
-              <h2>{props.title}</h2>
-              <p className="text-lg-start text-center">{props.text}</p>
+            <h2>{props.title}</h2>
+            <p className="text-lg-start text-center">{props.text}</p>
           </Col>
         </Row>
       </Container>

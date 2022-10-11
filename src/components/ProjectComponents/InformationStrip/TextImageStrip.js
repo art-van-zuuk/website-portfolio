@@ -17,13 +17,13 @@ function TextImageStrip(props) {
             <p className="text-lg-end">{props.text}</p>
           </Col>
           <Col className="col-lg-6 col-12">
-            <Fade bottom>
-            <img
-              className={props.rounded ? "rounded-element" : ""}
-              draggable="false"
-              src={"/images/Projects/" + props.image}
-              style={{ maxHeight: "300px", maxWidth: "400px" }}
-            ></img>
+            <Fade right distance="50px">
+              <img
+                className={props.rounded ? "rounded-element" : ""}
+                draggable="false"
+                src={"/images/Projects/" + props.image}
+                style={{ maxHeight: "300px", maxWidth: "400px" }}
+              ></img>
             </Fade>
           </Col>
         </Row>

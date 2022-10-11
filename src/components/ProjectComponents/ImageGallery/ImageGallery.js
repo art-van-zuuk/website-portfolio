@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Fade from "react-reveal/Fade";
 
 ///Image gallery with horizontal image rows. Requires: project and list of photos
 import Gallery from "react-photo-gallery";
@@ -14,7 +13,6 @@ function ImageGallery(props) {
   });
 
   return (
-    <Fade bottom>
       <Container className={"site-width " + props.padding}>
         <Row className="align-items-center justify-content-center gx-5">
           <Col className="col-12">
@@ -22,7 +20,6 @@ function ImageGallery(props) {
           </Col>
         </Row>
       </Container>
-    </Fade>
   );}
 
   export default ImageGallery;

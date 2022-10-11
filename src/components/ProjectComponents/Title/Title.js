@@ -9,7 +9,7 @@ function MediumTitle(props) {
   return (
     <Container className={"site-width " + props.padding}>
       <Row className="align-items-center justify-content-center gx-5">
-        <Fade bottom>
+        <Fade>
           <props.size className={"text-center text-md-" + props.alignment}>{props.title}</props.size>
         </Fade>
       </Row>

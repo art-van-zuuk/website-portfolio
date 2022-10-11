@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 function CardColumns(props) {
   return (
     <Container className={"site-width " + props.padding}>
-      <Fade bottom>
+      <Fade>
         <Row className="justify-content-center mt-4 gx-3">
           {props.cardInfo.map((card, index) => {
             return (
