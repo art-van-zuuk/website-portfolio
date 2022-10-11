@@ -19,25 +19,26 @@ function AnimatedCardColumns(props) {
             >
               <motion.div
                 className="animatedCard"
-                whileHover={{ scale: 1.3 }}
-                whileTap={{ scale: 1.1 }}
+                whileHover={{ scale: props.scale }}
               >
-                <Card className="bg-transparent rounded-element border-0 w-100 ">
-                  <img
-                    className={
-                      "card-img-top rounded-element p-" + props.imagePadding
-                    }
-                    src={"images/Projects/" + card.image}
-                    style={{
-                      height: props.imageHeight,
-                      objectFit: card.objectFit,
-                    }}
-                  ></img>
+                <div className={props.shadow? "hover-shadow" : ""}>
+                  <Card className="bg-transparent rounded-element border-0 w-100 ">
+                    <img
+                      className={
+                        "card-img-top rounded-element p-" + props.imagePadding
+                      }
+                      src={"images/Projects/" + card.image}
+                      style={{
+                        height: props.imageHeight,
+                        objectFit: card.objectFit,
+                      }}
+                    ></img>
 
-                  <div className="card-body text-center">
-                    <b className="text-center"> {card.title} </b>
-                  </div>
-                </Card>
+                    <div className="card-body text-center">
+                      <b className="text-center"> {card.title} </b>
+                    </div>
+                  </Card>
+                </div>
               </motion.div>
             </Col>
           );

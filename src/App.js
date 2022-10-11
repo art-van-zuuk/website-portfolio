@@ -9,6 +9,8 @@ import InputDevice from "./pages/designProjects/InputDevice";
 import CameraSlider from "./pages/designProjects/CameraSlider";
 import HANA from "./pages/designProjects/HANA";
 import LaSelce from "./pages/designProjects/LaSelce";
+import WebsiteIOFestival from "./pages/graphicProjects/WebsiteIOFestival";
+import OnLocked from "./pages/graphicProjects/OnLocked";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const BraunParch = React.lazy(() => import("./pages/designProjects/BraunParch"));
@@ -106,10 +108,26 @@ const App = () => {
           />
 
           <Route
+            path="onlocked"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <OnLocked />
+              </React.Suspense>
+            }
+          />
+          <Route
             path="posters"
             element={
               <React.Suspense fallback={<>...</>}>
                 <Posters />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="website-iofestival"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <WebsiteIOFestival />
               </React.Suspense>
             }
           />

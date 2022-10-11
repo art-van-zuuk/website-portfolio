@@ -10,7 +10,7 @@ designProjectList.push({
   type: "Project MARCH",
   year: "2022",
   team: "Team project",
-  backgroundColor: "#b7c0c7",
+  backgroundColor: "#d5dfe6",
   backgroundColor2: "#cad2d9",
 });
 designProjectList.push({
@@ -25,7 +25,7 @@ designProjectList.push({
 });
 designProjectList.push({
   name: "La Selce",
-  description: "Bring back passion in the future kitchen",
+  description: "Brings back passion in the future kitchen",
   type: "Group Project",
   year: "2021",
   textColor: "#f5f5f5",
@@ -101,7 +101,7 @@ designProjectList.push({
   type: "Bachelor End Project",
   year: "2020",
   team: "Individual project",
-  backgroundColor: "#eee",
+  backgroundColor: "#f8f8f8",
 });
 
 

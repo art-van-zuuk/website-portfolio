@@ -30,11 +30,11 @@ graphicProjectList.push({
   backgroundColor: "#eee",
 });
 graphicProjectList.push({
-  name: "Website IOFestival 2019",
+  name: "Website IOFestival",
   description: "Quick Food Dehydration using vacuum",
   type: "Personal Project",
   year: "2016",
-  backgroundColor: "#eee",
+  backgroundColor: "#36b18d",
 });
 graphicProjectList.push({
   name: "Posters",

@@ -6,5 +6,9 @@
 
 .animatedCard:hover{
     z-index: 1 !important;
-    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, .2); */
+}
+
+.hover-shadow:hover{
+    border-radius: var(--rounded-elements);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .2);
 }
