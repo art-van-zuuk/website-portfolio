@@ -45,14 +45,12 @@ function CV() {
                 <h1> Hello! </h1>
                 <p className="text-md-start text-center">
                   {" "}
-                  My name is Art van Zuuk. My interests in the design field are
-                  broad. Next to doing school projects, I like to design and
-                  craft pieces for my own purposes. This includes an automated
-                  programmable camera slider, graphical design works and
-                  mechanically moving machines. Two of my biggest interests are
-                  programming and videography. I am eager to learn new skills
-                  and design methods, and this is one of the reasons why I did
-                  my minor abroad.
+                  My name is Art van Zuuk, a Master's student in Industrial
+                  Design. I enjoy creating designs that take away the clutter in
+                  life and designs that are put together in a smart way.
+                  Especially when electronics or mechanics are involved. Next to
+                  learning as a student, I like to have my own projects. After
+                  all, I just want to create.
                 </p>
               </Col>
               <Col md="auto" className="col-12 text-center">

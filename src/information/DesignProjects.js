@@ -34,7 +34,8 @@ designProjectList.push({
 designProjectList.push({
   name: "HANA",
   description: "Giving the visually impaired direction",
-  explanation: "HANA is a navigation device for visually impaired people with guide dog. Using a tactile dot, it navigates them from one orientation point to the next.",
+  explanation:
+    "HANA is a navigation device for visually impaired people with a guide dog. Using a tactile dot, it navigates them from one orientation point to the next.",
   type: "Individual Project",
   year: "2021",
   textColor: "black",
@@ -53,6 +54,7 @@ designProjectList.push({
 designProjectList.push({
   name: "Braun Parch",
   description: "Quick Food Dehydration using vacuum",
+  explanation: "Food waste is a big problem, especially in this day and age. Braun asked us to design a product that would improve the situation. Braun Parch is a new way of dehydrating food at home by making use of a vacuum. Marking the process quicker, the food more healthy and the process more fun.",
   type: "Bachelor End Project",
   year: "2020",
   team: "Individual project",

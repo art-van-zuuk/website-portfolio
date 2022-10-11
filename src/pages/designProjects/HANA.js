@@ -34,18 +34,26 @@ const HANA = () => {
         skills={["photoshop", "indesign", "solidworks", "3dprinting"]}
       />
       <HorizonalImageTextCard
-        title="Research on visually impaired with guide dog"
-        text="Project MARCH is a non-profit DreamTeam, that aims to make someone with a spinal-cord-injury walk again by building an exoskeleton. The group, consisting of 26 students with different disciplines and backgrounds, worked full-time on this project for over a year. We were the seventh team."
+        title="Research on the visually impaired with a guide dog"
+        text="This assignment started off with a research phase. Together with 4 other students we discovered what the main hurdles are for visually impaired people in their mobility. We did this by interviewing and observing them. The next phase was individual. I decided to focus on visually impaired people with a guide dog."
         image="MARCH VII/TeamPhoto.jpg"
         padding="top-bottom-padding"
       />
       <SectionLine title="Research" padding="top-padding" />
       <ImageTextStrip
         title="Exploring unfamiliar environments"
-        text="say something about empowerment"
+        text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. This is something the guide dog has to learn and navigation is currently not good enough."
         image="HANA/GDOnCrossing.jpg"
-        padding="top-bottom-padding"
+        padding="top-padding"
         rounded="true"
+      />
+      <TextColumns
+        texts={["Image by: LightFieldStudios", ""]}
+        columnWidth="6"
+        size="p"
+        alignment="center"
+        padding="bottom-padding"
+        marginHeight=""
       />
       <Title
         title="Problem with todays navigation"

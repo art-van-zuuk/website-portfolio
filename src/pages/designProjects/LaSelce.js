@@ -18,7 +18,7 @@ import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
 
 const LaSelce = () => {
   //gets information about project
-  var projectInfo = GetProjectInfo(designProjectList, "HANA");
+  var projectInfo = GetProjectInfo(designProjectList, "La Selce");
 
   return (
     <>

@@ -33,14 +33,14 @@ const BraunParch = () => {
       />
       <TextImageStrip
         title="Food waste..."
-        text="With this assignment Braun asked us to design something to lower the consumer's food waste. A big portion of this waste happens during the conservation or even worse, lack of conservation of leftover food."
+        text="In Europe more than 50 per cent of food waste happens during consumption. A big portion of this comes from the lack of conservation of leftover food. Often this food is still perfectly edible and a good source of nutrition."
         image="Braun Parch/FoodWaste.jpg"
         padding="top-bottom-padding"
         rounded={true}
       />
       <ImageTextStrip
         title="Good taste..."
-        text="This leftover food often still is an excellent source of nutritions. An ancient but mostly forgotten method to preserve this is by dehydration. Braun Parch brings new life to the word of food dehydration at home by using vacuum."
+        text="An ancient but mostly forgotten method to preserve food is dehydration. Braun Parch brings new life to the world of food dehydration at home by using a vacuum."
         image="Braun Parch/GoodTaste.jpg"
         padding="top-bottom-padding"
         rounded={true}
@@ -52,10 +52,10 @@ const BraunParch = () => {
         padding="top-padding"
       />
       <Title
-        title="This leftover food often still is an excellent source of nutritions. Therefore, preserving it"
+        title="A vacuum makes it possible to evaporate water at a lower temperature. At a certain under pressure, water evaporates even at room temperature. At 0.12 Bar, water evaporates at 50 degrees C. So food can dry a lot quicker at a lower temperature, making the process faster and more nutritious."
         size="p"
         alignment="center"
-        padding="bottom-padding"
+        padding=""
       />
       <FullWidthImage
         project={projectInfo.name}
@@ -73,13 +73,13 @@ const BraunParch = () => {
         cardInfo={[
           {
             title: "Quick",
-            text: "By using vacuum, the process can be sped up while keeping the temperature relatively low.",
+            text: "By using a vacuum, the process can be sped up while keeping the temperature relatively low.",
             image: "Braun Parch/quick.png",
             objectFit: "contain",
           },
           {
             title: "Nutricious",
-            text: "Because of the low temperature, the nutricients in the food stay intact keeping it more healthy.",
+            text: "Because of the low temperature, the nutrients in the food stay intact keeping it more healthy.",
             image: "Braun Parch/nutricious.png",
             objectFit: "contain",
           },
@@ -97,13 +97,13 @@ const BraunParch = () => {
       />
       <ImageTextStrip
         title="Form follows functions"
-        text="With this assigment, Braun aimed to make a change in the increasing problem of food waste. I found that a big part of this waste happens at the consumption and espesially at the conservation of food"
+        text="The shape of the product is based on the function it has. The stainless steel container is rounded to withstand the pressure. The ribs on them are there to hold the trays in place. The plastic shell follows the shape of the container, but has a protrusion in the back to hold the electronics. The top has a big glass plate, so you could easily look in."
         image="Braun Parch/exploded_view.png"
         padding="top-bottom-padding"
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="Old heritage, new style"
-        text="With this assigment, Braun aimed to make a change in the increasing problem of food waste. I found that a big part of this waste happens at the consumption and espesially at the conservation of food"
+        text="In this design I tried to create a balance between using the old ‘Braun Style’ and my own. I did this by looking into the details. Using horizontal patterns, button colours and Braun-like materials."
         image="Braun Parch/thumbnail.png"
         padding="bottom-padding"
       />
@@ -113,7 +113,7 @@ const BraunParch = () => {
         padding=""
       />
       <Title
-        title="Source: Braun"
+        title="Images by: Braun"
         size="p"
         alignment="start"
         padding="padding-bottom"
