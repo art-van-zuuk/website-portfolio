@@ -63,7 +63,7 @@ function ProjectBanner(props) {
               </p>
             </Col>
             <Col className="col-lg-6 col-10">
-              <Fade right delay="500" duration="2000" distance="100px">
+              <Fade right delay={500} duration={2000} distance="100px">
                 <img
                   className="ProjectBannerImage"
                   draggable="false"

@@ -26,10 +26,13 @@ designProjectList.push({
 designProjectList.push({
   name: "La Selce",
   description: "Brings back passion in the future kitchen",
+  explanation:
+    "Boretti is working on the kitchen of the future, where the induction stoves are part of the coutertop. We were asked to design and build a wireless knob that would intuitively control all the stoves in a passionate way.",
   type: "Group Project",
   year: "2021",
   textColor: "#f5f5f5",
-  backgroundColor: "#323232",
+  backgroundColor: "#232224",
+  backgroundColor2: "#161617",
 });
 designProjectList.push({
   name: "HANA",
@@ -44,8 +47,8 @@ designProjectList.push({
 });
 designProjectList.push({
   name: "Chessboard",
-  description:
-    "As a gift for my sisters 27th birthday, I made her a wooden chessboard. This was all constructed of mahogany wood and timber plywood, and later varnished. Details have been engraved using a lasercutter. The board can fold in two, so the chesspieces can be stored inside. A hinge together with magnets holds the two pieces together. when it is stored. The self-designed pieces are made using a SLA 3D-printer and also stay in position by magnets.",
+  description: "A Chessboard as birthday gift for my sister",
+    explanation: "As a gift for my sisters 27th birthday, I made her a wooden chessboard. This was all constructed of mahogany wood and timber plywood, and later varnished. Details have been engraved using a lasercutter. The board can fold in two, so the chesspieces can be stored inside. A hinge together with magnets holds the two pieces together. when it is stored. The self-designed pieces are made using a SLA 3D-printer and also stay in position by magnets.",
   type: "Personal Project",
   year: "2021",
   team: "Individual project",
@@ -81,11 +84,13 @@ designProjectList.push({
 
 designProjectList.push({
   name: "Band Aid Dispenser",
-  description: "Quick Food Dehydration using vacuum",
-  type: "Personal Project",
-  year: "2016",
-  team: "Individual project",
-  backgroundColor: "#eee",
+  description: "A focus on user interaction",
+  explanation: "During a one week intense workshop, we were assigned to create a dispenser of any kind. The aim was to improve the user interaction of the product day by day by extensive user research.",
+  type: "Bachelor Project",
+  year: "2019",
+  team: "Group project",
+  textColor: "white",
+  backgroundColor: "#0e1910",
 });
 designProjectList.push({
   name: "Dust Buster",

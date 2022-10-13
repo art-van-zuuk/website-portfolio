@@ -11,6 +11,7 @@ import HANA from "./pages/designProjects/HANA";
 import LaSelce from "./pages/designProjects/LaSelce";
 import WebsiteIOFestival from "./pages/graphicProjects/WebsiteIOFestival";
 import OnLocked from "./pages/graphicProjects/OnLocked";
+import BandAidDispenser from "./pages/designProjects/BandAidDispenser";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const BraunParch = React.lazy(() => import("./pages/designProjects/BraunParch"));
@@ -95,6 +96,14 @@ const App = () => {
             element={
               <React.Suspense fallback={<>...</>}>
                 <HANA />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="band-aid-dispenser"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <BandAidDispenser />
               </React.Suspense>
             }
           />

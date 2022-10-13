@@ -25,6 +25,12 @@ const Chessboard = () => {
       />
       <Title
         title={projectInfo.description}
+        size="h4"
+        alignment="start"
+        padding=""
+      />
+      <Title
+        title={projectInfo.explanation}
         size="p"
         alignment="start"
         padding=""

@@ -15,8 +15,21 @@ video{
     color: white;
     text-align: center;
 }
+.black-text {
+    color: black;
+    text-align: center;
+}
 
 .handwritten{
     font-family: 'Long Cang' !important;
     font-size: 24px !important;
+}
+
+
+.white-bg{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: white;
+    opacity: 0.8;
 }

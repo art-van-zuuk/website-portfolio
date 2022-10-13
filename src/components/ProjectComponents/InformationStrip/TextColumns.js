@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 ///Creates a row of texts
 function TextColumns(props) {
   return (
-    <Fade bottom>
+    <Fade>
       <Container className={"site-width " + props.padding}>
         <Row
           className={

@@ -26,6 +26,11 @@ function CarouselCard(props) {
     }
   };
 
+  var backgroundColor2 = props.project.backgroundColor;
+  if (props.project.backgroundColor2 != null) {
+    backgroundColor2 = props.project.backgroundColor2;
+  }
+
   return (
     <div className="App">
       {/* Animates while hover */}
@@ -38,7 +43,14 @@ function CarouselCard(props) {
       >
         <div
           className="imgDiv"
-          style={{ backgroundColor: props.project.backgroundColor }}
+          style={{
+          background:
+            "linear-gradient(" +
+            props.project.backgroundColor +
+            ", " +
+            backgroundColor2 +
+            ")",
+        }}
         >
           <img
             draggable="false"
