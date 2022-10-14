@@ -137,7 +137,6 @@ const InputDevice = () => {
       <FullWidthImage
         project={projectInfo.name}
         image="IPDInNature.jpg"
-        rounded={true}
         padding="top-padding"
       />
       <Title title="Image by: Dreux" size="p" alignment="start" padding="" />

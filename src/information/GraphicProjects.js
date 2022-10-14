@@ -16,10 +16,17 @@ graphicProjectList.push({
   backgroundColor: "#000",
 });
 graphicProjectList.push({
+  name: "KARA Kickz",
+  description: "Designing the logo of a footwear selling company",
+  type: "Work Project",
+  year: "2021",
+  backgroundColor: "#000",
+});
+graphicProjectList.push({
   name: "OnLocked",
-  description: "Quick Food Dehydration using vacuum",
-  type: "Personal Project",
-  year: "2016",
+  description: "Designing the housestyle of an online escaperoom",
+  type: "Work Project",
+  year: "2020",
   backgroundColor: "#000",
 });
 graphicProjectList.push({
@@ -31,21 +38,20 @@ graphicProjectList.push({
 });
 graphicProjectList.push({
   name: "Website IOFestival",
-  description: "Quick Food Dehydration using vacuum",
+  description: "Buidling a website for the largest annual student festival in Europe",
+  explanation: "Each year, the Industrial Design studieassociation holds a festival. For this they build a new website each year. I was asked to build the website for the 2019 festival.",
   type: "Personal Project",
   year: "2016",
   backgroundColor: "#36b18d",
 });
 graphicProjectList.push({
   name: "Posters",
-  description: "Quick Food Dehydration using vacuum",
   type: "Personal Project",
   year: "2016",
   backgroundColor: "#eee",
 });
 graphicProjectList.push({
   name: "T-Shirts",
-  description: "Quick Food Dehydration using vacuum",
   type: "Personal Project",
   year: "2016",
   backgroundColor: "#eee",

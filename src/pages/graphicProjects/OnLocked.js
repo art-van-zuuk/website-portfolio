@@ -20,17 +20,27 @@ const OnLocked = () => {
         padding="top-padding"
       />
       <Title
+        title={projectInfo.description}
+        size="h4"
+        alignment="start"
+        padding=""
+      />
+      <Title
         title={projectInfo.explanation}
         size="p"
         alignment="start"
         padding=""
       />
+
       <Title
-        title="First itteration"
+        title="Logo design"
         size="h2"
         alignment="start"
-        padding=""
+        padding="top-padding"
       />
+
+      <Title title="First itteration" size="h4" alignment="start" padding="" />
+      <Title title="For the design of the logo I started off with " size="p" alignment="start" padding="" />
       <AnimatedCardColumns
         cardInfo={[
           {

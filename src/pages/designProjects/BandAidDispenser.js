@@ -15,7 +15,7 @@ const BandAidDispenser = () => {
   // console.log("list: " + designProjectList);
 
   //gets information about project
-  var projectInfo = GetProjectInfo(designProjectList, "Band Aid Dispenser");
+  var projectInfo = GetProjectInfo(designProjectList, "Band-Aid Dispenser");
 
   return (
     <>
@@ -23,34 +23,37 @@ const BandAidDispenser = () => {
         projectList={designProjectList}
         project={projectInfo.name}
       />
-      <SkillImages skills={["solidworks", "arduino", "lasercutting"]} />
+      <SkillImages skills={["solidworks", "building", "interview"]} />
       <ImageTextStrip
         title="User testing: From shape to model"
-        text="With this assigment, Braun aimed to make a change in the increasing problem of food waste. I found that a big part of this waste happens at the consumption and espesially at the conservation of food"
+        text="To create a Band-Aid Dispenser with the optimal user experience, we created several foam and 3D-printed models. Each of these models was tested to create a new iteration with a better interactive experience."
         image="Band Aid Dispenser/Prototype cut out.jpg"
         padding="top-bottom-padding"
       />
       <CardColumns
         cardInfo={[
           {
-            text: "Interaction prototypes",
+            title: "Interaction prototypes",
+            text: "Testing what different shapes do to the meaning and way of using the product",
             image: "Band Aid Dispenser/UserTest1.jpg",
             objectFit: "cover",
           },
           {
-            text: "Ergonomics prototypes",
+            title: "Ergonomics prototypes",
+            text: "Figuring out what shapes are most comfortable for the user",
             image: "Band Aid Dispenser/UserTest2.jpg",
             objectFit: "cover",
           },
           {
-            text: "Detailed prototype",
+            title: "Detailed prototype",
+            text: "Validating whether the full product is used as intended",
             image: "Band Aid Dispenser/UserTest3.jpg",
             objectFit: "cover",
           },
         ]}
         imageHeight="200px"
         cardWidth="4"
-        padding="bottom-padding"
+        padding="top-bottom-padding"
       />
 
       <Title
@@ -60,8 +63,8 @@ const BandAidDispenser = () => {
         padding="top-padding"
       />
       <Title
-        title="A better design in many ways"
-        size="p"
+        title="How are 'use cues' used to indicate the functions of the product"
+        size="h4"
         alignment="center"
         padding="bottom-padding"
       />
@@ -73,6 +76,11 @@ const BandAidDispenser = () => {
       <FullWidthImage
         project={projectInfo.name}
         image="Product render.jpg"
+        padding="top-padding"
+      />
+      <FullWidthImage
+        project={projectInfo.name}
+        image="Render close-up.png"
         padding="top-bottom-padding"
       />
     </>

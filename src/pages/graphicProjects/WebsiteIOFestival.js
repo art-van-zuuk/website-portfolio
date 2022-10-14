@@ -9,6 +9,7 @@ import Title from "../../components/ProjectComponents/Title/Title";
 
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 import graphicProjectList from "../../information/GraphicProjects";
+import LaptopMockup from "../../components/ProjectComponents/Mockup/LaptopMockup";
 
 const WebsiteIOFestival = () => {
   //gets information about project
@@ -23,11 +24,18 @@ const WebsiteIOFestival = () => {
         padding="top-padding"
       />
       <Title
+        title={projectInfo.description}
+        size="h4"
+        alignment="start"
+        padding=""
+      />
+      <Title
         title={projectInfo.explanation}
         size="p"
         alignment="start"
         padding=""
       />
+      <LaptopMockup project={projectInfo.name} image="test.jpeg" />
     </>
   );
 };

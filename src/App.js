@@ -3,15 +3,7 @@ import React, { useState, useMemo } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar/NavBar";
-import MARCHVII from "./pages/designProjects/MARCHVII";
 import Footer from "./components/Footer/Footer";
-import InputDevice from "./pages/designProjects/InputDevice";
-import CameraSlider from "./pages/designProjects/CameraSlider";
-import HANA from "./pages/designProjects/HANA";
-import LaSelce from "./pages/designProjects/LaSelce";
-import WebsiteIOFestival from "./pages/graphicProjects/WebsiteIOFestival";
-import OnLocked from "./pages/graphicProjects/OnLocked";
-import BandAidDispenser from "./pages/designProjects/BandAidDispenser";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const BraunParch = React.lazy(() => import("./pages/designProjects/BraunParch"));
@@ -21,6 +13,29 @@ const SlideToLight = React.lazy(() =>
 const Chessboard = React.lazy(() =>
   import("./pages/designProjects/Chessboard")
 );
+const MARCHVII = React.lazy(() =>
+  import("./pages/designProjects/MARCHVII")
+);
+const InputDevice = React.lazy(() =>
+  import("./pages/designProjects/InputDevice")
+);
+const CameraSlider = React.lazy(() =>
+  import("./pages/designProjects/CameraSlider")
+);
+const HANA = React.lazy(() =>
+  import("./pages/designProjects/HANA")
+);
+const LaSelce = React.lazy(() => import("./pages/designProjects/LaSelce"));
+const WebsiteIOFestival = React.lazy(() => import("./pages/graphicProjects/WebsiteIOFestival"));
+const OnLocked = React.lazy(() =>
+  import("./pages/graphicProjects/OnLocked")
+);
+
+const BandAidDispenser = React.lazy(() => import("./pages/designProjects/BandAidDispenser"));
+
+
+
+
 const Posters = React.lazy(() => import("./pages/graphicProjects/Posters"));
 
 const TestCompany = React.lazy(() => import("./pages/company/TestCompany"));

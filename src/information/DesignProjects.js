@@ -65,15 +65,6 @@ designProjectList.push({
 });
 
 designProjectList.push({
-  name: "Slide to Light",
-  description: "Quick Food Dehydration using vacuum",
-  type: "Bachelor Project",
-  year: "2018",
-  team: "Individual project",
-  backgroundColor: "#D7D6CA",
-});
-
-designProjectList.push({
   name: "Camera Slider",
   description: "Quick Food Dehydration using vacuum",
   type: "Personal Project",
@@ -83,14 +74,15 @@ designProjectList.push({
 });
 
 designProjectList.push({
-  name: "Band Aid Dispenser",
+  name: "Band-Aid Dispenser",
   description: "A focus on user interaction",
-  explanation: "During a one week intense workshop, we were assigned to create a dispenser of any kind. The aim was to improve the user interaction of the product day by day by extensive user research.",
+  explanation:
+    "During a one-week intense workshop, we were assigned to create a dispenser of any kind. The aim was to improve the user interaction with the product day by day through extensive user research.",
   type: "Bachelor Project",
   year: "2019",
   team: "Group project",
   textColor: "white",
-  backgroundColor: "#0e1910",
+  backgroundColor: "#1d2b1f",
 });
 designProjectList.push({
   name: "Dust Buster",
@@ -107,6 +99,15 @@ designProjectList.push({
   year: "2020",
   team: "Individual project",
   backgroundColor: "#f8f8f8",
+});
+
+designProjectList.push({
+  name: "Slide to Light",
+  description: "Quick Food Dehydration using vacuum",
+  type: "Bachelor Project",
+  year: "2018",
+  team: "Individual project",
+  backgroundColor: "#D7D6CA",
 });
 
 

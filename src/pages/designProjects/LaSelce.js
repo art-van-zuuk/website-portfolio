@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Footer from "../../components/Footer/Footer";
 import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
 import ImageTextStrip from "../../components/ProjectComponents/InformationStrip/ImageTextStrip";
@@ -15,7 +14,6 @@ import Title from "../../components/ProjectComponents/Title/Title";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 import designProjectList from "../../information/DesignProjects";
 import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
-import SectionLine from "../../components/ProjectComponents/SectionLine/SectionLine";
 import TextColumns from "../../components/ProjectComponents/InformationStrip/TextColumns";
 
 const LaSelce = () => {
