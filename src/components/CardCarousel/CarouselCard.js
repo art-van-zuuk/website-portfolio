@@ -60,7 +60,7 @@ function CarouselCard(props) {
         </div>
 
         <div className="text">
-          <h4 className="bold-text text-center"> {props.project.name} </h4>
+          <h5 className="text-center"> {props.project.name} </h5>
           <p className="text-center">
             {" "}
             {props.project.type} in {props.project.year}{" "}

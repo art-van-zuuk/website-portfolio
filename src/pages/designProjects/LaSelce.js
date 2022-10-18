@@ -38,14 +38,14 @@ const LaSelce = () => {
       />
       <ImageTextStrip
         title="Appassionato as starting point"
-        text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. This is something the guide dog has to learn and navigation is currently not good enough."
+        text="Boretti wants to create the kitchen of the future by implementing induction stoves into the kitchen counter, giving the user a lot of freedom. Herefore, Jeroen van Rijnberk created a wireless knob called Appassionato, which controls these stoves. We were asked to improve and work out this concept."
         image="La Selce/Appassionato.png"
         padding="top-bottom-padding"
         rounded="true"
       />
       <TextImageStrip
         title="Passion for cooking "
-        text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. This is something the guide dog has to learn and navigation is currently not good enough."
+        text="Boretti is a company that takes passion to the modern kitchen by embracing the Italian lifestyle. This is what we tried to accomplish with ‘La Selce’ the successor of Appassionato. We accomplished this by creating an organic and natural look and a professional and satisfying interaction."
         image="La Selce/ImageGallery/TopView.jpg"
         padding="top-bottom-padding"
         rounded="true"
@@ -83,19 +83,19 @@ const LaSelce = () => {
         cardInfo={[
           {
             title: "Right size for everyone",
-            text: "The first prototype was a simple 3D-printed model in which a phone could be clamped. Using Protopie, an app prototyping program, I made a simple interface, which was controllable via scroll wheel from a mouse.",
+            text: "The rotating knob and touchscreen buttons should be usable for people with a great range in hand sizes. To ensure the optimal fit for most, physical tests with the target group were done.",
             image: "La Selce/ImageGallery/Rotating knob.jpg",
             objectFit: "cover",
           },
           {
             title: "Intuitive interface",
-            text: "A few iterations later, we ordered the first SLS-printed model, which could be used during trainings. Based on this model, the final improvements were made.",
+            text: "The layout on the touchscreen mirrors the stove layout of the stoves, making the selection as easy as possible. The interface is simple and shows only the essential information.",
             image: "La Selce/Interface.jpg",
             objectFit: "cover",
           },
           {
             title: "Light, clicks and vibrations",
-            text: "Multimodal",
+            text: "La Selce uses multimodal feedback to create an understandable interaction, even while paying attention to your food. The ring clicks while rotating, the bottom light shines brighter when putting the stoves higher and a vibration motor gives feedback while using the touchscreen.",
             image: "La Selce/Multimodal Feedback.png",
             objectFit: "cover",
           },
@@ -106,7 +106,7 @@ const LaSelce = () => {
       />
       <ImageTextStrip
         title="Creating the perfect ring"
-        text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. This is something the guide dog has to learn and navigation is currently not good enough."
+        text="We spend a long time perfecting the rotating ring. The turn had to feel satisfying, with the perfect amount of resistance, an array of magnets create 18 clicks per rotation, corresponding with the number of grooves on the outside, and the material had to feel comfortable and premium. After many iterations, we set on a design created from black anodized aluminium."
         image="La Selce/Ring.png"
         padding="top-bottom-padding"
         rounded="true"
@@ -173,7 +173,7 @@ const LaSelce = () => {
       <FullWidthImage
         project={projectInfo.name}
         image="Exploded.png"
-        padding="bottom-padding"
+        padding="top-bottom-padding"
       />
       <ImageGallery
         project={projectInfo.name}

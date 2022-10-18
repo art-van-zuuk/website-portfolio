@@ -27,9 +27,9 @@ function TextVideoStrip(props) {
     <div className="App">
       <Container className={"site-width " + props.padding}>
         <Row className="align-items-center justify-content-center gx-5">
-          <Col className=" col-lg-5 col-12 text-md-left text-lg-end">
+          <Col className=" col-lg-5 col-12 text-md-left text-lg-start">
             <h2>{props.title}</h2>
-            <p className="text-lg-end">{props.text}</p>
+            <p className="text-lg-start">{props.text}</p>
           </Col>
           <Col className="col-lg-7 col-12">
             <Fade right distance="50px">

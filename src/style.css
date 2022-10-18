@@ -51,11 +51,12 @@ body {
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-size: small;
     font-weight: normal;
     line-height: 24px;
-    color: var(--text-color)
+    color: var(--text-color);
+    
 }
 
 b {
@@ -68,28 +69,30 @@ b {
 
 h1 {
     font-size: 60px;
-    font-family: 'Montserrat';
-    font-weight: 800;
+    font-family: 'Nunito Sans';
+    font-weight: 700;
 }
 
 h2 {
     font-size: 40px;
-    font-family: 'Montserrat';
-    font-weight: 600;
+    font-family: 'Nunito Sans';
+    font-weight: 700;
 }
 
 h3 {
     font-size: 30px;
-    font-family: 'Montserrat';
-    font-weight: 800;
+    font-family: 'Nunito Sans';
+    font-weight: 300;
 }
 
 h4 {
-    font-size: 18px;
-    font-family: 'Montserrat';
-    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Nunito Sans';
+    font-weight: 300;
 }
 h6{
+    font-family: 'Nunito Sans';
+    font-weight: 700;
     font-style: italic;
 }
 

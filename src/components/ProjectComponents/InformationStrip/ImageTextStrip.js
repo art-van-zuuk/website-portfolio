@@ -17,7 +17,11 @@ function ImageTextStrip(props) {
                 className={props.rounded ? "rounded-element" : ""}
                 draggable="false"
                 src={"/images/Projects/" + props.image}
-                style={{ maxHeight: "300px", maxWidth: "400px" }}
+                style={{
+                  maxHeight:
+                    props.maxHeight != null ? props.maxHeight : "300px",
+                  maxWidth: props.maxWidth != null ? props.maxWidth : "400px",
+                }}
               ></img>
             </Fade>
           </Col>

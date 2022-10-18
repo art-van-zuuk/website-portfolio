@@ -12,9 +12,9 @@ function TextImageStrip(props) {
     <div className="App">
       <Container className={"site-width " + props.padding}>
         <Row className="align-items-center justify-content-center gx-5">
-          <Col className="text-lg-end col-lg-6 col-md-6">
+          <Col className="text-lg-start col-lg-6 col-md-6">
             <h2>{props.title}</h2>
-            <p className="text-lg-end">{props.text}</p>
+            <p className="text-lg-start">{props.text}</p>
           </Col>
           <Col className="col-lg-6 col-12">
             <Fade right distance="50px">
@@ -22,7 +22,11 @@ function TextImageStrip(props) {
                 className={props.rounded ? "rounded-element" : ""}
                 draggable="false"
                 src={"/images/Projects/" + props.image}
-                style={{ maxHeight: "300px", maxWidth: "400px" }}
+                style={{
+                  maxHeight:
+                    props.maxHeight != null ? props.maxHeight : "300px",
+                  maxWidth: props.maxWidth != null ? props.maxWidth : "400px",
+                }}
               ></img>
             </Fade>
           </Col>

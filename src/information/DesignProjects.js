@@ -27,11 +27,11 @@ designProjectList.push({
   name: "La Selce",
   description: "Brings back passion in the future kitchen",
   explanation:
-    "Boretti is working on the kitchen of the future, where the induction stoves are part of the coutertop. We were asked to design and build a wireless knob that would intuitively control all the stoves in a passionate way.",
+    "Boretti is working on the kitchen of the future, where the induction stoves are part of the countertop. We were asked to design and build a wireless knob that would intuitively control all the stoves in a passionate way.",
   type: "Group Project",
   year: "2021",
   textColor: "#f5f5f5",
-  backgroundColor: "#232224",
+  backgroundColor: "#000",
   backgroundColor2: "#161617",
 });
 designProjectList.push({
@@ -85,22 +85,25 @@ designProjectList.push({
   backgroundColor: "#1d2b1f",
 });
 designProjectList.push({
-  name: "Dust Buster",
-  description: "Quick Food Dehydration using vacuum",
-  type: "Personal Project",
-  year: "2016",
-  team: "Individual project",
-  backgroundColor: "#eee",
-});
-designProjectList.push({
   name: "Google Speech",
-  description: "Quick Food Dehydration using vacuum",
-  type: "Bachelor End Project",
-  year: "2020",
-  team: "Individual project",
+  description: "Helps refugees integrate using speech",
+  explanation:
+    "With the increasing individualism and conflicting subcultures, unpolite behaviour is seen to be rising. The scope of this assignment is to resolve this challenge in 2030 using an electronic device with speech as input. The first design phases were individual. After four weeks the pre-assigned group had to choose one concept to work out technically. We chose to continue with my concept.",
+  type: "Bachelor Project",
+  year: "2019",
+  team: "Group project",
   backgroundColor: "#f8f8f8",
 });
-
+designProjectList.push({
+  name: "Dust Buster",
+  description: "Armadillo inspired vacuum cleaner",
+  explanation:
+    "With the inspiration of an animal, we had to create a dust buster with a certain expression. Form, colour, material and texture where really important in this course.",
+  type: "Personal Project",
+  year: "2017",
+  team: "Individual project",
+  backgroundColor: "#e4e2e9",
+});
 designProjectList.push({
   name: "Slide to Light",
   description: "Quick Food Dehydration using vacuum",

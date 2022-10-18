@@ -18,7 +18,7 @@ const SiteVideoBanner = (props) => {
       <div className="videoContainer">
         <video src={video} autoPlay loop muted />
       </div>
-      <ScrollPage
+      {/* <ScrollPage
         page={0}
         className="align-items-center justify-content-center"
       >
@@ -27,47 +27,26 @@ const SiteVideoBanner = (props) => {
           <h4 className="white-text handwritten">By Art van Zuuk</h4>
         </Animator>
       </ScrollPage>
-      <ScrollPage page={1}></ScrollPage>
+      <ScrollPage page={1}></ScrollPage> */}
 
       <ScrollPage page={2}>
         <Animator animation={batch(StickyIn(), FadeIn())}>
           <div className="white-bg"></div>
         </Animator>
         <Animator animation={batch(StickyIn(), FadeIn(), MoveIn())}>
-            <Row className="align-items-center justify-content-center">
-              <Col className="col-12 col-md-6">
-                <h3 className="text-center">Hello, {props.company}!</h3>
-                <h4 className="text-center">
-                  This is my portfolio website. Here I showcase all of the
-                  project that I am proud of. A few projects are highlighted and
-                  I would love you to see them. But if you are interested to see
-                  more, feel free to look around.
-                </h4>
-              </Col>
-            </Row>
+          <Row className="align-items-center justify-content-center">
+            <Col className="col-12 col-md-8">
+              <h2 className="text-center">My portfolio for {props.company}!</h2>
+              <p className="text-dark text-center">
+                This is my portfolio website. Here I showcase all of the project
+                that I am proud of. A few projects are highlighted and I would
+                love you to see them. But if you are interested to see more,
+                feel free to look around.
+              </p>
+            </Col>
+          </Row>
         </Animator>
       </ScrollPage>
-
-      {/* <ScrollPage page={3}>
-        <Animator animation={batch(StickyOut(), )}>
-          <div className="white-bg"></div>
-        </Animator>
-        <Animator animation={batch(StickyIn(), )}>
-          <div className="child ">
-            <Row className="align-items-center justify-content-center">
-              <Col className="col-12 col-md-6">
-                <h3 className="text-center">Hello, {props.company}!</h3>
-                <h4 className="text-center">
-                  This is my portfolio website. Here I showcase all of the
-                  project that I am proud of. A few projects are highlighted and
-                  I would love you to see them. But if you are interested to see
-                  more, feel free to look around.
-                </h4>
-              </Col>
-            </Row>
-          </div>
-        </Animator>
-      </ScrollPage> */}
     </ScrollContainer>
   );
 };

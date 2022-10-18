@@ -100,29 +100,22 @@ const MARCHVII = () => {
         alignment="start"
         padding="top-padding"
       />
-      <Title title="Idea sketches" size="h4" alignment="start" padding="" />
-      <Title
-        title="By gathering inspiration from last year’s exoskeletons and exoskeletons that were already on the market, we created some ideas for the look and feel of our exoskeleton."
-        size="p"
-        alignment="start"
-        padding=""
-      />
+      <Title title="Idea sketches - Concept Sketches" size="h4" alignment="start" padding="" />
       <FullWidthImage
         project={projectInfo.name}
         image="Drawings.jpg"
-        padding="bottom-padding"
-      />
-
-      <Title title="Concept sketches" size="h4" alignment="start" padding="" />
-      <Title
-        title="To get a better understanding of how these details would translate to a full exoskeleton, we made four different concepts. For each style we created a collage for inspiration. The final design took inspiration from different elements of these concepts. Two of these concepts were made by Iza Bosch."
-        size="p"
-        alignment="start"
         padding=""
       />
+
       <FullWidthImage
         project={projectInfo.name}
         image="Concepts.jpg"
+        padding=""
+      />
+      <Title
+        title="By gathering inspiration from last year’s exoskeletons and exoskeletons that were already on the market, we created some ideas for the look and feel of our exoskeleton. To get a better understanding of how these details would translate to a full exoskeleton, we made four different concepts. For each style we created a collage for inspiration. The final design took inspiration from different elements of these concepts. Two of these concepts were made by Iza Bosch."
+        size="p"
+        alignment="start"
         padding="bottom-padding"
       />
 
