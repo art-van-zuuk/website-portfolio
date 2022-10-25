@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from "react-bootstrap";
+import {Row, Col} from "react-bootstrap";
 
 import { batch, Fade, MoveIn, MoveOut, Animator, ScrollContainer, ScrollPage, Sticky, StickyIn, StickyOut, ZoomIn, FadeIn, FadeOut, Move, ZoomOut } from 'react-scroll-motion';
 
@@ -18,17 +18,6 @@ const SiteVideoBanner = (props) => {
       <div className="videoContainer">
         <video src={video} autoPlay loop muted />
       </div>
-      {/* <ScrollPage
-        page={0}
-        className="align-items-center justify-content-center"
-      >
-        <Animator animation={batch(Sticky(), Fade(), Move())}>
-          <h2 className="white-text">A portfolio</h2>
-          <h4 className="white-text handwritten">By Art van Zuuk</h4>
-        </Animator>
-      </ScrollPage>
-      <ScrollPage page={1}></ScrollPage> */}
-
       <ScrollPage page={2}>
         <Animator animation={batch(StickyIn(), FadeIn())}>
           <div className="white-bg"></div>
@@ -36,12 +25,15 @@ const SiteVideoBanner = (props) => {
         <Animator animation={batch(StickyIn(), FadeIn(), MoveIn())}>
           <Row className="align-items-center justify-content-center">
             <Col className="col-12 col-md-8">
-              <h2 className="text-center">My portfolio for {props.company}!</h2>
+              <h2 className="text-center">
+                {props.title == "" || props.title == null
+                  ? "A portfolio by Art"
+                  : props.title}
+              </h2>
               <p className="text-dark text-center">
-                This is my portfolio website. Here I showcase all of the project
-                that I am proud of. A few projects are highlighted and I would
-                love you to see them. But if you are interested to see more,
-                feel free to look around.
+                {props.text == "" || props.text == null
+                  ? "This is my portfolio website. Here I showcase all of the project that I am proud of. A few projects are highlighted and I would love you to see them. But if you are interested to see more, feel free to look around."
+                  : props.text}
               </p>
             </Col>
           </Row>

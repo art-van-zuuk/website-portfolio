@@ -7,7 +7,6 @@ import SkillImages from "../../components/ProjectComponents/SkillImages/SkillIma
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 import Title from "../../components/ProjectComponents/Title/Title";
-import ImageTextStrip from "../../components/ProjectComponents/InformationStrip/ImageTextStrip";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
 import { photos } from "../../components/ProjectComponents/ImageGallery/IGDustBuster.js";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
@@ -39,7 +38,7 @@ const DustBuster = () => {
         image="Armadillo transform.jpg"
         padding="bottom-padding"
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="Inspiration from shape and texture"
         text="With inspiration from existing Google products, user research on body placement and comfort, and modelling in clay and 3D prints we found the optimal shape for the product."
         image="Dust Buster/Inspiration.jpg"
@@ -47,6 +46,7 @@ const DustBuster = () => {
         rounded="true"
         maxHeight="400px"
         maxWidth="100%"
+        reverse={true}
       />
 
       <FullWidthImage

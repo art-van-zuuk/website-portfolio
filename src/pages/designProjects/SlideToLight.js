@@ -7,7 +7,6 @@ import SkillImages from "../../components/ProjectComponents/SkillImages/SkillIma
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 import Title from "../../components/ProjectComponents/Title/Title";
-import ImageTextStrip from "../../components/ProjectComponents/InformationStrip/ImageTextStrip";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
 
 
@@ -18,12 +17,13 @@ const SlideToLight = () => {
     <>
       <ProjectBanner projectList={designProjectList} project="Slide to Light" />
       <SkillImages skills={["phototshop", "buidling", "lasercutting"]} />
-      <ImageTextStrip
+      <TextImageStrip
         title="Goalll...."
         text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. This is something the guide dog has to learn and navigation is currently not good enough."
         image="La Selce/Appassionato.png"
         padding="top-bottom-padding"
         rounded="true"
+        reverse={true}
       />
       <Title
         title="How to play"
@@ -36,12 +36,13 @@ const SlideToLight = () => {
         image="HowToPlay.png"
         padding="bottom-padding"
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="Many levels to play"
         text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. This is something the guide dog has to learn and navigation is currently not good enough."
         image="Slide to Light/Cards.png"
         padding="top-bottom-padding"
         rounded="true"
+        reverse={true}
       />
       <TextImageStrip
         title="Many configurations"

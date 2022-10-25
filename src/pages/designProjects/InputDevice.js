@@ -6,16 +6,10 @@ import GetProjectInfo from "../../scripts/GetProjectInfo";
 import designProjectList from "../../information/DesignProjects";
 import SkillImages from "../../components/ProjectComponents/SkillImages/SkillImages";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
-import ImageTextStrip from "../../components/ProjectComponents/InformationStrip/ImageTextStrip";
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
-import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 import Title from "../../components/ProjectComponents/Title/Title";
 import HorizonalImageTextCard from "../../components/ProjectComponents/Card/HorizontalImageTextCard";
-import { photos } from "../../components/ProjectComponents/ImageGallery/IGMARCHVII";
-import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
 import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
-import TextVideoStrip from "../../components/ProjectComponents/InformationStrip/TextVideoStrip";
-import TextColumns from "../../components/ProjectComponents/InformationStrip/TextColumns";
 
 const InputDevice = () => {
   //gets information about project
@@ -36,12 +30,13 @@ const InputDevice = () => {
         image="MARCH VII/TeamPhoto.jpg"
         padding="bottom-padding"
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="Previous design"
         text="The design of the input device stayed the same for many years. As a new team, we soon realized that it was outdated and too difficult to use for both the user as well as the team."
         image="Input Device/OldDesign.jpg"
         rounded={true}
         padding="top-bottom-padding"
+        reverse={true}
       />
       <Title
         title="How we improved"
@@ -74,11 +69,12 @@ const InputDevice = () => {
         cardWidth="4"
         padding="bottom-padding"
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="Simple electronics, easy to repair"
         text="A rotary encoder and push-button are connected to an Arduino. Via a USB-cable the Arduino is connected to the smartphone using a keyboard protocol. This simple arrangement, together with the fact that only mechanical fastening methods have been used, made it very easy to repair."
         image="Input Device/RepairableIPD.jpg"
         rounded={true}
+        reverse={true}
         padding="top-bottom-padding"
       />
       <TextImageStrip
@@ -119,12 +115,13 @@ const InputDevice = () => {
         cardWidth="4"
         padding="bottom-padding"
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="User testing"
         text="All of these prototypes were tested by and discussed with the end user. Based on this, changes were made in terms of cognitive and physical ergonomics."
         image="Input Device/ErgonomicsKoen.jpg"
         rounded={true}
         padding="top-bottom-padding"
+        reverse={true}
       />
       <TextImageStrip
         title="Flexible SLS-printing"

@@ -8,10 +8,12 @@ import "../../../style.css";
 ///Text + Image strip with image on the right side. Requires: image, title and text
 function TextImageStrip(props) {
 
+  var reverseClass = props.reverse ? "flex-row-reverse" : "";
+
   return (
     <div className="App">
       <Container className={"site-width " + props.padding}>
-        <Row className="align-items-center justify-content-center gx-5">
+        <Row className={"d-flex align-items-center justify-content-center gx-5 " + reverseClass}>
           <Col className="text-lg-start col-lg-6 col-md-6">
             <h2>{props.title}</h2>
             <p className="text-lg-start">{props.text}</p>

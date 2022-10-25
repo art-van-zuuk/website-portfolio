@@ -6,7 +6,6 @@ import GetProjectInfo from "../../scripts/GetProjectInfo";
 import designProjectList from "../../information/DesignProjects";
 import SkillImages from "../../components/ProjectComponents/SkillImages/SkillImages";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
-import ImageTextStrip from "../../components/ProjectComponents/InformationStrip/ImageTextStrip";
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 import Title from "../../components/ProjectComponents/Title/Title";
@@ -157,12 +156,13 @@ const MARCHVII = () => {
         padding="top-bottom-padding"
         rounded={true}
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="Testing with 3D-printed prototypes"
         text="To validate whether our digital designs worked as expected, we build tons of prototypes using 3D-printers. Every part was iterated multiple times to get the most functional and good-looking design."
         image="MARCH VII/PuttingOnCovers.jpg"
         padding="top-bottom-padding"
         rounded={true}
+        reverse={true}
       />
       <TextImageStrip
         title="Designing for manufacturing"

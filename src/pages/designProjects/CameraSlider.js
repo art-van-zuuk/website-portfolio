@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
-import ImageTextStrip from "../../components/ProjectComponents/InformationStrip/ImageTextStrip";
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 import SkillImages from "../../components/ProjectComponents/SkillImages/SkillImages";
@@ -56,11 +55,12 @@ const CameraSlider = () => {
         padding="bottom-padding"
       />
 
-      <ImageTextStrip
+      <TextImageStrip
         title="The electric circuit"
         text="With this assigment, Braun aimed to make a change in the increasing problem of food waste. I found that a big part of this waste happens at the consumption and espesially at the conservation of food"
         image="Camera Slider/CircuitDiagram.jpg"
         padding="top-bottom-padding"
+        reverse={true}
       />
     </>
   );

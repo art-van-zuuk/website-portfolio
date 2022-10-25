@@ -7,7 +7,6 @@ import SkillImages from "../../components/ProjectComponents/SkillImages/SkillIma
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 import Title from "../../components/ProjectComponents/Title/Title";
-import ImageTextStrip from "../../components/ProjectComponents/InformationStrip/ImageTextStrip";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
 import { photos } from "../../components/ProjectComponents/ImageGallery/IGGoogleSpeech";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
@@ -30,13 +29,14 @@ const GoogleSpeech = () => {
         maxHeight="600px"
         maxWidth="100%"
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="Finding the optimal shape"
         text="With inspiration from existing Google products, user research on body placement and comfort, and modelling in clay and 3D prints we found the optimal shape for the product."
         image="Google Speech/Drawings.jpg"
         padding="top-bottom-padding"
         maxHeight="600px"
         maxWidth="350px"
+        reverse={true}
       />
       <Title
         title="How it's made"

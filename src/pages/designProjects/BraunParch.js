@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../../components/Footer/Footer";
 import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
-import ImageTextStrip from "../../components/ProjectComponents/InformationStrip/ImageTextStrip";
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 import SkillImages from "../../components/ProjectComponents/SkillImages/SkillImages";
@@ -38,12 +37,13 @@ const BraunParch = () => {
         padding="top-bottom-padding"
         rounded={true}
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="Good taste..."
         text="An ancient but mostly forgotten method to preserve food is dehydration. Braun Parch brings new life to the world of food dehydration at home by using a vacuum."
         image="Braun Parch/GoodTaste.jpg"
         padding="top-bottom-padding"
         rounded={true}
+        reverse={true}
       />
       <Title
         title="Drying food with the power of vacuum..."
@@ -95,11 +95,12 @@ const BraunParch = () => {
         cardWidth="4"
         padding="bottom-padding"
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="Form follows functions"
         text="The shape of the product is based on the function it has. The stainless steel container is rounded to withstand the pressure. The ribs on them are there to hold the trays in place. The plastic shell follows the shape of the container, but has a protrusion in the back to hold the electronics. The top has a big glass plate, so you could easily look in."
         image="Braun Parch/exploded_view.png"
         padding="top-bottom-padding"
+        reverse={true}
       />
       <TextImageStrip
         title="Old heritage, new style"

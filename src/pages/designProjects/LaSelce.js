@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
-import ImageTextStrip from "../../components/ProjectComponents/InformationStrip/ImageTextStrip";
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 import SkillImages from "../../components/ProjectComponents/SkillImages/SkillImages";
@@ -36,12 +35,13 @@ const LaSelce = () => {
           "manufacturing",
         ]}
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="Appassionato as starting point"
         text="Boretti wants to create the kitchen of the future by implementing induction stoves into the kitchen counter, giving the user a lot of freedom. Herefore, Jeroen van Rijnberk created a wireless knob called Appassionato, which controls these stoves. We were asked to improve and work out this concept."
         image="La Selce/Appassionato.png"
         padding="top-bottom-padding"
         rounded="true"
+        reverse={true}
       />
       <TextImageStrip
         title="Passion for cooking "
@@ -104,12 +104,13 @@ const LaSelce = () => {
         cardWidth="4"
         padding="bottom-padding"
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="Creating the perfect ring"
         text="The rotating ring is designed to be satisfying and intuitive. Tight tolerances together with an array of magnets create the perfect resistance. After many iterations, we set on a design created from black anodized aluminium."
         image="La Selce/Ring.png"
         padding="top-bottom-padding"
         rounded="true"
+        reverse={true}
       />
       <TextImageStrip
         title="Simulating a stove with a custom PCB"
@@ -155,12 +156,13 @@ const LaSelce = () => {
         cardWidth="4"
         padding="bottom-padding"
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="Made for repairability"
         text="La Selce is built in a stackable way making it easy to (dis)assemble. The use of screws and electronic connectors means that minimal adhesion is used."
         image="La Selce/Repairability.jpg"
         padding="top-bottom-padding"
         rounded="true"
+        reverse={true}
       />
       <TextImageStrip
         title="Designed for manufacturing"

@@ -23,15 +23,35 @@ function TextVideoStrip(props) {
       },
     };
 
+
+  if (props.videoWidth == null) {
+    var videoWidth = 7;
+  } else {
+    var videoWidth = props.videoWidth;
+  }
+
+   var textWidth = 12 - videoWidth;
+
+
+  var reverseClass = props.reverse?  "flex-row-reverse" : "";
+
+
   return (
     <div className="App">
       <Container className={"site-width " + props.padding}>
-        <Row className="align-items-center justify-content-center gx-5">
-          <Col className=" col-lg-5 col-12 text-md-left text-lg-start">
+        <Row
+          className={"d-flex align-items-center justify-content-center gx-5 " + reverseClass}
+        >
+          <Col
+            className={
+              "align-self-center col-12 text-md-left text-lg-start col-lg-" +
+              textWidth
+            }
+          >
             <h2>{props.title}</h2>
             <p className="text-lg-start">{props.text}</p>
           </Col>
-          <Col className="col-lg-7 col-12">
+          <Col className={"col-12 col-lg-" + videoWidth}>
             <Fade right distance="50px">
               <PlayVideo video={props.video} rounded={props.rounded} />
             </Fade>

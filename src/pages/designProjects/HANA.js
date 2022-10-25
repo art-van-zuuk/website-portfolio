@@ -1,16 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Footer from "../../components/Footer/Footer";
 import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
-import ImageTextStrip from "../../components/ProjectComponents/InformationStrip/ImageTextStrip";
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
 import TextColumns from "../../components/ProjectComponents/InformationStrip/TextColumns";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 import SkillImages from "../../components/ProjectComponents/SkillImages/SkillImages";
 
-import { photos } from "../../components/ProjectComponents/ImageGallery/IGBraunParch";
 import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
 import Title from "../../components/ProjectComponents/Title/Title";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
@@ -18,6 +15,7 @@ import designProjectList from "../../information/DesignProjects";
 import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
 import HorizonalImageTextCard from "../../components/ProjectComponents/Card/HorizontalImageTextCard";
 import SectionLine from "../../components/ProjectComponents/SectionLine/SectionLine";
+import TextVideoStrip from "../../components/ProjectComponents/InformationStrip/TextVideoStrip";
 
 const HANA = () => {
 
@@ -40,12 +38,13 @@ const HANA = () => {
         padding="top-bottom-padding"
       />
       <SectionLine title="Research" padding="top-padding" />
-      <ImageTextStrip
+      <TextImageStrip
         title="Exploring unfamiliar environments"
         text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. This is something the guide dog has to learn and navigation is currently not good enough."
         image="HANA/GDOnCrossing.jpg"
         padding="top-padding"
         rounded="true"
+        reverse={true}
       />
       <TextColumns
         texts={["Image by: LightFieldStudios", ""]}
@@ -108,11 +107,12 @@ const HANA = () => {
         alignment="end"
       />
       <SectionLine title="Solution" padding="top-padding" />
-      <ImageTextStrip
+      <TextImageStrip
         title="On demand information"
         text="Say something about on-demand info"
         image="Braun Parch/exploded_view.png"
         padding="top-bottom-padding"
+        reverse={true}
       />
       <TextImageStrip
         title="Using orientation points"
@@ -133,11 +133,12 @@ const HANA = () => {
         image="HANAScenario.png"
         padding="bottom-padding"
       />
-      <ImageTextStrip
+      <TextImageStrip
         title="A tactile dot"
         text="Tactile dot underneath fabric "
         image="Braun Parch/exploded_view.png"
         padding="top-bottom-padding"
+        reverse={true}
       />
       <TextImageStrip
         title="GPS and camera vision"
@@ -146,13 +147,14 @@ const HANA = () => {
         padding="bottom-padding"
       />
       <SectionLine title="Validation" padding="top-padding" />
-
-      <ImageTextStrip
+      <TextVideoStrip
         title="Prototyping a tactile dot"
-        text="Tactile dot underneath fabric "
-        image="HANA/TactileDotPrototype.jpg"
+        text="During the year, I wanted to challenge myself by learning to render in Blender. I spent a full month learning the program and rendering shot by shot. For a better experience turn on the music and watch it on full screen!"
+        video="jVQsnZeGv9E"
+        videoWidth="6"
         padding="top-bottom-padding"
-        rounded="true"
+        rounded={true}
+        reverse={true}
       />
       <Title
         title="User testing"

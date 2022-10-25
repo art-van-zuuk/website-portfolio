@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
-import ImageTextStrip from "../../components/ProjectComponents/InformationStrip/ImageTextStrip";
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
 import SkillImages from "../../components/ProjectComponents/SkillImages/SkillImages";
 
@@ -10,6 +9,7 @@ import Title from "../../components/ProjectComponents/Title/Title";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 import designProjectList from "../../information/DesignProjects";
 import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
+import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
 
 const BandAidDispenser = () => {
   // console.log("list: " + designProjectList);
@@ -24,11 +24,12 @@ const BandAidDispenser = () => {
         project={projectInfo.name}
       />
       <SkillImages skills={["solidworks", "building", "interview"]} />
-      <ImageTextStrip
+      <TextImageStrip
         title="User testing: From shape to model"
         text="To create a Band-Aid Dispenser with the optimal user experience, we created several foam and 3D-printed models. Each of these models was tested to create a new iteration with a better interactive experience."
         image="Band-Aid Dispenser/Prototype cut out.jpg"
         padding="top-bottom-padding"
+        reverse={true}
       />
       <CardColumns
         cardInfo={[
