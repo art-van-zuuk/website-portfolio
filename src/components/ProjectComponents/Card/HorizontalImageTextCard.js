@@ -11,7 +11,6 @@ function HorizonalImageTextCard(props) {
             <img
               src={"/images/Projects/" + props.image}
               className="card-img rounded-element"
-              alt="..."
             ></img>
           </Col>
           <Col className="col-md-7">

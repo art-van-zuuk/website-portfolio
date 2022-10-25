@@ -1,9 +1,9 @@
-function HandleURL(projectURL) {
+function HandleURL(projectURL, openType='_self') {
   //gets company name from URL
   const URLparams = new URLSearchParams(window.location.search);
   const companyName = URLparams.get("name");
 
-  const OpenURL = (projectURL) => {
+  const OpenURL = (projectURL, openType) => {
     
     var URL = projectURL;
 
@@ -21,12 +21,13 @@ function HandleURL(projectURL) {
       URL = URL + "?name=" + companyName;
     }
 
-    // console.log(URL);
-    window.open(URL, "_self", "noopener,noreferrer");
+
+    console.log("test " + openType);
+    window.open(URL, openType, "noopener,noreferrer");
   };
 
   //opens link
-  OpenURL(projectURL);
+  OpenURL(projectURL, openType);
 }
 
 export default HandleURL;

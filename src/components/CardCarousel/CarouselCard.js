@@ -22,7 +22,7 @@ function CarouselCard(props) {
       mouseUp < window.checkForDrag + 5 &&
       mouseUp > window.checkForDrag - 5
     ) {
-      HandleURL(URLLink);
+      HandleURL(props.project.url != null? props.project.url: URLLink, props.project.url != null? '_blank' : '_self');
     }
   };
 

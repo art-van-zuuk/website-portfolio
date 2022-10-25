@@ -45,7 +45,7 @@ const LaSelce = () => {
       />
       <TextImageStrip
         title="Passion for cooking "
-        text="Boretti is a company that takes passion to the modern kitchen by embracing the Italian lifestyle. This is what we tried to accomplish with ‘La Selce’ the successor of Appassionato. We accomplished this by creating an organic and natural look and a professional and satisfying interaction."
+        text="Boretti is a company that takes passion to the modern kitchen by embracing the Italian lifestyle. This is what we tried to accomplish with ‘La Selce’ the successor of Appassionato. We did this by creating an organic and natural look and a professional and satisfying interaction."
         image="La Selce/ImageGallery/TopView.jpg"
         padding="top-bottom-padding"
         rounded="true"
@@ -89,13 +89,13 @@ const LaSelce = () => {
           },
           {
             title: "Intuitive interface",
-            text: "The layout on the touchscreen mirrors the stove layout of the stoves, making the selection as easy as possible. The interface is simple and shows only the essential information.",
+            text: "The layout on the touchscreen mirrors the layout of the stoves, making the selection as easy as possible. The interface is simple and shows only the essential information.",
             image: "La Selce/Interface.jpg",
             objectFit: "cover",
           },
           {
             title: "Light, clicks and vibrations",
-            text: "La Selce uses multimodal feedback to create an understandable interaction, even while paying attention to your food. The ring clicks while rotating, the bottom light shines brighter when putting the stoves higher and a vibration motor gives feedback while using the touchscreen.",
+            text: "La Selce uses multimodal feedback to create an understandable interaction, even while paying attention to your food. The ring clicks while rotating, the bottom lights up as an indicator of the temperature and a vibration motor gives feedback while using the touchscreen.",
             image: "La Selce/Multimodal Feedback.png",
             objectFit: "cover",
           },
@@ -106,14 +106,14 @@ const LaSelce = () => {
       />
       <ImageTextStrip
         title="Creating the perfect ring"
-        text="We spend a long time perfecting the rotating ring. The turn had to feel satisfying, with the perfect amount of resistance, an array of magnets create 18 clicks per rotation, corresponding with the number of grooves on the outside, and the material had to feel comfortable and premium. After many iterations, we set on a design created from black anodized aluminium."
+        text="The rotating ring is designed to be satisfying and intuitive. Tight tolerances together with an array of magnets create the perfect resistance. After many iterations, we set on a design created from black anodized aluminium."
         image="La Selce/Ring.png"
         padding="top-bottom-padding"
         rounded="true"
       />
       <TextImageStrip
         title="Simulating a stove with a custom PCB"
-        text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. This is something the guide dog has to learn and navigation is currently not good enough."
+        text="With La Selce, we wanted to refer to the feeling of cooking on an authentic gas stove. To accomplish this, I designed a custom PCB with a ring of LEDs. It shines through a diffused layer of polycarbonate giving an even glow on the countertop. The colour temperature and light intensity could be adjusted to indicate the state of the selected stove."
         image="La Selce/LEDPCB.jpg"
         padding="top-bottom-padding"
         rounded="true"
@@ -124,23 +124,29 @@ const LaSelce = () => {
         alignment="center"
         padding="top-padding"
       />
+      <Title
+        title="Extensive testing to find the best parts, materials and sensors for a durable product"
+        size="h4"
+        alignment="center"
+        padding=""
+      />
       <CardColumns
         cardInfo={[
           {
             title: "Temperature resistance",
-            text: "The first prototype was a simple 3D-printed model in which a phone could be clamped. Using Protopie, an app prototyping program, I made a simple interface, which was controllable via scroll wheel from a mouse.",
+            text: "Temperature-resistant materials (silicone, PC & aluminium) protect the device against heat. A sensor inside the device helps warn the user when temperatures get too high.",
             image: "La Selce/Temperature.jpg",
             objectFit: "cover",
           },
           {
             title: "Fall resistance",
-            text: "After multiple iterations, a design was made that would closely resemble the shape of the final model. Therefore, ergonomics could be tested. Experiments with TPU were done and the electronics were almost finalized.",
+            text: "Droptests and simulations were performed to find the optimal shape and material to withstand a fall.",
             image: "La Selce/Fall.png",
             objectFit: "cover",
           },
           {
             title: "Watertightness",
-            text: "A few iterations later, we ordered the first SLS-printed model, which could be used during trainings. Based on this model, the final improvements were made.",
+            text: "Gaskets and watertight adhesion make sure that the device withstands dropping into water.",
             image: "La Selce/Watertightness.png",
             objectFit: "cover",
           },
@@ -151,14 +157,14 @@ const LaSelce = () => {
       />
       <ImageTextStrip
         title="Made for repairability"
-        text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. This is something the guide dog has to learn and navigation is currently not good enough."
+        text="La Selce is built in a stackable way making it easy to (dis)assemble. The use of screws and electronic connectors means that minimal adhesion is used."
         image="La Selce/Repairability.jpg"
         padding="top-bottom-padding"
         rounded="true"
       />
       <TextImageStrip
-        title="Designed for manufacuring"
-        text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. This is something the guide dog has to learn and navigation is currently not good enough."
+        title="Designed for manufacturing"
+        text="PBy extensive contact between manufacturers and experts, we designed parts that are not only cheap and easy to manufacture, but also look and feel premium."
         image="La Selce/Manufacturing.jpg"
         padding="top-padding"
       />

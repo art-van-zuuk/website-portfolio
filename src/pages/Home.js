@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <>
-      <SiteVideoBanner company="VanBerlo" />
+      <SiteVideoBanner company="René" />
       <CV />
       <HighlightProject projectList={designProjectList} project="MARCH VII" />
       <HighlightProject

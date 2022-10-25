@@ -4,16 +4,16 @@ var graphicProjectList = [];
 graphicProjectList.push({
   name: "Weerwater Track App",
   description: "Quick Food Dehydration using vacuum",
-  type: "Personal Project",
-  year: "2016",
+  type: "Work Project",
+  year: "2022",
   backgroundColor: "#eee",
 });
 graphicProjectList.push({
-  name: "Webite DARE",
-  description: "Quick Food Dehydration using vacuum",
-  type: "Personal Project",
-  year: "2016",
-  backgroundColor: "#000",
+  name: "Website DARE",
+  type: "Project MARCH",
+  year: "2021",
+  backgroundColor: "#e6e6e6",
+  url: "https://www.dare-info.com/",
 });
 graphicProjectList.push({
   name: "KARA Kickz",
@@ -31,18 +31,17 @@ graphicProjectList.push({
 });
 graphicProjectList.push({
   name: "Website René van Zuuk Architects",
-  description: "Quick Food Dehydration using vacuum",
-  type: "Personal Project",
-  year: "2016",
+  type: "Work Project",
+  year: "2020",
   backgroundColor: "#eee",
+  url: "https://iofestival.com/2019/",
 });
 graphicProjectList.push({
   name: "Website IOFestival",
-  description: "Buidling a website for the largest annual student festival in Europe",
-  explanation: "Each year, the Industrial Design studieassociation holds a festival. For this they build a new website each year. I was asked to build the website for the 2019 festival.",
-  type: "Personal Project",
-  year: "2016",
+  type: "Individual Project",
+  year: "2019",
   backgroundColor: "#36b18d",
+  url: "https://iofestival.com/2019/",
 });
 graphicProjectList.push({
   name: "Posters",
