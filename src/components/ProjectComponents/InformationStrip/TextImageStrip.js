@@ -19,7 +19,7 @@ function TextImageStrip(props) {
             <p className="text-lg-start">{props.text}</p>
           </Col>
           <Col className="col-lg-6 col-12">
-            <Fade right distance="50px">
+            <Fade bottom distance="50px">
               <img
                 className={props.rounded ? "rounded-element" : ""}
                 draggable="false"

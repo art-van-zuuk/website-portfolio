@@ -52,7 +52,7 @@ function TextVideoStrip(props) {
             <p className="text-lg-start">{props.text}</p>
           </Col>
           <Col className={"col-12 col-lg-" + videoWidth}>
-            <Fade right distance="50px">
+            <Fade bottom distance="50px">
               <PlayVideo video={props.video} rounded={props.rounded} />
             </Fade>
           </Col>

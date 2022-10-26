@@ -6,6 +6,7 @@ import TextImageStrip from "../../components/ProjectComponents/InformationStrip/
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
 import TextColumns from "../../components/ProjectComponents/InformationStrip/TextColumns";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
+import { photos } from "../../components/ProjectComponents/ImageGallery/IGHANA";
 import SkillImages from "../../components/ProjectComponents/SkillImages/SkillImages";
 
 import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
@@ -55,7 +56,7 @@ const HANA = () => {
         marginHeight=""
       />
       <Title
-        title="Problem with todays navigation"
+        title="Problems with today's navigation"
         size="h2"
         alignment="center"
         padding="top-padding"
@@ -64,19 +65,19 @@ const HANA = () => {
         cardInfo={[
           {
             title: "Inaccuracy",
-            text: "The first prototype was a simple 3D-printed model in which a phone could be clamped. Using Protopie, an app prototyping program, I made a simple interface, which was controllable via scroll wheel from a mouse.",
+            text: "GPS can be very inaccurate in urban environments. Especially for blind people, that rely only on sound, this is difficult, since taking a wrong turn at the wrong moment could be very confusing.",
             image: "HANA/Inaccurate.jpg",
             objectFit: "contain",
           },
           {
             title: "Occupy hearing sense",
-            text: "After multiple iterations, a design was made that would closely resemble the shape of the final model. Therefore, ergonomics could be tested. Experiments with TPU were done and the electronics were almost finalized.",
+            text: "Relying on your ears can be difficult and dangerous. It might be hard to hear the navigation when traffic is loud and it might be hard to hear traffic when the navigation is talking.",
             image: "HANA/Hearing.jpg",
             objectFit: "contain",
           },
           {
             title: "Unintuitive",
-            text: "A few iterations later, we ordered the first SLS-printed model, which could be used during trainings. Based on this model, the final improvements were made.",
+            text: "Sometimes it is hard to understand what the navigation means. ‘Go south’ or ‘head towards Churchstreet’ means nothing to a visually impaired person that cannot rely on a screen.",
             image: "HANA/Intuitive.jpg",
             objectFit: "contain",
           },
@@ -108,16 +109,18 @@ const HANA = () => {
       />
       <SectionLine title="Solution" padding="top-padding" />
       <TextImageStrip
-        title="On demand information"
-        text="Say something about on-demand info"
-        image="Braun Parch/exploded_view.png"
+        title="On-demand information"
+        text="To make the navigation process less interruptive in traffic, on-demand information can be used. The visually impaired person decides when to get or not to get directions."
+        image="HANA/onDemand.jpg"
         padding="top-bottom-padding"
+        maxWidth="400px"
+        maxHeight="400px"
         reverse={true}
       />
       <TextImageStrip
         title="Using orientation points"
-        text="Say something about on-demand info"
-        image="Braun Parch/exploded_view.png"
+        text="People with guide dogs walk from one orientation point to the next. This way the route is divided into smaller parts making it easier to comprehend and easier to understand where they are. Therefore, this is the bases for the HANA concept."
+        image="HANA/OrientationPoints.jpg"
         padding="bottom-padding"
       />
       <SectionLine title="The concept" padding="top-padding" />
@@ -135,21 +138,22 @@ const HANA = () => {
       />
       <TextImageStrip
         title="A tactile dot"
-        text="Tactile dot underneath fabric "
-        image="Braun Parch/exploded_view.png"
+        text="HANA makes use of a tactile dot located underneath a round piece of fabric at the index finger. This dot represents the location of the next orientation point compared to the user (static dot on fabric). Two motors make the dot move in 2D space."
+        image="HANA/TactileDot.jpg"
         padding="top-bottom-padding"
+        maxHeight="350px"
         reverse={true}
       />
       <TextImageStrip
         title="GPS and camera vision"
-        text="Tactile dot underneath fabric "
+        text="For general localization GPS is used, but to create a sub-meter accuracy, a camera recognizes orientation points on the route. Experts were consulted and a custom AI classification model was made to validate this principle."
         image="Braun Parch/exploded_view.png"
         padding="bottom-padding"
       />
       <SectionLine title="Validation" padding="top-padding" />
       <TextVideoStrip
         title="Prototyping a tactile dot"
-        text="During the year, I wanted to challenge myself by learning to render in Blender. I spent a full month learning the program and rendering shot by shot. For a better experience turn on the music and watch it on full screen!"
+        text="To validate the concept a working prototype was made. This was tested on a number of sighted and visually impaired people."
         video="jVQsnZeGv9E"
         videoWidth="6"
         padding="top-bottom-padding"
@@ -172,19 +176,19 @@ const HANA = () => {
         cardInfo={[
           {
             title: "Cognitive Ergonomics",
-            text: "The first prototype was a simple 3D-printed model in which a phone could be clamped. Using Protopie, an app prototyping program, I made a simple interface, which was controllable via scroll wheel from a mouse.",
+            text: "A number of visually impaired people were asked to describe the direction that the working prototype was giving.",
             image: "HANA/CognitiveErgonomics.png",
             objectFit: "cover",
           },
           {
             title: "Physical Ergonomics",
-            text: "After multiple iterations, a design was made that would closely resemble the shape of the final model. Therefore, ergonomics could be tested. Experiments with TPU were done and the electronics were almost finalized.",
+            text: "Extensive research was done on the placement, material and shape of the tactile surface.",
             image: "HANA/PhysicalErgonomics.png",
             objectFit: "cover",
           },
           {
             title: "The details",
-            text: "A few iterations later, we ordered the first SLS-printed model, which could be used during trainings. Based on this model, the final improvements were made.",
+            text: "Visually impaired people were asked to give their opinion about the overall concept and details of the final prototype.",
             image: "HANA/EaseOfUse.png",
             objectFit: "cover",
           },
@@ -193,22 +197,11 @@ const HANA = () => {
         cardWidth="4"
         padding="bottom-padding"
       />
-      <Title
-        title="Empowerment > exploring unfamiliar environments... quote I am proud of me and my dog when I easily walk a difficult route | 
-        3 Problem with todays navigation | 
-        Solution: On demand info & Using orientation points |
-        Solution: introduction to the concept | 
-        Concept: step by step image |
-        Testing: tactile dot prototypes |
-        Testing: graphs? | 
-        Final model photos, exploded view?
-        
-        "
-        size="p"
-        alignment="center"
+      <ImageGallery
+        project={projectInfo.name}
+        photos={photos}
         padding="top-padding"
       />
-
       <FullWidthVideo video="jTybKpj1jgA" padding="bottom-padding" />
     </>
   );

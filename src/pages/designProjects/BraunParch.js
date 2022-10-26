@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Footer from "../../components/Footer/Footer";
 import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
