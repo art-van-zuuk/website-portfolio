@@ -15,10 +15,18 @@ const FadeUp = batch(Fade(), Sticky(), MoveOut(0, -300));
 const SiteVideoBanner = (props) => {
   return (
     <ScrollContainer>
-      <div className="videoContainer">
-        <video src={video} autoPlay loop muted />
+      <div class="video-background">
+        <iframe
+          src={
+            "https://www.youtube.com/embed/" +
+            props.video +
+            "?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=" + props.video
+          }
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
       </div>
-      <ScrollPage page={2}>
+      <ScrollPage page={1}>
         <Animator animation={batch(StickyIn(), FadeIn())}>
           <div className="white-bg"></div>
         </Animator>
