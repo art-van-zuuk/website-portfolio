@@ -3,8 +3,6 @@ import {Row, Col} from "react-bootstrap";
 
 import { batch, Fade, MoveIn, MoveOut, Animator, ScrollContainer, ScrollPage, Sticky, StickyIn, StickyOut, ZoomIn, FadeIn, FadeOut, Move, ZoomOut } from 'react-scroll-motion';
 
-import video from './C0007.MP4'
-
 import '../../style.css'
 import "./SiteVideoBanner.css";
 

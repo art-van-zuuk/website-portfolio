@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 function CardCarousel(props) {
 
   const [width, setWidth] = useState(0);
+  const [indicatorIsShown, setIndicatorIsShown] = useState(true);
   const carousel = useRef();
 
   useEffect(() => {
@@ -46,33 +47,55 @@ function CardCarousel(props) {
         <img draggable="false" className="titleImage" src={image}></img>
       </Row>
       {/* Carousel */}
-      <motion.div
-        ref={carousel}
-        className="carousel"
-        whileTap={{ cursor: "grabbing" }}
+      <div
+        onMouseEnter={() => setIndicatorIsShown(false)}
+        onMouseLeave={() => setIndicatorIsShown(true)}
       >
-        <motion.div
-          className="testimonial-group"
-          drag="x"
-          dragConstraints={{ right: width, left: -width }}
-          animate={{ x: [-width, width] }}
-          transition={{
-            duration: totalStepTime,
-            repeat: Infinity,
-            repeatType: "reverse",
+        <div
+          style={{
+            position: "absolute",
+            opacity: indicatorIsShown ? "0.85" : "0",
+            zIndex: indicatorIsShown ? "10" : "0",
+            width: "100vw",
+            transition: "all 0.5s ease",
           }}
         >
-          <Row className="justify-content-center">
-            {props.projectList.map((project, index) => {
-              return (
-                <Col key={index} className="col-auto">
-                  <CarouselCard project={project} />
-                </Col>
-              );
-            })}
+          <Row className="justify-content-center align-items-center">
+              <img
+                draggable="false"
+                style={{marginTop: "60px", height: "100px", objectFit: "contain" }}
+                src="images/website/grab-carousel.png"
+              ></img>
           </Row>
+        </div>
+        <motion.div
+          ref={carousel}
+          className="carousel"
+          whileTap={{ cursor: "grabbing" }}
+        >
+          <motion.div
+            className="testimonial-group"
+            drag="x"
+            dragConstraints={{ right: width, left: -width }}
+            animate={{ x: [-width, width] }}
+            transition={{
+              duration: totalStepTime,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+          >
+            <Row className="justify-content-center">
+              {props.projectList.map((project, index) => {
+                return (
+                  <Col key={index} className="col-auto">
+                    <CarouselCard project={project} />
+                  </Col>
+                );
+              })}
+            </Row>
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
     </div>
   );
 }
