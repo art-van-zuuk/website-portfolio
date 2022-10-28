@@ -33,7 +33,7 @@ const MARCHVII = () => {
       <SkillImages skills={["photoshop", "catia", "blender", "3dprinting"]} />
       <HorizonalImageTextCard
         title="What is Project MARCH?"
-        text="Project MARCH is a non-profit DreamTeam, that aims to make someone with a spinal-cord-injury walk again by building an exoskeleton. The group, consisting of 26 students with different disciplines and backgrounds, worked full-time on this project for over a year. We were the seventh team."
+        text="Project MARCH is a non-profit DreamTeam, that aims to make someone with a spinal cord injury walk again by building an exoskeleton. The group consists of 26 students with different disciplines and backgrounds who worked full-time on this project for over a year. We were the seventh team."
         image="MARCH VII/TeamPhoto.jpg"
         padding="top-bottom-padding"
       />
@@ -51,7 +51,7 @@ const MARCHVII = () => {
         padding="top-padding"
       />
       <Title
-        title="From 2015 on, the MARCH exoskeletons have developed to be more functional and human-centered"
+        title="From 2015 on, the MARCH exoskeletons have developed to be more functional and human-centred"
         size="h4"
         alignment="start"
         padding=""
@@ -99,7 +99,12 @@ const MARCHVII = () => {
         alignment="start"
         padding="top-padding"
       />
-      <Title title="Idea sketches - Concept Sketches" size="h4" alignment="start" padding="" />
+      <Title
+        title="Idea sketches - Concept Sketches"
+        size="h4"
+        alignment="start"
+        padding=""
+      />
       <FullWidthImage
         project={projectInfo.name}
         image="Drawings.jpg"
@@ -112,7 +117,7 @@ const MARCHVII = () => {
         padding=""
       />
       <Title
-        title="By gathering inspiration from last year’s exoskeletons and exoskeletons that were already on the market, we created some ideas for the look and feel of our exoskeleton. To get a better understanding of how these details would translate to a full exoskeleton, we made four different concepts. For each style we created a collage for inspiration. The final design took inspiration from different elements of these concepts. Two of these concepts were made by Iza Bosch."
+        title="Thorough research by gathering inspiration from other exoskeletons and the human body, materials, colours & shapes was done to create ideas for the look and feel of our exoskeleton. These were worked out into four concepts, which we took as inspiration for the final design. Two of these concepts were made by Iza Bosch."
         size="p"
         alignment="start"
         padding="bottom-padding"
@@ -128,19 +133,19 @@ const MARCHVII = () => {
         cardInfo={[
           {
             title: "Organic and small design",
-            text: "The big motors, frame, and electronics could quickly lead to a bulky looking design. We aimed to overcome this by using some visual tricks. The black inside, and smart use of organic curves and details create an illusion, making the covers appear smaller than they are.",
+            text: "The big motors, frame, and electronics could quickly lead to a bulky looking design. We aimed to overcome this by using some visual tricks. The black inside and smart use of organic curves and details create an illusion, making the covers appear smaller.",
             image: "MARCH VII/BlackLine.jpg",
             objectFit: "cover",
           },
           {
-            title: "Focus on the users",
-            text: "In the past, putting on the covers was a tedious task. By incorporating magnets inside of the covers, they would always align and snap into place. Another big frustration was caused by the lack of cable management. We improved this by rethinking cable routes and tightening them down to the frame.",
+            title: "Magnets and cables",
+            text: "In the past, putting on the covers was a tedious task. By incorporating magnets inside of the covers, they would always align and snap into place. The lack of cable management caused another big frustration. We improved this by simpler and more reliable cable routing.",
             image: "MARCH VII/Magnets.jpg",
             objectFit: "cover",
           },
           {
             title: "Eye on safety",
-            text: "One of the main functions of the covers is to protect the team, the user, and the internals. A lot of testing was done to ensure the ergonomics for the user, strength of the covers and protection for the components.",
+            text: "One of the main functions of the covers is to protect the team, the user, and the internals. A lot of testing was done to ensure the ergonomics for the user, strength of the covers and protection for the components, while maintaining a highly modular and repairable design.",
             image: "MARCH VII/Hip.jpg",
             objectFit: "cover",
           },
@@ -151,7 +156,7 @@ const MARCHVII = () => {
       />
       <TextVideoStrip
         title="Making it visible"
-        text="During the year, I wanted to challenge myself by learning to render in Blender. I spent a full month learning the program and rendering shot by shot. For a better experience turn on the music and watch it on full screen!"
+        text="During the year, I wanted to challenge myself by learning to render in Blender. I spent a full month learning the program and rendering the video shot by shot. For a better experience turn on the music and watch it on full screen!"
         video="sgKixViuUBE"
         padding="top-bottom-padding"
         rounded={true}
@@ -166,7 +171,7 @@ const MARCHVII = () => {
       />
       <TextImageStrip
         title="Designing for manufacturing"
-        text="The final covers were made in PA12 using SLS-printing. This gave immense design freedom while being strong and precise. All while being relatively cheap for a single produced product."
+        text="The final covers were made in PA12 using SLS-printing. This gave immense design freedom while being strong, precise, and relatively cheap for a single-produced product."
         image="MARCH VII/Manufacturing.jpg"
         padding="top-bottom-padding"
         rounded={true}

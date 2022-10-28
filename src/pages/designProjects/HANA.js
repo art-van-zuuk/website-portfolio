@@ -34,14 +34,14 @@ const HANA = () => {
       />
       <HorizonalImageTextCard
         title="Research on the visually impaired with a guide dog"
-        text="This assignment started off with a research phase. Together with 4 other students we discovered what the main hurdles are for visually impaired people in their mobility. We did this by interviewing and observing them. The next phase was individual. I decided to focus on visually impaired people with a guide dog."
+        text="This assignment started off with a research phase. Together with 4 other students, we discovered what the main hurdles are for visually impaired people in terms of mobility. We did this by interviewing and observing them. The next phase was individual. I decided to focus on visually impaired people with a guide dog."
         image="MARCH VII/TeamPhoto.jpg"
         padding="top-bottom-padding"
       />
       <SectionLine title="Research" padding="top-padding" />
       <TextImageStrip
         title="Exploring unfamiliar environments"
-        text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. This is something the guide dog has to learn and navigation is currently not good enough."
+        text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. A guide dog is no navigator on its own and navigation technologies are currently not good enough."
         image="HANA/GDOnCrossing.jpg"
         padding="top-padding"
         rounded="true"
@@ -65,7 +65,7 @@ const HANA = () => {
         cardInfo={[
           {
             title: "Inaccuracy",
-            text: "GPS can be very inaccurate in urban environments. Especially for blind people, that rely only on sound, this is difficult, since taking a wrong turn at the wrong moment could be very confusing.",
+            text: "GPS can be very inaccurate in urban environments. Especially for blind people, that have no visual confirmation. Taking the wrong turn at the wrong moment could be very confusing.",
             image: "HANA/Inaccurate.jpg",
             objectFit: "contain",
           },
@@ -138,7 +138,7 @@ const HANA = () => {
       />
       <TextImageStrip
         title="A tactile dot"
-        text="HANA makes use of a tactile dot located underneath a round piece of fabric at the index finger. This dot represents the location of the next orientation point compared to the user (static dot on fabric). Two motors make the dot move in 2D space."
+        text="HANA makes use of a tactile dot located underneath a circular piece of fabric at the index finger. This dot represents the location of the next orientation point compared to the user (static dot on fabric). Two motors make the dot move in 2D space."
         image="HANA/TactileDot.jpg"
         padding="top-bottom-padding"
         maxHeight="350px"
