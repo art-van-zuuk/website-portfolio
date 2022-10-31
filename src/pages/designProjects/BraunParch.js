@@ -31,7 +31,7 @@ const BraunParch = () => {
       />
       <TextImageStrip
         title="Food waste..."
-        text="In Europe more than 50 per cent of food waste happens during consumption. A big portion of this comes from the lack of conservation of leftover food. Often this food is still perfectly edible and a good source of nutrition."
+        text="More than 50 per cent of food waste happens during consumption in Europe. A big portion of this comes from the lack of conservation of leftover food. Often this food is still perfectly edible and a good source of nutrition."
         image="Braun Parch/FoodWaste.jpg"
         padding="top-bottom-padding"
         rounded={true}
@@ -94,35 +94,36 @@ const BraunParch = () => {
         cardWidth="4"
         padding="bottom-padding"
       />
+      <FullWidthImage
+        project={projectInfo.name}
+        image="sketches.png"
+        padding="top-bottom-padding"
+      />
       <TextImageStrip
         title="Form follows functions"
-        text="The shape of the product is based on the function it has. The stainless steel container is rounded to withstand the pressure. The ribs on them are there to hold the trays in place. The plastic shell follows the shape of the container, but has a protrusion in the back to hold the electronics. The top has a big glass plate, so you could easily look in."
+        text="The stainless steel container is rounded to withstand the pressure. These incorporate ribs to hold the trays in place. The plastic shell follows the shape of the container, but has a protrusion in the back to hold the electronics. The top has a big glass plate, so you could easily look in."
         image="Braun Parch/exploded_view.png"
         padding="top-bottom-padding"
         reverse={true}
       />
-      <TextImageStrip
-        title="Old heritage, new style"
-        text="In this design I tried to create a balance between using the old ‘Braun Style’ and my own. I did this by looking into the details. Using horizontal patterns, button colours and Braun-like materials."
-        image="Braun Parch/thumbnail.png"
-        padding="bottom-padding"
-      />
       <FullWidthImage
         project={projectInfo.name}
         image="inspiration.jpg"
-        padding=""
+        padding="top-padding"
       />
       <Title
         title="Images by: Braun"
         size="p"
         alignment="start"
-        padding="padding-bottom"
-      />
-      <FullWidthImage
-        project={projectInfo.name}
-        image="sketches.png"
         padding="bottom-padding"
       />
+      <TextImageStrip
+        title="Old heritage, new style"
+        text="This design creates a balance between using the old ‘Braun Style’ and my own. The horizontal patterns, button colours and materials refer to the old style, while the organic shell is not often seen in Braun products."
+        image="Braun Parch/thumbnail.png"
+        padding="top-bottom-padding"
+      />
+
       <ImageGallery
         project={projectInfo.name}
         photos={photos}

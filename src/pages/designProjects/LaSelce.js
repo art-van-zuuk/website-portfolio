@@ -45,7 +45,7 @@ const LaSelce = () => {
       />
       <TextImageStrip
         title="Passion for cooking "
-        text="Boretti is a company that takes passion to the modern kitchen by embracing the Italian lifestyle. This is what we tried to accomplish with ‘La Selce’ the successor of Appassionato. We did this by creating an organic and natural look and a professional and satisfying interaction."
+        text="Boretti is a company that takes passion to the modern kitchen by embracing the Italian lifestyle. This is what we tried to accomplish with ‘La Selce’ the successor of Appassionato. We did this by creating an organic look, satisfying interaction and authentic elements."
         image="La Selce/ImageGallery/TopView.jpg"
         padding="top-bottom-padding"
         rounded="true"
@@ -107,14 +107,14 @@ const LaSelce = () => {
       <TextImageStrip
         title="Creating the perfect ring"
         text="The rotating ring is designed to be satisfying and intuitive. Tight tolerances together with an array of magnets create the perfect resistance. After many iterations, we set on a design created from black anodized aluminium."
-        image="La Selce/Ring.png"
+        image="La Selce/Proto-overview.png"
         padding="top-bottom-padding"
         rounded="true"
         reverse={true}
       />
       <TextImageStrip
         title="Simulating a stove with a custom PCB"
-        text="With La Selce, we wanted to refer to the feeling of cooking on an authentic gas stove. To accomplish this, I designed a custom PCB with a ring of LEDs. It shines through a diffused layer of polycarbonate giving an even glow on the countertop. The colour temperature and light intensity could be adjusted to indicate the state of the selected stove."
+        text="With La Selce, we wanted to refer to the feeling of cooking on an authentic gas stove. To accomplish this, I designed a custom PCB with LED ring. It shines through a diffused layer of polycarbonate giving an even glow on the countertop. The colour temperature and light intensity could be adjusted to indicate the state of the selected stove."
         image="La Selce/LEDPCB.jpg"
         padding="top-bottom-padding"
         rounded="true"
@@ -166,7 +166,7 @@ const LaSelce = () => {
       />
       <TextImageStrip
         title="Designed for manufacturing"
-        text="PBy extensive contact between manufacturers and experts, we designed parts that are not only cheap and easy to manufacture, but also look and feel premium."
+        text="Through extensive contact between manufacturers and experts, we designed parts that are not only cheap and easy to manufacture, but also look and feel premium."
         image="La Selce/Manufacturing.jpg"
         padding="top-padding"
       />

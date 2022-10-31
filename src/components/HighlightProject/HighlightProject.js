@@ -24,7 +24,7 @@ function HighlightProject(props) {
   return (
     <div className="App">
       <div
-        className="highlight-div"
+        className="top-bottom-padding"
         style={{
           background:
             "linear-gradient(" +
@@ -35,7 +35,7 @@ function HighlightProject(props) {
         }}
       >
         <Container className="site-width">
-          <Row className="text-start align-items-center justify-content-center gx-5 gy-5">
+          <Row className="text-center text-md-start align-items-center justify-content-center gx-5 gy-5">
             <Col md="auto" className="col-12">
               <Fade bottom distance="50px" delay={250}>
                 <img
@@ -45,8 +45,9 @@ function HighlightProject(props) {
                 ></img>
               </Fade>
             </Col>
-            <Col className="col-md-6 col-12">
-              <h2 style={{ color: projectInfo.textColor }}>
+            <Col className="col-md-6 col-11">
+              <h2 
+              style={{ color: projectInfo.textColor }}>
                 {" "}
                 {projectInfo.name}{" "}
               </h2>

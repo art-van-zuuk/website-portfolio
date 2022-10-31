@@ -56,14 +56,16 @@ function CardCarousel(props) {
             position: "absolute",
             opacity: indicatorIsShown ? "0.85" : "0",
             zIndex: indicatorIsShown ? "10" : "0",
-            width: "100vw",
+            width: "100px",
+            marginLeft: "calc(50% - 50px)",
             transition: "all 0.5s ease",
+            pointerEvents: "none",
           }}
         >
           <Row className="justify-content-center align-items-center">
               <img
                 draggable="false"
-                style={{marginTop: "60px", height: "100px", objectFit: "contain" }}
+                style={{marginTop: "75px", width: "100%", objectFit: "contain" }}
                 src="images/website/grab-carousel.png"
               ></img>
           </Row>

@@ -1,13 +1,17 @@
-import React from 'react';
-import {Row, Col} from "react-bootstrap";
+import React from "react";
+import { Col, Row } from "react-bootstrap";
 
-import { batch, Fade, MoveIn, MoveOut, Animator, ScrollContainer, ScrollPage, Sticky, StickyIn, StickyOut, ZoomIn, FadeIn, FadeOut, Move, ZoomOut } from 'react-scroll-motion';
+import {
+  Animator, batch,
+  Fade, FadeIn, MoveIn,
+  MoveOut, ScrollContainer,
+  ScrollPage,
+  Sticky,
+  StickyIn, ZoomIn
+} from "react-scroll-motion";
 
-import '../../style.css'
+import "../../style.css";
 import "./SiteVideoBanner.css";
-
-const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-const FadeUp = batch(Fade(), Sticky(), MoveOut(0, -300));
 
 ///Full size video banner with animated text. Requires: company
 const SiteVideoBanner = (props) => {
@@ -18,13 +22,26 @@ const SiteVideoBanner = (props) => {
           src={
             "https://www.youtube.com/embed/" +
             props.video +
-            "?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=" + props.video
+            "?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=" +
+            props.video
           }
           frameborder="0"
           allowfullscreen
         ></iframe>
       </div>
-      <ScrollPage page={1}>
+      <ScrollPage page={0}>
+        <Animator animation={batch(Sticky(),)}>
+          <div style={{height: "100vh"}}>
+            <img
+              style={{ postion: "absolute", marginTop: "calc(100vh - 45px)", opacity: "0.8"}}
+              draggable="false"
+              src={"/images/website/ScrollDown.png"}
+              height="35px"
+            ></img>
+          </div>
+        </Animator>
+      </ScrollPage>
+      <ScrollPage page={2}>
         <Animator animation={batch(StickyIn(), FadeIn())}>
           <div className="white-bg"></div>
         </Animator>
@@ -49,4 +66,4 @@ const SiteVideoBanner = (props) => {
   );
 };
 
-export default SiteVideoBanner; 
+export default SiteVideoBanner;

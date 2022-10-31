@@ -16,8 +16,8 @@ export const photos = [
     height: 1125,
   },
   {
-    src: "front_side.png",
-    width: 1687,
+    src: "holding.png",
+    width: 2000,
     height: 1125,
   },
 ];

@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
       <SiteVideoBanner
-        video="I-A6p4wQRxs"
+        video="Z3PsFc2NEXI"
         title="Hi Spark!"
         text="Dit is mijn portfolio voor jullie. Allereerst kun je mijn CV lezen, daarna heb ik vier projecten gehighlight die ik graag aan jullie laat zien."
       />
