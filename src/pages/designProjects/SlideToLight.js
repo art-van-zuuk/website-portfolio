@@ -47,7 +47,7 @@ const SlideToLight = () => {
       <TextImageStrip
         title="Many configurations"
         text="People with a guide dog are relatively mobile. The guide dog can lead them to known environments, watch the traffic and move around obstacles. However, exploring new environments is difficult. This is something the guide dog has to learn and navigation is currently not good enough."
-        image="Slide to light/Blocks.png"
+        image="Slide to Light/Blocks.png"
         padding="top-bottom-padding"
         rounded="true"
       />

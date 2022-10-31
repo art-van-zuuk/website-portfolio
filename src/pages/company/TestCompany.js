@@ -15,18 +15,21 @@ const TestCompany = () => {
 
   return (
     <>
-      <SiteVideoBanner company="Test Company" />
-      <CV />
-      <HighlightProject project="Braun Parch" />
-      <HighlightProject project="Slide to Light" />
-      <HighlightProject project="Camera Slider" />
-      <CardCarousel
-        projectList={designProjectList}
-        title={"designProjectsTitle"}
+      <SiteVideoBanner
+        video="Z3PsFc2NEXI"
+        title="Hi Lars!"
+        text="Dit is mijn portfolio voor jou. Vier van de projecten waar ik het meest trots op ben en waarvan ik graag aan jullie wil laten zien, zijn hieronder gehighlight. Maar als je..."
       />
-      {/* <CardCarousel projectList={projectList}/>
-        <CardCarousel projectList={projectList}/> */}
-      <Footer />
+      <CV />
+      <HighlightProject projectList={designProjectList} project="MARCH VII" />
+      <HighlightProject
+        projectList={designProjectList}
+        project="Input Device"
+      />
+      <HighlightProject projectList={designProjectList} project="La Selce" />
+      <HighlightProject projectList={designProjectList} project="HANA" />
+
+      <CardCarousel projectList={designProjectList} title={"Design Projects"} />
     </>
   );
 };
