@@ -20,18 +20,12 @@ const DustBuster = () => {
         projectList={designProjectList}
         project={projectInfo.name}
       />
-      <SkillImages skills={["photoshop", "illustrator", "3dprinting"]} />
+      <SkillImages skills={["photoshop", "illustrator", "building"]} />
       <Title
         title="From armadillo to dust buster"
         size="h2"
         alignment="center"
         padding="top-padding"
-      />
-      <Title
-        title="Speech has a display that is hidden behind an ultrathin layer of plastic foil. By using two-component injection moulding the foil and the housing melt together. The housing holds all the components and is joined together by snap fits."
-        size="p"
-        alignment="center"
-        padding=""
       />
       <FullWidthImage
         project={projectInfo.name}
@@ -40,13 +34,13 @@ const DustBuster = () => {
       />
       <TextImageStrip
         title="Inspiration from shape and texture"
-        text="With inspiration from existing Google products, user research on body placement and comfort, and modelling in clay and 3D prints we found the optimal shape for the product."
+        text="The most apparent visual features of an armadillo are the big scales, downward facing snout and tough appearance. From there I tried to translate this into a dust buster."
         image="Dust Buster/Inspiration.jpg"
         padding="top-bottom-padding"
-        rounded="true"
         maxHeight="400px"
         maxWidth="100%"
         reverse={true}
+        rounded="true"
       />
 
       <FullWidthImage

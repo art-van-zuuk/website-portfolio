@@ -10,10 +10,11 @@ import Title from "../../components/ProjectComponents/Title/Title";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
 import { photos } from "../../components/ProjectComponents/ImageGallery/IGGoogleSpeech";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
+import AnimatedCardColumns from "../../components/ProjectComponents/Card/AnimatedCardColumns";
 
-const GoogleSpeech = () => {
+const Speech = () => {
   //gets information about project
-  var projectInfo = GetProjectInfo(designProjectList, "Google Speech");
+  var projectInfo = GetProjectInfo(designProjectList, "Speech");
   return (
     <>
       <ProjectBanner
@@ -23,16 +24,16 @@ const GoogleSpeech = () => {
       <SkillImages skills={["photoshop", "illustrator", "3dprinting"]} />
       <TextImageStrip
         title="Integrating refugees using speech"
-        text="The big gap in culture and language most refugees experience leads to the holding back of their integration as well as being perceived as unpolite. Speech as a part of their integration course helps refugees overcome this gap in a quick and enjoyable way."
-        image="Google Speech/Scenario.jpg"
+        text="The big gap in culture and language most refugees experience holds back their integration and can be perceived as unpolite. Speech as a part of their integration course helps refugees overcome this gap in a quick and enjoyable way."
+        image="Speech/Scenario.jpg"
         padding="top-bottom-padding"
         maxHeight="600px"
         maxWidth="100%"
       />
       <TextImageStrip
         title="Finding the optimal shape"
-        text="With inspiration from existing Google products, user research on body placement and comfort, and modelling in clay and 3D prints we found the optimal shape for the product."
-        image="Google Speech/Drawings.jpg"
+        text="With inspiration from similar products, user research on body placement and comfort, and modelling in clay and 3D prints we found the optimal shape for the product."
+        image="Speech/Drawings.jpg"
         padding="top-bottom-padding"
         maxHeight="600px"
         maxWidth="350px"
@@ -55,6 +56,24 @@ const GoogleSpeech = () => {
         image="Exploded view.jpg"
         padding="bottom-padding"
       />
+
+      <AnimatedCardColumns
+        cardInfo={[
+          {
+            title: "Cross section of injection mould",
+            image: "Speech/Spuitgieten.jpg",
+            objectFit: "contain",
+          },
+          {
+            title: "Cross section of product",
+            image: "Speech/Section Speech.jpg",
+            objectFit: "contain",
+          },
+        ]}
+        imageHeight="150px"
+        cardWidth="6"
+        padding="bottom-padding"
+      />
       <ImageGallery
         project={projectInfo.name}
         photos={photos}
@@ -69,4 +88,4 @@ const GoogleSpeech = () => {
   );
 };
 
-export default GoogleSpeech;
+export default Speech;

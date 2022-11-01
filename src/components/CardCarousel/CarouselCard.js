@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "../../style.css";
 import "./CarouselCard.css";
 import HandleURL from "../../scripts/HandleURL";
 
-
 ///Card inside the carousel. Requires: name of project
 function CarouselCard(props) {
+
+  const [showVideo, setShowVideo] = useState(false);
 
   //changes name of project to URL format
   var URLLink = props.project.name.replace(/\s/g, "-");
@@ -23,6 +24,7 @@ function CarouselCard(props) {
       mouseUp > window.checkForDrag - 5
     ) {
       HandleURL(props.project.url != null? props.project.url: URLLink, props.project.url != null? '_blank' : '_self');
+      // setShowVideo(true);
     }
   };
 
@@ -32,42 +34,58 @@ function CarouselCard(props) {
   }
 
   return (
-    <div className="App">
-      {/* Animates while hover */}
-      <motion.div
-        className="text-start smallCard"
-        whileHover={{ scale: 1.03 }}
-        whileTap={{ scale: 0.97 }}
-        onMouseDown={(e) => mouseDownCoords(e)}
-        onMouseUp={(e) => clickOrDrag(e)}
-      >
-        <div
-          className="imgDiv"
-          style={{
-          background:
-            "linear-gradient(" +
-            props.project.backgroundColor +
-            ", " +
-            backgroundColor2 +
-            ")",
-        }}
+    <>
+      <div className="App">
+        {/* Animates while hover */}
+        <motion.div
+          className="text-start smallCard"
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
+          onMouseDown={(e) => mouseDownCoords(e)}
+          onMouseUp={(e) => clickOrDrag(e)}
         >
-          <img
-            draggable="false"
-            className="image"
-            src={"/images/Projects/" + props.project.name + "/thumbnail.png"}
-          ></img>
-        </div>
+          <div
+            className="imgDiv"
+            style={{
+              background:
+                "linear-gradient(" +
+                props.project.backgroundColor +
+                ", " +
+                backgroundColor2 +
+                ")",
+            }}
+          >
+            <img
+              draggable="false"
+              className="image"
+              src={"/images/Projects/" + props.project.name + "/thumbnail.png"}
+            ></img>
+          </div>
 
-        <div className="text">
-          <h5 className="text-center"> {props.project.name} </h5>
-          <p className="text-center">
-            {" "}
-            {props.project.type} in {props.project.year}{" "}
-          </p>
-        </div>
-      </motion.div>
-    </div>
+          <div className="text">
+            <h5 className="text-center"> {props.project.name} </h5>
+            <p className="text-center">
+              {" "}
+              {props.project.type} in {props.project.year}{" "}
+            </p>
+          </div>
+        </motion.div>
+      </div>
+      {/* Shows when video is pressed */}
+      {showVideo? 
+      <div 
+        style={{
+          position: "absolute",
+          top: "0",
+          height: "100vh",
+          width: "100vw",
+          backgroundColor: 'black',
+          opacity: "0.8",
+          overflow: "visible",
+
+        }}
+      ></div> : <div></div>}
+    </>
   );
 };
 

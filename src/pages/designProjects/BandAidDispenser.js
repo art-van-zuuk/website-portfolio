@@ -26,7 +26,7 @@ const BandAidDispenser = () => {
       <SkillImages skills={["solidworks", "building", "interview"]} />
       <TextImageStrip
         title="User testing: From shape to model"
-        text="To create a Band-Aid Dispenser with the optimal user experience, we created several foam and 3D-printed models. Each of these models was tested to create a new iteration with a better interactive experience."
+        text="To create a Band-Aid Dispenser with the optimal user experience, we created several foam and 3D-printed models. Each model was tested to create a new iteration with a better interactive experience."
         image="Band-Aid Dispenser/Prototype cut out.jpg"
         padding="top-bottom-padding"
         reverse={true}
@@ -47,7 +47,7 @@ const BandAidDispenser = () => {
           },
           {
             title: "Detailed prototype",
-            text: "Validating whether the full product is used as intended",
+            text: "Validating whether the complete model is used as intended",
             image: "Band-Aid Dispenser/UserTest3.jpg",
             objectFit: "cover",
           },

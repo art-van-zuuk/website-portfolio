@@ -32,8 +32,8 @@ const OnLocked = React.lazy(() =>
 );
 
 const BandAidDispenser = React.lazy(() => import("./pages/designProjects/BandAidDispenser"));
-const GoogleSpeech = React.lazy(() =>
-  import("./pages/designProjects/GoogleSpeech")
+const Speech = React.lazy(() =>
+  import("./pages/designProjects/Speech")
 );
 const DustBuster = React.lazy(() =>
   import("./pages/designProjects/DustBuster")
@@ -136,10 +136,10 @@ const App = () => {
             }
           />
           <Route
-            path="google-speech"
+            path="speech"
             element={
               <React.Suspense fallback={<>...</>}>
-                <GoogleSpeech />
+                <Speech />
               </React.Suspense>
             }
           />

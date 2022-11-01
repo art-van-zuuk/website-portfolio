@@ -33,7 +33,6 @@ function TextImageStrip(props) {
                   maxHeight:
                     props.maxHeight != null ? props.maxHeight : "300px",
                   maxWidth: props.maxWidth != null ? props.maxWidth : "100%",
-                  width: "400px",
                   objectFit: 'contain',
                 }}
               ></img>

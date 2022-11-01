@@ -47,8 +47,9 @@ designProjectList.push({
 });
 designProjectList.push({
   name: "Chessboard",
-  description: "A Chessboard as birthday gift for my sister",
-    explanation: "As a gift for my sisters 27th birthday, I made her a wooden chessboard. This was all constructed of mahogany wood and timber plywood, and later varnished. Details have been engraved using a lasercutter. The board can fold in two, so the chesspieces can be stored inside. A hinge together with magnets holds the two pieces together. when it is stored. The self-designed pieces are made using a SLA 3D-printer and also stay in position by magnets.",
+  description: "A Chessboard as a birthday gift for my sister",
+  explanation:
+    "As a gift for my sister's 27th birthday, I made her a wooden chessboard. This was all constructed of mahogany wood and timber plywood, and later varnished. Details have been engraved using a laser cutter. The board can fold in two, so the chess pieces can be stored inside. A hinge together with magnets holds the two pieces together. when it is stored. The pieces are made using an SLA 3D printer and also stay in position with magnets.",
   type: "Personal Project",
   year: "2021",
   team: "Individual project",
@@ -64,14 +65,7 @@ designProjectList.push({
   backgroundColor: "#eee",
 });
 
-designProjectList.push({
-  name: "Camera Slider",
-  description: "Quick Food Dehydration using vacuum",
-  type: "Personal Project",
-  year: "2016",
-  team: "Individual project",
-  backgroundColor: "#dcdbdd",
-});
+
 
 designProjectList.push({
   name: "Band-Aid Dispenser",
@@ -85,7 +79,7 @@ designProjectList.push({
   backgroundColor: "#1d2b1f",
 });
 designProjectList.push({
-  name: "Google Speech",
+  name: "Speech",
   description: "Helps refugees integrate using speech",
   explanation:
     "With the increasing individualism and conflicting subcultures, unpolite behaviour is seen to be rising. The scope of this assignment is to resolve this challenge in 2030 using an electronic device with speech as input. The first design phases were individual. After four weeks the pre-assigned group had to choose one concept to work out technically. We chose to continue with my concept.",
@@ -94,24 +88,35 @@ designProjectList.push({
   team: "Group project",
   backgroundColor: "#f8f8f8",
 });
-designProjectList.push({
-  name: "Dust Buster",
-  description: "Armadillo inspired vacuum cleaner",
-  explanation:
-    "With the inspiration of an animal, we had to create a dust buster with a certain expression. Form, colour, material and texture where really important in this course.",
-  type: "Personal Project",
-  year: "2017",
-  team: "Individual project",
-  backgroundColor: "#e4e2e9",
-});
+
 designProjectList.push({
   name: "Slide to Light",
-  description: "Quick Food Dehydration using vacuum",
+  description: "A puzzle game about closing the circuit",
+  explanation: "Nowadays, most professions face the problem of having workdays with too few breaks in between. By making a wooden, easy transportable distraction, we have been assigned to solve this problem. A designed a sliding game.",
   type: "Bachelor Project",
   year: "2018",
   team: "Individual project",
   backgroundColor: "#D7D6CA",
 });
+designProjectList.push({
+  name: "Dust Buster",
+  description: "Armadillo-inspired vacuum cleaner",
+  explanation:
+    "With the inspiration of an animal, we had to create a dust buster with a certain expression. The focus was on form, colour, material and texture. I decided to inspire my dust buster on the armadillo.",
+  type: "Bachelor Project",
+  year: "2017",
+  team: "Individual project",
+  backgroundColor: "#e4e2e9",
+});
+
+// designProjectList.push({
+//   name: "Camera Slider",
+//   description: "Quick Food Dehydration using vacuum",
+//   type: "Personal Project",
+//   year: "2016",
+//   team: "Individual project",
+//   backgroundColor: "#dcdbdd",
+// });
 
 
 export default designProjectList;
