@@ -6,9 +6,7 @@ import SiteVideoBanner from "../../components/SiteVideoBanner/SiteVideoBanner";
 import CV from "../../components/CV/CV";
 import CardCarousel from "../../components/CardCarousel/CardCarousel";
 import designProjectList from "../../information/DesignProjects";
-import Footer from "../../components/Footer/Footer";
 import HighlightProject from "../../components/HighlightProject/HighlightProject";
-import { useLocation } from "react-router-dom";
 
 
 const TestCompany = () => {

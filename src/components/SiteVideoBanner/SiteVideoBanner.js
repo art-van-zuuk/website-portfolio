@@ -30,10 +30,14 @@ const SiteVideoBanner = (props) => {
         ></iframe>
       </div>
       <ScrollPage page={0}>
-        <Animator animation={batch(Sticky(),)}>
-          <div style={{height: "100vh"}}>
+        <Animator animation={batch(Sticky())}>
+          <div style={{ height: "100vh" }}>
             <img
-              style={{ postion: "absolute", marginTop: "calc(100vh - 45px)", opacity: "0.8"}}
+              style={{
+                postion: "absolute",
+                marginTop: "calc(100vh - 45px)",
+                opacity: "0.8",
+              }}
               draggable="false"
               src={"/images/website/ScrollDown.png"}
               height="35px"
@@ -41,19 +45,19 @@ const SiteVideoBanner = (props) => {
           </div>
         </Animator>
       </ScrollPage>
-      <ScrollPage page={2}>
+      <ScrollPage page={1}>
         <Animator animation={batch(StickyIn(), FadeIn())}>
-          <div className="white-bg"></div>
+          <div className="color-bg"></div>
         </Animator>
         <Animator animation={batch(StickyIn(), FadeIn(), MoveIn())}>
           <Row className="align-items-center justify-content-center">
             <Col className="col-12 col-md-8">
-              <h2 className="text-center">
+              <h2 className="text-white text-center">
                 {props.title == "" || props.title == null
                   ? "A portfolio by Art"
                   : props.title}
               </h2>
-              <p className="text-dark text-center">
+              <p className="text-white text-center">
                 {props.text == "" || props.text == null
                   ? "This is my portfolio website. Here I showcase all of the project that I am proud of. A few projects are highlighted and I would love you to see them. But if you are interested to see more, feel free to look around."
                   : props.text}

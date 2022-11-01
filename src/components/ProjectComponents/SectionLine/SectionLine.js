@@ -6,7 +6,7 @@ function SectionLine(props) {
   return (
     <Container className={"site-width " + props.padding}>
       <Row className="align-items-center justify-content-center gx-4">
-        <Col className="col-md-auto">
+        <Col className="col-auto">
           <h4 className="text-center">{props.title}</h4>
         </Col>
         <Col>

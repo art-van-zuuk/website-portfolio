@@ -24,15 +24,15 @@ function TextVideoStrip(props) {
     };
 
 
+  // Sets the ratio between text and video
   if (props.videoWidth == null) {
     var videoWidth = 7;
   } else {
     var videoWidth = props.videoWidth;
   }
+  var textWidth = 12 - videoWidth;
 
-   var textWidth = 12 - videoWidth;
-
-
+  // Handles reversing text and image
   var reverseClass = props.reverse?  "flex-row-reverse" : "";
 
 
@@ -40,7 +40,10 @@ function TextVideoStrip(props) {
     <div className="App">
       <Container className={"site-width " + props.padding}>
         <Row
-          className={"d-flex align-items-center justify-content-center gx-5 " + reverseClass}
+          className={
+            "d-flex align-items-center justify-content-center gx-5 " +
+            reverseClass
+          }
         >
           <Col
             className={
@@ -52,9 +55,15 @@ function TextVideoStrip(props) {
             <p className="text-lg-start">{props.text}</p>
           </Col>
           <Col className={"col-12 col-lg-" + videoWidth}>
-            <Fade bottom distance="50px">
-              <PlayVideo video={props.video} rounded={props.rounded} />
-            </Fade>
+            <div style={{ maxWidth: props.maxWidth }}>
+              <Fade bottom distance="50px">
+                <PlayVideo
+                  video={props.video}
+                  rounded={props.rounded}
+                  aspectRatio={props.aspectRatio}
+                />
+              </Fade>
+            </div>
           </Col>
         </Row>
       </Container>

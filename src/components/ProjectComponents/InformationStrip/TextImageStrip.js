@@ -13,7 +13,12 @@ function TextImageStrip(props) {
   return (
     <div className="App">
       <Container className={"site-width " + props.padding}>
-        <Row className={"d-flex align-items-center justify-content-center gx-5 " + reverseClass}>
+        <Row
+          className={
+            "d-flex align-items-center justify-content-center gx-5 " +
+            reverseClass
+          }
+        >
           <Col className="text-lg-start col-lg-6 col-md-6">
             <h2>{props.title}</h2>
             <p className="text-lg-start">{props.text}</p>
@@ -27,7 +32,9 @@ function TextImageStrip(props) {
                 style={{
                   maxHeight:
                     props.maxHeight != null ? props.maxHeight : "300px",
-                  maxWidth: props.maxWidth != null ? props.maxWidth : "400px",
+                  maxWidth: props.maxWidth != null ? props.maxWidth : "100%",
+                  width: "400px",
+                  objectFit: 'contain',
                 }}
               ></img>
             </Fade>

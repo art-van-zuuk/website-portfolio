@@ -5,15 +5,15 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 function HorizonalImageTextCard(props) {
   return (
     <Container className={"site-width " + props.padding}>
-      <Card className="shadow rounded-element">
+      <Card className="shadow rounded-element"> 
         <Row className="no-gutters align-items-center justify-content-center gx-5">
-          <Col className="col-md-5">
+          <Col className="col-md-5 col-12">
             <img
               src={"/images/Projects/" + props.image}
               className="card-img rounded-element"
             ></img>
           </Col>
-          <Col className="col-md-7">
+          <Col className="col-md-7 col-12">
             <div className="card-body">
               <h5 className="card-title">{props.title}</h5>
               <p className="card-text">{props.text}</p>

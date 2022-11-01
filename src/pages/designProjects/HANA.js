@@ -35,7 +35,7 @@ const HANA = () => {
       <HorizonalImageTextCard
         title="Research on the visually impaired with a guide dog"
         text="This assignment started off with a research phase. Together with 4 other students, we discovered what the main hurdles are for visually impaired people in terms of mobility. We did this by interviewing and observing them. The next phase was individual. I decided to focus on visually impaired people with a guide dog."
-        image="MARCH VII/TeamPhoto.jpg"
+        image="HANA/Braille.jpg"
         padding="top-bottom-padding"
       />
       <SectionLine title="Research" padding="top-padding" />
@@ -144,11 +144,16 @@ const HANA = () => {
         maxHeight="350px"
         reverse={true}
       />
-      <TextImageStrip
+      <TextVideoStrip
         title="GPS and camera vision"
         text="For general localization GPS is used, but to create a sub-meter accuracy, a camera recognizes orientation points on the route. Experts were consulted and a custom AI classification model was made to validate this principle."
         image="Braun Parch/exploded_view.png"
-        padding="bottom-padding"
+        videoWidth="5"
+        padding="top-bottom-padding"
+        video="2_CDSOufP1c"
+        rounded={true}
+        aspectRatio= "720/1000"
+        maxWidth= "250px"
       />
       <SectionLine title="Validation" padding="top-padding" />
       <TextVideoStrip
