@@ -16,7 +16,7 @@ const TestCompany = () => {
       <SiteVideoBanner
         video="Z3PsFc2NEXI"
         title="Hi Lars!"
-        text="Dit is mijn portfolio voor jou. Vier van de projecten waar ik het meest trots op ben en waarvan ik graag aan jullie wil laten zien, zijn hieronder gehighlight. Maar als je..."
+        text="Dit is mijn portfolio website voor jou. Hieronder heb ik vier projecten gehighlight die ik graag aan jou wil laten zien. En dan nog een kort stukie text voor het bedrijf"
       />
       <CV />
       <HighlightProject projectList={designProjectList} project="MARCH VII" />

@@ -32,7 +32,7 @@ const LaSelce = () => {
           "solidworks",
           "arduino",
           "3dprinting",
-          "manufacturing",
+          "building",
         ]}
       />
       <TextImageStrip

@@ -8,7 +8,6 @@ import FullWidthImage from "../../components/ProjectComponents/InformationStrip/
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 import Title from "../../components/ProjectComponents/Title/Title";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
-import AnimatedCardColumns from "../../components/ProjectComponents/Card/AnimatedCardColumns";
 import { photos } from "../../components/ProjectComponents/ImageGallery/IGSlideToLight";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 

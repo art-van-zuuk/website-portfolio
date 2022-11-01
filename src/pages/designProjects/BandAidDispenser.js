@@ -23,7 +23,7 @@ const BandAidDispenser = () => {
         projectList={designProjectList}
         project={projectInfo.name}
       />
-      <SkillImages skills={["solidworks", "building", "interview"]} />
+      <SkillImages skills={["solidworks", "building", "userresearch"]} />
       <TextImageStrip
         title="User testing: From shape to model"
         text="To create a Band-Aid Dispenser with the optimal user experience, we created several foam and 3D-printed models. Each model was tested to create a new iteration with a better interactive experience."

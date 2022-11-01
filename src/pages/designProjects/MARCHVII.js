@@ -30,7 +30,7 @@ const MARCHVII = () => {
         projectList={designProjectList}
         project={projectInfo.name}
       />
-      <SkillImages skills={["photoshop", "catia", "blender", "3dprinting"]} />
+      <SkillImages skills={["photoshop", "catia", "blender", "3dprinting", "building"]} />
       <HorizonalImageTextCard
         title="What is Project MARCH?"
         text="Project MARCH is a non-profit DreamTeam, that aims to make someone with a spinal cord injury walk again by building an exoskeleton. The group consists of 26 students with different disciplines and backgrounds who worked full-time on this project for over a year. We were the seventh team."

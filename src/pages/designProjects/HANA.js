@@ -30,7 +30,7 @@ const HANA = () => {
         project={projectInfo.name}
       />
       <SkillImages
-        skills={["photoshop", "indesign", "solidworks", "3dprinting"]}
+        skills={["photoshop", "indesign", "solidworks", "3dprinting", "userresearch"]}
       />
       <HorizonalImageTextCard
         title="Research on the visually impaired with a guide dog"
