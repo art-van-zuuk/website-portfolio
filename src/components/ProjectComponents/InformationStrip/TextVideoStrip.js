@@ -1,34 +1,22 @@
-import React, { useRef, useEffect, useState } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ReactPlayer from "react-player";
-import YouTube from "react-youtube";
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
-import "../../../style.css";
 import PlayVideo from "../../../scripts/PlayVideo";
+import "../../../style.css";
 
 ///Text + Image strip with image on the right side. Requires: image, title and text
 function TextVideoStrip(props) {
 
-    const videoOptions = {
-      playerVars: {
-        autoplay: 1,
-        controls: 0,
-        rel: 0,
-        showinfo: 0,
-        mute: 1,
-        loop: 1,
-        playlist: props.video,
-      },
-    };
-
+  
 
   // Sets the ratio between text and video
+  var videoWidth = 0;
   if (props.videoWidth == null) {
-    var videoWidth = 7;
+    videoWidth = 7;
   } else {
-    var videoWidth = props.videoWidth;
+    videoWidth = props.videoWidth;
   }
   var textWidth = 12 - videoWidth;
 

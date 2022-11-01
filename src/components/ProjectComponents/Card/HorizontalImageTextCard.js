@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 
 ///Creates a grid of images in rows. Requires: list of photos with src, width & height and name of project
 function HorizonalImageTextCard(props) {
@@ -9,6 +9,7 @@ function HorizonalImageTextCard(props) {
         <Row className="no-gutters align-items-center justify-content-center gx-5">
           <Col className="col-md-5 col-12">
             <img
+              alt=""
               src={"/images/Projects/" + props.image}
               className="card-img rounded-element"
             ></img>

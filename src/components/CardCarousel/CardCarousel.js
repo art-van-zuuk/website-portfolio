@@ -44,7 +44,7 @@ function CardCarousel(props) {
     <div className="App card-carousel-div">
       {/* Title above carousel */}
       <Row className="justify-content-center">
-        <img draggable="false" className="titleImage" src={image}></img>
+        <img alt='' draggable="false" className="titleImage" src={image}></img>
       </Row>
       {/* Carousel */}
       <div
@@ -64,6 +64,7 @@ function CardCarousel(props) {
         >
           <Row className="justify-content-center align-items-center">
               <img
+                alt=""
                 draggable="false"
                 style={{marginTop: "75px", width: "100%", objectFit: "contain" }}
                 src="images/website/grab-carousel.png"

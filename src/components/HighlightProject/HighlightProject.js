@@ -39,6 +39,7 @@ function HighlightProject(props) {
             <Col md="auto" className="col-12">
               <Fade bottom distance="50px" delay={250}>
                 <img
+                  alt="Highlight project"
                   className="highlight-project-image"
                   draggable="false"
                   src={"/images/Projects/" + props.project + "/thumbnail.png"}

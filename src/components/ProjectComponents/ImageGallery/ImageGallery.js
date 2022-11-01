@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
 ///Image gallery with horizontal image rows. Requires: project and list of photos
@@ -9,9 +9,9 @@ import Gallery from "react-photo-gallery";
 function ImageGallery(props) {
 
   ///Changes the prefix of source to only enter the file name in the list
-  props.photos.map((object, index) => {
-    object.src = "/images/Projects/" + props.project + "/ImageGallery/" + object.src;
-  });
+  props.photos.map((object, index) => (
+    object.src = "/images/Projects/" + props.project + "/ImageGallery/" + object.src
+  ));
 
   return (
     <Fade>

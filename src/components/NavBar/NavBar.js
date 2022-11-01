@@ -1,19 +1,13 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { Button } from 'react-bootstrap'
-import { useNavigate, useLocation } from "react-router-dom"
+import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
 
 import HandleURL from "../../scripts/HandleURL";
-import '../../style.css'
-import './NavBar.css'
+import '../../style.css';
+import './NavBar.css';
 
 ///Navigation bar on the top of the site
-const NavBar = (props) => {
+const NavBar = () => {
 
-
-  //opens link
-  const open = (url) => {
-    window.open(url, "_self", "noopener,noreferrer");
-  };
 
   // Change nav color when scrolling
   const [color, setColor] = useState(false);

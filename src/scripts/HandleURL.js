@@ -12,7 +12,7 @@ function HandleURL(projectURL, openType='_self') {
     URL = URL.toLowerCase();
 
     //navigates to company home page if there is one
-    if((URL == "" || URL == "/") && companyName != null){
+    if((URL === "" || URL === "/") && companyName != null){
       URL = companyName
     }
 

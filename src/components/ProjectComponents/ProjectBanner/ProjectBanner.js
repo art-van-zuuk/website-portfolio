@@ -1,11 +1,11 @@
-import React, { useRef, useEffect, useState } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
+import GetProjectInfo from "../../../scripts/GetProjectInfo";
 import "../../../style.css";
 import "./ProjectBanner.css";
-import GetProjectInfo from "../../../scripts/GetProjectInfo";
 
 ///Banner at top of project. Requires: project
 function ProjectBanner(props) {
@@ -67,6 +67,7 @@ function ProjectBanner(props) {
                 <img
                   className="ProjectBannerImage"
                   draggable="false"
+                  alt={""}
                   src={
                     "/images/Projects/" + projectInfo.name + "/thumbnail.png"
                   }

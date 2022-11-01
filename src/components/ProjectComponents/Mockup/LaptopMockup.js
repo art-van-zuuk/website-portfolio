@@ -3,21 +3,22 @@
 function LaptopMockup(props) {
 
 
-    var width = "1000px";
-    var imageWidth = 800;
-    var imageHeight = 480;
+    // var width = "1000px";
+    // var imageWidth = 800;
+    // var imageHeight = 480;
     // var height = ((width / imageHeight) * imageWidth).toString + "px";
     // console.log(height);
 
     return (
       <div
         style={{
-            width: "700px",
-            padding: "50px",
-            backgroundColor: "red",
+          width: "700px",
+          padding: "50px",
+          backgroundColor: "red",
         }}
       >
         <img
+          alt="Mockup"
           draggable="false"
           src={"/images/Projects/" + props.project + "/" + props.image}
           style={{
@@ -37,6 +38,7 @@ function LaptopMockup(props) {
           }}
         >
           <img
+            alt="Mockup"
             draggable="false"
             src={"/images/Projects/" + props.project + "/" + props.image}
             style={{ width: "100%", overflow: "hidden" }}

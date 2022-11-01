@@ -1,22 +1,22 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
 
-import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
-import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
+import { photos } from "../../components/ProjectComponents/ImageGallery/IGHANA";
+import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
 import TextColumns from "../../components/ProjectComponents/InformationStrip/TextColumns";
-import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
-import { photos } from "../../components/ProjectComponents/ImageGallery/IGHANA";
+import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
+import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
 import SkillImages from "../../components/ProjectComponents/SkillImages/SkillImages";
 
-import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
-import Title from "../../components/ProjectComponents/Title/Title";
-import GetProjectInfo from "../../scripts/GetProjectInfo";
-import designProjectList from "../../information/DesignProjects";
 import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
 import HorizonalImageTextCard from "../../components/ProjectComponents/Card/HorizontalImageTextCard";
-import SectionLine from "../../components/ProjectComponents/SectionLine/SectionLine";
+import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
 import TextVideoStrip from "../../components/ProjectComponents/InformationStrip/TextVideoStrip";
+import SectionLine from "../../components/ProjectComponents/SectionLine/SectionLine";
+import Title from "../../components/ProjectComponents/Title/Title";
+import designProjectList from "../../information/DesignProjects";
+import GetProjectInfo from "../../scripts/GetProjectInfo";
 
 const HANA = () => {
 

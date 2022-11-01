@@ -1,6 +1,6 @@
-import React, { useRef, useEffect, useState } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
 import "../../../style.css";
@@ -26,6 +26,7 @@ function TextImageStrip(props) {
           <Col className="col-lg-6 col-12">
             <Fade bottom distance="50px">
               <img
+              alt=""
                 className={props.rounded ? "rounded-element" : ""}
                 draggable="false"
                 src={"/images/Projects/" + props.image}

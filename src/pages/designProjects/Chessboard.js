@@ -1,13 +1,12 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
 
-import Footer from "../../components/Footer/Footer";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 
 import { photos } from "../../components/ProjectComponents/ImageGallery/IGChessboard";
 import Title from "../../components/ProjectComponents/Title/Title";
-import GetProjectInfo from "../../scripts/GetProjectInfo";
 import designProjectList from "../../information/DesignProjects";
+import GetProjectInfo from "../../scripts/GetProjectInfo";
 
 
 const Chessboard = () => {

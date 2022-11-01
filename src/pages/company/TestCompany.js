@@ -1,12 +1,12 @@
-import React, {useContext, useEffect} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
 import "../../style.css";
 
-import SiteVideoBanner from "../../components/SiteVideoBanner/SiteVideoBanner";
-import CV from "../../components/CV/CV";
 import CardCarousel from "../../components/CardCarousel/CardCarousel";
-import designProjectList from "../../information/DesignProjects";
+import CV from "../../components/CV/CV";
 import HighlightProject from "../../components/HighlightProject/HighlightProject";
+import SiteVideoBanner from "../../components/SiteVideoBanner/SiteVideoBanner";
+import designProjectList from "../../information/DesignProjects";
 
 
 const TestCompany = () => {

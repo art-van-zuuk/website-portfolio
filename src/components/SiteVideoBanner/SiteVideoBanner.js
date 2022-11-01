@@ -2,12 +2,10 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 
 import {
-  Animator, batch,
-  Fade, FadeIn, MoveIn,
-  MoveOut, ScrollContainer,
+  Animator, batch, FadeIn, MoveIn, ScrollContainer,
   ScrollPage,
   Sticky,
-  StickyIn, ZoomIn
+  StickyIn
 } from "react-scroll-motion";
 
 import "../../style.css";
@@ -19,6 +17,7 @@ const SiteVideoBanner = (props) => {
     <ScrollContainer>
       <div class="video-background">
         <iframe
+          title="SiteVideoBanner"
           src={
             "https://www.youtube.com/embed/" +
             props.video +
@@ -33,6 +32,7 @@ const SiteVideoBanner = (props) => {
         <Animator animation={batch(Sticky())}>
           <div style={{ height: "100vh" }}>
             <img
+              alt=""
               style={{
                 postion: "absolute",
                 marginTop: "calc(100vh - 45px)",
@@ -53,12 +53,12 @@ const SiteVideoBanner = (props) => {
           <Row className="align-items-center justify-content-center">
             <Col className="col-12 col-md-8">
               <h2 className="text-white text-center">
-                {props.title == "" || props.title == null
+                {props.title === "" || props.title === null
                   ? "A portfolio by Art"
                   : props.title}
               </h2>
               <p className="text-white text-center">
-                {props.text == "" || props.text == null
+                {props.text === "" || props.text === null
                   ? "This is my portfolio website. Here I showcase all of the project that I am proud of. A few projects are highlighted and I would love you to see them. But if you are interested to see more, feel free to look around."
                   : props.text}
               </p>

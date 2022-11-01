@@ -1,15 +1,12 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
 
-import Footer from "../../components/Footer/Footer";
-import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 
-import { photos } from "../../components/ProjectComponents/ImageGallery/IGPosters";
 import Title from "../../components/ProjectComponents/Title/Title";
 
-import GetProjectInfo from "../../scripts/GetProjectInfo";
-import graphicProjectList from "../../information/GraphicProjects";
 import LaptopMockup from "../../components/ProjectComponents/Mockup/LaptopMockup";
+import graphicProjectList from "../../information/GraphicProjects";
+import GetProjectInfo from "../../scripts/GetProjectInfo";
 
 const WebsiteIOFestival = () => {
   //gets information about project

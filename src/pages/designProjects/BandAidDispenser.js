@@ -1,15 +1,15 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
 
-import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
+import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
 import SkillImages from "../../components/ProjectComponents/SkillImages/SkillImages";
 
-import Title from "../../components/ProjectComponents/Title/Title";
-import GetProjectInfo from "../../scripts/GetProjectInfo";
-import designProjectList from "../../information/DesignProjects";
 import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
+import Title from "../../components/ProjectComponents/Title/Title";
+import designProjectList from "../../information/DesignProjects";
+import GetProjectInfo from "../../scripts/GetProjectInfo";
 
 const BandAidDispenser = () => {
   // console.log("list: " + designProjectList);

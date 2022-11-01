@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 ///Creates a grid of images in rows. Requires: list of photos with src, width & height and name of project
 function SkillImages(props) {
@@ -16,6 +16,7 @@ function SkillImages(props) {
               <img
                 draggable="false"
                 src={"/images/website/SkillImages/" + image + ".jpg"}
+                alt={''}
                 style={{
                   height: "50px",
                   marginTop: "20px",

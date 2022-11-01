@@ -1,13 +1,11 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
+import React from "react";
+import HandleURL from "../../scripts/HandleURL";
 import "../../style.css";
 import "./CarouselCard.css";
-import HandleURL from "../../scripts/HandleURL";
 
 ///Card inside the carousel. Requires: name of project
 function CarouselCard(props) {
-
-  const [showVideo, setShowVideo] = useState(false);
 
   //changes name of project to URL format
   var URLLink = props.project.name.replace(/\s/g, "-");
@@ -56,6 +54,7 @@ function CarouselCard(props) {
             }}
           >
             <img
+              alt=""
               draggable="false"
               className="image"
               src={"/images/Projects/" + props.project.name + "/thumbnail.png"}
@@ -71,20 +70,6 @@ function CarouselCard(props) {
           </div>
         </motion.div>
       </div>
-      {/* Shows when video is pressed */}
-      {showVideo? 
-      <div 
-        style={{
-          position: "absolute",
-          top: "0",
-          height: "100vh",
-          width: "100vw",
-          backgroundColor: 'black',
-          opacity: "0.8",
-          overflow: "visible",
-
-        }}
-      ></div> : <div></div>}
     </>
   );
 };

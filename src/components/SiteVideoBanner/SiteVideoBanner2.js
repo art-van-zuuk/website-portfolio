@@ -1,9 +1,9 @@
 import React from 'react';
-import {Row, Col} from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
-import { batch, Fade, MoveIn, MoveOut, Animator, ScrollContainer, ScrollPage, Sticky, StickyIn, StickyOut, ZoomIn, FadeIn, FadeOut, Move, ZoomOut } from 'react-scroll-motion';
+import { batch, Fade, FadeIn, MoveOut, Sticky, StickyIn, ZoomIn } from 'react-scroll-motion';
 
-import '../../style.css'
+import '../../style.css';
 import "./SiteVideoBanner.css";
 
 const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());

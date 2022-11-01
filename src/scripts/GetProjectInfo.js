@@ -4,12 +4,12 @@ function GetProjectInfo(designProjectList, chosenProject) {
   var projectInfo = {};
 
   designProjectList.map((project, index) => {
-    if (Object.values(project)[0] == chosenProject) {
+    if (Object.values(project)[0] === chosenProject) {
       projectInfo = designProjectList[index];
     }
+    return projectInfo;
   });
 
-  return projectInfo;
 }
 
-export default GetProjectInfo;
+export default GetProjectInfo; 

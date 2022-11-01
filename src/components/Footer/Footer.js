@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../style.css'
-import './Footer.css'
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import '../../style.css';
+import './Footer.css';
 
 
 
@@ -22,7 +22,7 @@ const Footer = () => {
                   <li>
                     <a href="design@artvanzuuk.nl">
                       <img
-                        src={"/images/website/Socials/" + "mail.png"}
+                        src="/images/website/Socials/mail.png"
                         className="social-icon"
                         alt="..."
                       ></img>
@@ -33,7 +33,7 @@ const Footer = () => {
                   <li>
                     <a href="https://arizonaatwork.com">
                       <img
-                        src={"/images/website/Socials/" + "linkedin.png"}
+                        src="/images/website/Socials/linkedin.png"
                         className="social-icon"
                         alt="..."
                       ></img>

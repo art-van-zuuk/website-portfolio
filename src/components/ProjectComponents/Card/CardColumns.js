@@ -1,5 +1,5 @@
-import React, {Image} from "react";
-import { Container, Row, Col, Card, CardColumn } from "react-bootstrap";
+import React from "react";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 
 ///Creates a row of cards with image, title and text
@@ -16,6 +16,7 @@ function CardColumns(props) {
               >
                 <Card className="rounded-element border-0 w-100 ">
                   <img
+                    alt=""
                     className={
                       "card-img-top rounded-element p-" + props.imagePadding
                     }

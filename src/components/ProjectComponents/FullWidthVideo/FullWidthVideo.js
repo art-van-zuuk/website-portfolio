@@ -1,10 +1,9 @@
-import React, { useRef, useEffect, useState } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ReactPlayer from "react-player";
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 
-import "../../../style.css";
 import PlayVideo from "../../../scripts/PlayVideo";
+import "../../../style.css";
 
 
 ///Full with image. Requires: name of image and project

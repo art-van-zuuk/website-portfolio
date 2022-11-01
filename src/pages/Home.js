@@ -1,13 +1,13 @@
-import React, { useContext, useEffect} from "react";
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '../style.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import '../style.css';
 
-import SiteVideoBanner from "../components/SiteVideoBanner/SiteVideoBanner";
-import CV from '../components/CV/CV';
 import CardCarousel from '../components/CardCarousel/CardCarousel';
+import CV from '../components/CV/CV';
+import HighlightProject from '../components/HighlightProject/HighlightProject';
+import SiteVideoBanner from "../components/SiteVideoBanner/SiteVideoBanner";
 import designProjectList from "../information/DesignProjects";
 import graphicProjectList from "../information/GraphicProjects";
-import HighlightProject from '../components/HighlightProject/HighlightProject';
 
 
 const Home = () => {

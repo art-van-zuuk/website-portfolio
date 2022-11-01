@@ -1,15 +1,15 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
 
-import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
-import GetProjectInfo from "../../scripts/GetProjectInfo";
-import designProjectList from "../../information/DesignProjects";
-import SkillImages from "../../components/ProjectComponents/SkillImages/SkillImages";
-import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
-import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
-import Title from "../../components/ProjectComponents/Title/Title";
-import HorizonalImageTextCard from "../../components/ProjectComponents/Card/HorizontalImageTextCard";
 import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
+import HorizonalImageTextCard from "../../components/ProjectComponents/Card/HorizontalImageTextCard";
+import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
+import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
+import ProjectBanner from "../../components/ProjectComponents/ProjectBanner/ProjectBanner";
+import SkillImages from "../../components/ProjectComponents/SkillImages/SkillImages";
+import Title from "../../components/ProjectComponents/Title/Title";
+import designProjectList from "../../information/DesignProjects";
+import GetProjectInfo from "../../scripts/GetProjectInfo";
 
 const InputDevice = () => {
   //gets information about project
