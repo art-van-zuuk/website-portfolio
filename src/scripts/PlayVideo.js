@@ -10,7 +10,7 @@ function PlayVideo(props) {
         src={
           "https://www.youtube.com/embed/" +
           props.video +
-          "?controls=1&mute=1&showinfo=0&rel=0&autoplay=1&loop=1&playlist=" +
+          "?controls=1&referrerpolicy=no-referrer&mute=1&showinfo=0&rel=0&autoplay=1&loop=1&playlist=" +
           props.video
         }
         // allow="autoplay; encrypted-media"
