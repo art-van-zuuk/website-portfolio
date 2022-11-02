@@ -58,13 +58,17 @@ const SiteVideoBanner = (props) => {
     <div style={{ backgroundColor: "#080c2e" }}>
       <ScrollContainer>
         {/* Video background */}
-        <div className="video-background" key={0} style={{ opacity: transparancy }}>
+        <div
+          className="video-background"
+          key={0}
+          style={{ opacity: transparancy }}
+        >
           <iframe
             title="SiteVideoBanner"
             src={
               "https://www.youtube.com/embed/" +
               props.video +
-              "?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=" +
+              "?controls=0&referrerpolicy=no-referrer&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=" +
               props.video
             }
             frameBorder="0"
