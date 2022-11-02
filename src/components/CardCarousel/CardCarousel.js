@@ -48,6 +48,7 @@ function CardCarousel(props) {
       </Row>
       {/* Carousel */}
       <div
+        style={{width: "100%"}}
         onMouseEnter={() => setIndicatorIsShown(false)}
         onMouseLeave={() => setIndicatorIsShown(true)}
       >

@@ -4,7 +4,6 @@ import Slide from "react-reveal/Slide";
 
 import "../../style.css";
 import "./CV.css";
-import image from "./Portfolio picture bw.png";
 
 ///Item in CV for Work Experience and Eduction. Requires: allignment and information
 function TimelineItem(props) {
@@ -56,7 +55,7 @@ function CV() {
               </Col>
               <Col md="auto" className="col-12 text-center">
                 <Slide right>
-                  <img alt='' className="CVImage" draggable="false" src={image}></img>
+                  <img alt='' className="CVImage" draggable="false" src="images/website/Portfolio picture bw.png"></img>
                 </Slide>
               </Col>
             </Row>
