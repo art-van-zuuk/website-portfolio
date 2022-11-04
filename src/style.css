@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:wght@0,600;0,800;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
 body {
@@ -53,18 +54,18 @@ body {
 }
 
 p {
-    font-family: 'Roboto';
-    font-size: small;
-    font-weight: normal;
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    font-weight: 500;
     line-height: 24px;
     color: var(--text-color);
     
 }
 
 b {
-    font-family: 'Roboto', sans-serif;
-    font-size: small;
-    font-weight: bold;
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    font-weight: 700;
     line-height: 24px;
     color: var(--text-color);
 }
@@ -88,7 +89,7 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Nunito Sans';
     font-weight: 300;
 }

@@ -26,11 +26,12 @@
 
 .CVDate {
     line-height: 3px;
+    font-size: 12px;
     color: var(--text-color);
 }
 
 .CVTitle{
-    font-weight: 600;
+    font-weight: bold;
     font-size: 16px;
     line-height: 16px;
     color: var(--text-color);

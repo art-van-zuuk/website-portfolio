@@ -74,35 +74,32 @@ const SiteVideoBanner = (props) => {
             frameBorder="0"
             allowFullScreen
           ></iframe>
+          <div style={{ height: "100vh" }}>
+            <img
+              alt=""
+              style={{
+                postion: "absolute",
+                marginTop: "calc(100vh - 45px)",
+                marginLeft: "calc(50vw - 50px)",
+                opacity: "0.8",
+              }}
+              draggable="false"
+              src={"/images/website/ScrollDown.png"}
+              width="100px"
+            ></img>
+          </div>
         </div>
-        <ScrollPage page={0}>
-          <Animator animation={batch(Sticky(), FadeOut())}>
-            <div style={{ height: "100vh" }}>
-              <img
-                alt=""
-                style={{
-                  postion: "absolute",
-                  marginTop: "calc(100vh - 45px)",
-                  opacity: "0.8",
-                }}
-                draggable="false"
-                src={"/images/website/ScrollDown.png"}
-                height="35px"
-              ></img>
-            </div>
-          </Animator>
-        </ScrollPage>
         <ScrollPage key={2}>
-          <Animator animation={batch(StickyIn(), FadeIn(), MoveIn())}>
+          <Animator animation={batch(StickyIn(), FadeIn(), ZoomIn(1.3,1))}>
             <Row className="align-items-center justify-content-center">
-              <Col className="col-12 col-md-8">
+              <Col className="col-12 col-md-8" style={{width: "500px", maxWidth: "90vw"}}>
                 <h2 className="text-white text-center">
-                  {props.title === "" || props.title === null
+                  {props.title == "" || props.title == null
                     ? "A portfolio by Art"
                     : props.title}
                 </h2>
                 <p className="text-white text-center">
-                  {props.text === "" || props.text === null
+                  {props.text == "" || props.text == null
                     ? "This is my portfolio website. Here I showcase all of the project that I am proud of. A few projects are highlighted and I would love you to see them. But if you are interested to see more, feel free to look around."
                     : props.text}
                 </p>
