@@ -19,7 +19,7 @@ const SlideToLight = () => {
   return (
     <>
       <ProjectBanner projectList={designProjectList} project="Slide to Light" />
-      <SkillImages skills={["phototshop", "buidling", "lasercutting"]} />
+      <SkillImages skills={["photoshop", "building", "lasercutting"]} />
       <TextImageStrip
         title="Take a break..."
         text="Many people tend to take too few breaks while working. This can lead to a loss of concentration while working, less motivation and fysical fatigue like RSI. Slight to Light is a puzzle game that helps with this by letting you do something not work related."

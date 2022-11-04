@@ -42,7 +42,7 @@ function TextVideoStrip(props) {
             <h2>{props.title}</h2>
             <p className="text-lg-start">{props.text}</p>
           </Col>
-          <Col className={"col-12 col-lg-" + videoWidth}>
+          <Col className={"align-self-center col-12 col-lg-" + videoWidth}>
             <div style={{ maxWidth: props.maxWidth }}>
               <Fade bottom distance="50px">
                 <PlayVideo
