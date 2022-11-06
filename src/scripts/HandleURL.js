@@ -1,4 +1,4 @@
-function HandleURL(projectURL, openType='_self') {
+function HandleURL(projectURL, openType='_self', lowerCase=true) {
   //gets company name from URL
   const URLparams = new URLSearchParams(window.location.search);
   const companyName = URLparams.get("name");
@@ -9,7 +9,9 @@ function HandleURL(projectURL, openType='_self') {
 
     // changes name of project to URL format
     URL = URL.replace(/\s/g, "-");
-    URL = URL.toLowerCase();
+    if(lowerCase){
+      URL = URL.toLowerCase();
+    }
 
     //navigates to company home page if there is one
     if((URL === "" || URL === "/") && companyName != null){
@@ -21,8 +23,6 @@ function HandleURL(projectURL, openType='_self') {
       URL = URL + "?name=" + companyName;
     }
 
-
-    console.log("test " + openType);
     window.open(URL, openType, "noopener,noreferrer");
   };
 

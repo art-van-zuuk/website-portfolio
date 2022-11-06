@@ -21,7 +21,7 @@ function CarouselCard(props) {
       mouseUp < window.checkForDrag + 5 &&
       mouseUp > window.checkForDrag - 5
     ) {
-      HandleURL(props.project.url != null? props.project.url: URLLink, props.project.url != null? '_blank' : '_self');
+      HandleURL(props.project.url != null? props.project.url: URLLink, props.project.url != null? '_blank' : '_self', !props.project.video);
       // setShowVideo(true);
     }
   };
@@ -83,7 +83,7 @@ function CarouselCard(props) {
                 <img
                   style={{
                     position: "absolute",
-                    opacity: hover ? "0.2" : "0.8",
+                    opacity: hover ? "0" : "0.8",
                     transition: "all 0.3s ease",
                   }}
                   className="image"
