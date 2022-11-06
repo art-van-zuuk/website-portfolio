@@ -54,8 +54,20 @@ const SiteVideoBanner = (props) => {
   // Fire when scolling
   window.addEventListener("scroll", changeTransparency);
 
+  // Scroll page down on pressing scroll button
+  function scrollWin() {
+    if (window.scrollY < window.innerHeight) {
+      window.scrollTo(0, window.innerHeight);
+    } else if (
+      window.scrollY >= window.innerHeight &&
+      window.scrollY <= window.innerHeight * 2
+    ) {
+      window.scrollTo(0, window.innerHeight * 2);
+    }
+  }
+
   return (
-    <div style={{ backgroundColor: "#080c2e" }}>
+    <div style={{ backgroundColor: "#080c2e" }} onClick={scrollWin}>
       <ScrollContainer>
         {/* Video background */}
         <div
@@ -74,38 +86,45 @@ const SiteVideoBanner = (props) => {
             frameBorder="0"
             allowFullScreen
           ></iframe>
-          <div style={{ height: "100vh" }}>
-            <img
-              alt=""
-              style={{
-                postion: "absolute",
-                marginTop: "calc(100vh - 45px)",
-                marginLeft: "calc(50vw - 50px)",
-                opacity: "0.8",
-              }}
-              draggable="false"
-              src={"/images/website/ScrollDown.png"}
-              width="100px"
-            ></img>
-          </div>
+          <img
+            alt=""
+            style={{
+              postion: "absolute",
+              marginTop: "calc(100vh - 45px)",
+              marginLeft: "calc(50vw - 50px)",
+              opacity: "0.8",
+            }}
+            draggable="false"
+            src={"/images/website/ScrollDown.png"}
+            width="100px"
+          ></img>
         </div>
-        <ScrollPage key={2}>
-          <Animator animation={batch(StickyIn(), FadeIn(), ZoomIn(1.3,1))}>
-            <Row className="align-items-center justify-content-center">
-              <Col className="col-12 col-md-8" style={{width: "500px", maxWidth: "90vw"}}>
-                <h2 className="text-white text-center">
-                  {props.title == "" || props.title == null
-                    ? "A portfolio by Art"
-                    : props.title}
-                </h2>
-                <p className="text-white text-center">
-                  {props.text == "" || props.text == null
-                    ? "This is my portfolio website. Here I showcase all of the project that I am proud of. A few projects are highlighted and I would love you to see them. But if you are interested to see more, feel free to look around."
-                    : props.text}
-                </p>
-              </Col>
-            </Row>
+        <ScrollPage key={0}>
+          {/* Div for stop triggering pause/play on video */}
+          <Animator animation={batch(StickyIn())}>
+            <div style={{ height: "100vh", width: "100vw" }}></div>
           </Animator>
+          
+          {/* Animated text */}
+            <Animator animation={batch(StickyIn(), FadeIn(), ZoomIn(1.3, 1))}>
+              <Row className="align-items-center justify-content-center">
+                <Col
+                  className="col-12 col-md-8"
+                  style={{ width: "500px", maxWidth: "90vw" }}
+                >
+                  <h2 className="text-white text-center">
+                    {props.title == "" || props.title == null
+                      ? "A portfolio by Art"
+                      : props.title}
+                  </h2>
+                  <p className="text-white text-center">
+                    {props.text == "" || props.text == null
+                      ? "This is my portfolio website. Here I showcase all of the project that I am proud of. A few projects are highlighted and I would love you to see them. But if you are interested to see more, feel free to look around."
+                      : props.text}
+                  </p>
+                </Col>
+              </Row>
+            </Animator>
         </ScrollPage>
       </ScrollContainer>
     </div>

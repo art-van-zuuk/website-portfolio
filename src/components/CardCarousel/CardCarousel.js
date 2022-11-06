@@ -67,7 +67,7 @@ function CardCarousel(props) {
               <img
                 alt=""
                 draggable="false"
-                style={{marginTop: "75px", width: "100%", objectFit: "contain" }}
+                style={{marginTop: "70px", width: "100%", objectFit: "contain" }}
                 src="images/website/grab-carousel.png"
               ></img>
           </Row>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import HandleURL from "../../scripts/HandleURL";
 import "../../style.css";
 import "./CarouselCard.css";
@@ -31,6 +31,17 @@ function CarouselCard(props) {
     backgroundColor2 = props.project.backgroundColor2;
   }
 
+  // Change transparency of image on hover
+  const [hover, setHover] = useState(false);
+
+  const onMouseEnter = () => {
+    setHover(true);
+  };
+
+  const onMouseLeave = () => {
+    setHover(false);
+  };
+
   return (
     <>
       <div className="App">
@@ -41,6 +52,8 @@ function CarouselCard(props) {
           whileTap={{ scale: 0.97 }}
           onMouseDown={(e) => mouseDownCoords(e)}
           onMouseUp={(e) => clickOrDrag(e)}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
         >
           <div
             className="imgDiv"
@@ -53,12 +66,42 @@ function CarouselCard(props) {
                 ")",
             }}
           >
-            <img
-              alt=""
-              draggable="false"
-              className="image"
-              src={"/images/Projects/" + props.project.name + "/thumbnail.png"}
-            ></img>
+            {props.project.video ? (
+              // If video show different thumbnail
+              <>
+                <img
+                  alt=""
+                  draggable="false"
+                  className="image"
+                  style={{
+                    opacity: hover ? "1" : "0.5",
+                    transition: "all 0.3s ease",
+                  }}
+                  src={"/images/Projects/Videos/" + props.project.name + ".png"}
+                />
+
+                <img
+                  style={{
+                    position: "absolute",
+                    opacity: hover ? "0.2" : "0.8",
+                    transition: "all 0.3s ease",
+                  }}
+                  className="image"
+                  alt=""
+                  draggable="false"
+                  src={"/images/website/PlayButton.png"}
+                />
+              </>
+            ) : (
+              <img
+                alt=""
+                draggable="false"
+                className="image"
+                src={
+                  "/images/Projects/" + props.project.name + "/thumbnail.png"
+                }
+              />
+            )}
           </div>
 
           <div className="text">

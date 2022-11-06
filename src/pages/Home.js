@@ -7,6 +7,7 @@ import CV from '../components/CV/CV';
 import HighlightProject from '../components/HighlightProject/HighlightProject';
 import SiteVideoBanner from "../components/SiteVideoBanner/SiteVideoBanner";
 import designProjectList from "../information/DesignProjects";
+import videoProjectList from "../information/VideoProjects";
 import graphicProjectList from "../information/GraphicProjects";
 
 
@@ -16,9 +17,7 @@ const Home = () => {
 
   return (
     <>
-      <SiteVideoBanner
-        video="Z3PsFc2NEXI"
-      />
+      <SiteVideoBanner video="Z3PsFc2NEXI" />
       <CV />
       <HighlightProject projectList={designProjectList} project="MARCH VII" />
       <HighlightProject
@@ -33,6 +32,7 @@ const Home = () => {
         projectList={graphicProjectList}
         title={"Graphic Projects"}
       />
+      <CardCarousel projectList={videoProjectList} title={"Videography"} />
     </>
   );
 }

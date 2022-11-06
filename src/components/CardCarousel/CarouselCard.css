@@ -37,10 +37,8 @@ body{
     height: var(--card-width);
     width: var(--card-width);
     object-fit: contain;
-    
-    
-    
 }
+
 .text{
     background-color: white;
     padding-top: 15px;
