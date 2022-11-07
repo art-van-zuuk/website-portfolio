@@ -166,6 +166,8 @@ const MARCHVII = () => {
         text="To validate whether our digital designs worked as expected, we build tons of prototypes using 3D-printers. Every part was iterated multiple times to get the most functional and good-looking design."
         image="MARCH VII/PuttingOnCovers.jpg"
         padding="top-bottom-padding"
+        maxHeight="500px"
+        maxWidth="300px"
         rounded={true}
         reverse={true}
       />

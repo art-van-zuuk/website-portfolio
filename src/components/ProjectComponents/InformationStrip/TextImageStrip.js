@@ -7,7 +7,17 @@ import "../../../style.css";
 
 ///Text + Image strip with image on the right side. Requires: image, title and text
 function TextImageStrip(props) {
+  
+  // Sets the ratio between text and video
+  var imageWidth = 0;
+  if (props.imageWidth == null) {
+    imageWidth = 6;
+  } else {
+    imageWidth = props.imageWidth;
+  }
+  var textWidth = 12 - imageWidth;
 
+  // Handles reversing text and image
   var reverseClass = props.reverse ? "flex-row-reverse" : "";
 
   return (
@@ -19,14 +29,14 @@ function TextImageStrip(props) {
             reverseClass
           }
         >
-          <Col className="text-lg-start col-lg-6 col-md-6">
+          <Col className={"text-lg-start col-md-6 col-lg-" + textWidth}>
             <h2>{props.title}</h2>
             <p className="text-lg-start">{props.text}</p>
           </Col>
-          <Col className="col-lg-6 col-12">
+          <Col className={"col-12 col-lg-" + imageWidth}>
             <Fade bottom distance="50px">
               <img
-              alt=""
+                alt=""
                 className={props.rounded ? "rounded-element" : ""}
                 draggable="false"
                 src={"/images/Projects/" + props.image}
@@ -34,7 +44,7 @@ function TextImageStrip(props) {
                   maxHeight:
                     props.maxHeight != null ? props.maxHeight : "300px",
                   maxWidth: props.maxWidth != null ? props.maxWidth : "100%",
-                  objectFit: 'contain',
+                  objectFit: "contain",
                 }}
               ></img>
             </Fade>

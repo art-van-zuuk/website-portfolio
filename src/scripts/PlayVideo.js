@@ -1,13 +1,16 @@
+import React, { useRef, useLayoutEffect, useState } from "react";
+import ReactPlayer from 'react-player';
+
 function PlayVideo(props) {
 
-    
+
   return (
 
     <div
       className={props.rounded ? "rounded-element" : ""}
-      style={{ overflow: "hidden" }}
+      style={{ overflow: "hidden", width: "100%", aspectRatio: props.aspectRatio == null? "16/9" : props.aspectRatio}}
     >
-      <iframe
+      {/* <iframe
         style={{
           aspectRatio: props.aspectRatio == null ? "16/9" : props.aspectRatio,
         }}
@@ -22,7 +25,20 @@ function PlayVideo(props) {
         }
         frameborder="0"
         allowfullscreen
-      ></iframe>
+      ></iframe> */}
+
+
+      <ReactPlayer 
+        url={"https://www.youtube.com/embed/" + props.video}
+        width = "100%"
+        height= "100%"
+        muted
+        autoplay
+        controls
+        playing
+        loop
+      />
+
     </div>
   );
 }

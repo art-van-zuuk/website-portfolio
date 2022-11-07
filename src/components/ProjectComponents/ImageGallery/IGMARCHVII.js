@@ -1,4 +1,4 @@
-///Image gallery of photos from Chess Board
+///Image gallery of photos from MARCH
 export const photos = [
   {
     src: "Front.jpg",

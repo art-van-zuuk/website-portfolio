@@ -73,14 +73,17 @@ const InputDevice = () => {
         title="Simple electronics, easy to repair"
         text="A rotary encoder and push-button are connected to an Arduino. Via a USB-cable the Arduino is connected to the smartphone using a keyboard protocol. This simple arrangement, together with the fact that only mechanical fastening methods are used, makes it very easy to repair."
         image="Input Device/RepairableIPD.jpg"
+        imageWidth={7}
+        maxHeight="400px"
         rounded={true}
-        reverse={true}
         padding="top-bottom-padding"
       />
       <TextImageStrip
         title="Interface, only the essentials"
         text="Together with one of the Software Engineers from MARCH, we designed a more intuitive interface. It showed more information while being less cluttered with unnecessary details. The left-hand side shows only the possible movements the user can do, and the right-hand side shows its status."
         image="Input Device/Interface.jpg"
+        imageWidth={7}
+        maxHeight="400px"
         rounded={true}
         padding="top-bottom-padding"
       />

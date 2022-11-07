@@ -11,13 +11,15 @@ import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
 import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
 import { photos } from "../../components/ProjectComponents/ImageGallery/IGLaSelce";
 import TextColumns from "../../components/ProjectComponents/InformationStrip/TextColumns";
-import Title from "../../components/ProjectComponents/Title/Title";
+import Title from "../../components/ProjectComponents/Title/Title"; 
 import designProjectList from "../../information/DesignProjects";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 
 const LaSelce = () => {
   //gets information about project
   var projectInfo = GetProjectInfo(designProjectList, "La Selce");
+
+  console.log(photos)
 
   return (
     <>
@@ -27,6 +29,8 @@ const LaSelce = () => {
       />
       <SkillImages
         skills={[
+          "premierepro",
+          "aftereffects",
           "photoshop",
           "indesign",
           "solidworks",

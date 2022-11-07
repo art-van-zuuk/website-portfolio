@@ -23,6 +23,8 @@ const HANA = () => {
   //gets information about project
   var projectInfo = GetProjectInfo(designProjectList, "HANA");
 
+  console.log(photos);
+
   return (
     <>
       <ProjectBanner
