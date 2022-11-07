@@ -15,7 +15,7 @@ const BandAidDispenser = () => {
   // console.log("list: " + designProjectList);
 
   //gets information about project
-  var projectInfo = GetProjectInfo(designProjectList, "Band-Aid Dispenser");
+  var projectInfo = GetProjectInfo(designProjectList, "Band Aid Dispenser");
 
   return (
     <>
@@ -26,8 +26,8 @@ const BandAidDispenser = () => {
       <SkillImages skills={["solidworks", "building", "userresearch"]} />
       <TextImageStrip
         title="User testing: From shape to model"
-        text="To create a Band-Aid Dispenser with the optimal user experience, we created several foam and 3D-printed models. Each model was tested to create a new iteration with a better interactive experience."
-        image="Band-Aid Dispenser/Prototype cut out.jpg"
+        text="To create a Band Aid Dispenser with the optimal user experience, we created several foam and 3D-printed models. Each model was tested to create a new iteration with a better interactive experience."
+        image="Band Aid Dispenser/Prototype cut out.jpg"
         padding="top-bottom-padding"
         reverse={true}
       />
@@ -36,19 +36,19 @@ const BandAidDispenser = () => {
           {
             title: "Interaction prototypes",
             text: "Testing what different shapes do to the meaning and way of using the product",
-            image: "Band-Aid Dispenser/UserTest1.jpg",
+            image: "Band Aid Dispenser/UserTest1.jpg",
             objectFit: "cover",
           },
           {
             title: "Ergonomics prototypes",
             text: "Figuring out what shapes are most comfortable for the user",
-            image: "Band-Aid Dispenser/UserTest2.jpg",
+            image: "Band Aid Dispenser/UserTest2.jpg",
             objectFit: "cover",
           },
           {
             title: "Detailed prototype",
             text: "Validating whether the complete model is used as intended",
-            image: "Band-Aid Dispenser/UserTest3.jpg",
+            image: "Band Aid Dispenser/UserTest3.jpg",
             objectFit: "cover",
           },
         ]}

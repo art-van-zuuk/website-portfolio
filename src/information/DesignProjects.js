@@ -70,7 +70,7 @@ designProjectList.push({
 
 
 designProjectList.push({
-  name: "Band-Aid Dispenser",
+  name: "Band Aid Dispenser",
   description: "A focus on user interaction",
   explanation:
     "During a one-week intense workshop, we were assigned to create a dispenser of any kind. The aim was to improve the user interaction with the product day by day through extensive user research.",
