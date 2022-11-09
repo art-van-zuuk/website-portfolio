@@ -8,4 +8,9 @@
 .social-icon{
     height: 20px;
     width: auto;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+.social-icon:hover{
+    opacity: 1;
 }

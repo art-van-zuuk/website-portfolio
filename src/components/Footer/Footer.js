@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from "react-bootstrap";
+import HandleURL from '../../scripts/HandleURL';
 import '../../style.css';
 import './Footer.css';
 
@@ -11,36 +12,58 @@ const Footer = () => {
       <div className="footer">
         <Container className="site-width ">
           <Row className="align-items-center justify-content-center gx-5">
-            <Col className="">
-              <p className="text-end text-muted">
-                A portfolio website by Art van Zuuk
-              </p>
-            </Col>
-            <Col className="gx-2">
-              <Row>
-                <Col className='col-auto'>
-                  <li>
-                    <a href="design@artvanzuuk.nl">
-                      <img
-                        src="/images/website/Socials/mail.png"
-                        className="social-icon"
-                        alt="..."
-                      ></img>
-                    </a>
-                  </li>
-                </Col>
-                <Col className='col-auto'>
-                  <li>
-                    <a href="https://arizonaatwork.com">
-                      <img
-                        src="/images/website/Socials/linkedin.png"
-                        className="social-icon"
-                        alt="..."
-                      ></img>
-                    </a>
-                  </li>
-                </Col>
-              </Row>
+            <Col>
+              <>
+                <p className="text-center text-muted">
+                  A portfolio website by Art van Zuuk
+                </p>
+                <Row className="align-items-center justify-content-center gx-5">
+                  <Col
+                    className="col-auto"
+                    onClick={() => HandleURL("mailto:design@artvanzuuk.nl", "_blanc")}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <img
+                      src="/images/website/Socials/mail.png"
+                      className="social-icon"
+                      alt="..."
+                    ></img>
+                  </Col>
+                  <Col
+                    className="col-auto"
+                    onClick={() =>
+                      HandleURL(
+                        "https://www.linkedin.com/in/artvanzuuk/",
+                        "_blanc"
+                      )
+                    }
+                    style={{ cursor: "pointer" }}
+                  >
+                    <img
+                      src="/images/website/Socials/linkedin.png"
+                      className="social-icon"
+                      alt="..."
+                    ></img>
+                  </Col>
+                  <Col
+                    className="col-auto"
+                    onClick={() =>
+                      HandleURL(
+                        "https://www.youtube.com/channel/UCsSZuON4bJaKberCRzVSneQ",
+                        "_blanc",
+                        false
+                      )
+                    }
+                    style={{ cursor: "pointer" }}
+                  >
+                    <img
+                      src="/images/website/Socials/youtube.png"
+                      className="social-icon"
+                      alt="..."
+                    ></img>
+                  </Col>
+                </Row>
+              </>
             </Col>
           </Row>
         </Container>

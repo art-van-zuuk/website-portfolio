@@ -38,7 +38,7 @@ function CardCarousel(props) {
   //Converts title into image format
   var image = props.title ;
   image = image.replace(/\s+/g, "");
-  image = "/images/website/" + image + "Title.png";
+  image = "/images/website/" + image + "Title.jpg";
 
   return (
     <div className="App card-carousel-div">
