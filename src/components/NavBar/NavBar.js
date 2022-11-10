@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
 
 import HandleURL from "../../scripts/HandleURL";
 import '../../style.css';
 import './NavBar.css';
 import designProjectList from "../../information/DesignProjects";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
-import { propTypes } from 'react-bootstrap/esm/Image';
 
 
 ///Navigation bar on the top of the site
@@ -18,8 +16,6 @@ const NavBar = () => {
 
   //gets information about project
   var projectInfo = GetProjectInfo(designProjectList, page);
-
-    console.log(projectInfo.textColor);
 
   // Change nav color when scrolling
   const [color, setColor] = useState(false);
@@ -37,6 +33,7 @@ const NavBar = () => {
     <nav className={color ? "nav-bg" : null}>
       <img
         className="website-logo"
+        style={{cursor: "pointer"}}
         alt=""
         src={
           projectInfo.textColor != null && !color

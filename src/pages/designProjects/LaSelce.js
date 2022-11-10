@@ -19,8 +19,6 @@ const LaSelce = () => {
   //gets information about project
   var projectInfo = GetProjectInfo(designProjectList, "La Selce");
 
-  console.log(photos)
-
   return (
     <>
       <ProjectBanner

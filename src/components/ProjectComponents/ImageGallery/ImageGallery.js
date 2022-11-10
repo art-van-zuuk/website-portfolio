@@ -8,8 +8,6 @@ import Gallery from "react-photo-gallery";
 ///Creates a grid of images in rows. Requires: list of photos with src, width & height and name of project
 function ImageGallery(props) {
  
-  console.log(props.photos);
-
   ///Changes the prefix of source to only enter the file name in the list
   props.photos.map((object, index) => (
     object.src = "/images/Projects/" + props.project + "/ImageGallery/" + object.src

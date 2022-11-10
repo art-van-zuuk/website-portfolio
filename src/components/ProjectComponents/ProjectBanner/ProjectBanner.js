@@ -52,7 +52,15 @@ function ProjectBanner(props) {
               <p style={{ color: projectInfo.textColor, opacity: textOpacity }}>
                 {projectInfo.explanation}
               </p>
+              {projectInfo.contribution != null ?
+              <>
+              <p style={{ color: projectInfo.textColor, opacity: textOpacity }}>
+                {" "}
+                <strong>My contribution: </strong>{projectInfo.contribution}
+              </p>
               <p> </p>
+              </>
+              : <p></p>}
               <b style={{ color: projectInfo.textColor, opacity: textOpacity }}>
                 {" "}
                 {projectInfo.type} in {projectInfo.year}{" "}
