@@ -59,8 +59,8 @@ function HighlightProject(props) {
                 <Col md="auto" className="col-12">
                   <Fade bottom distance="50px" delay={250}>
                     <motion.div
-                      animate={{ scale: hover ? [1, 1.2] : 1}}
-                      transition={{ duration: 1 }}
+                      animate={{ scale: hover ? [1, 1.2] : 1 }}
+                      transition={{ duration: 0.5 }}
                     >
                       <img
                         alt="Highlight project"
@@ -110,13 +110,13 @@ function HighlightProject(props) {
                     {projectInfo.type} in {projectInfo.year}{" "}
                   </b>
                   <p> </p>
-                  <Button
-                    style={{ color: projectInfo.textColor + " !imortant" }}
-                    variant="secondary rounded-pill"
+                  <div
+                    style={{ color: projectInfo.textColor === undefined? "black" : projectInfo.textColor, borderColor: projectInfo.textColor }}
+                    className="outline-button"
                     onClick={() => HandleURL(projectInfo.name)}
                   >
-                    Learn more
-                  </Button>{" "}
+                    Click here to learn more
+                  </div>{" "}
                 </Col>
               </Row>
             </Container>

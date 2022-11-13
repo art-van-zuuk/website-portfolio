@@ -75,7 +75,7 @@ designProjectList.push({
   type: "Master Project",
   year: "2021",
   team: "Group Project",
-  textColor: "#f5f5f5",
+  textColor: "white",
   backgroundColor: "#000",
   backgroundColor2: "#161617",
 });

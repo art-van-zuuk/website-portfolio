@@ -124,16 +124,38 @@ h6{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .2);
 }
 .custom-round-button{
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .5);
     font-size: 14px;
     padding: 3px;
     padding-left: 14px;
     padding-right: 14px;
     border-radius: 100px;
+    transition: all .4s;
 }
 .custom-round-button:hover{
+    background-color: rgba(255, 255, 255, .8);
+}
+.outline-button{
+    opacity: 0.8;
+    border-style: solid; 
+    border-width: 1px;
+    border-radius: 100px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    transition: all 0.5s;
+}
+.outline-button:hover {
+    opacity: 0.8;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
     background-color: rgba(255, 255, 255, .3);
-    transition: all .4s;
 }
 
 iframe {

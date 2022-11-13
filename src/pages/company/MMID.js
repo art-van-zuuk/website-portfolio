@@ -17,7 +17,7 @@ const MMID = () => {
       <SiteVideoBanner
         video="Z3PsFc2NEXI"
         title="Hi MMID!"
-        text="Dit is mijn portfolio website voor jou. Hieronder heb ik vier projecten gehighlight die ik graag aan jou wil laten zien. En dan nog een kort stukie text voor het bedrijf"
+        text="This is my portfolio website for you. I selected four projects that I would love for you to see. These are more of the mechanical and technological projects I did. With this, I hope to show the skills required to work at MMID. If you are interested in more, you can have a look at the bottom of this page. Enjoy reading!"
       />
       <CV />
       <HighlightProject projectList={designProjectList} project="MARCH VII" />
@@ -30,7 +30,6 @@ const MMID = () => {
 
       <CardCarousel projectList={designProjectList} title={"Design Projects"} />
       <CardCarousel projectList={videoProjectList} title={"Videography"} />
-      
     </>
   );
 };
