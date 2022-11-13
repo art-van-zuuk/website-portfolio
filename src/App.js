@@ -45,6 +45,7 @@ const Posters = React.lazy(() => import("./pages/graphicProjects/Posters"));
 
 // Companies
 const MMID = React.lazy(() => import("./pages/company/MMID"));
+const Spark = React.lazy(() => import("./pages/company/Spark"));
 
 const App = () => {
 
@@ -184,6 +185,14 @@ const App = () => {
             element={
               <React.Suspense fallback={<>...</>}>
                 <MMID />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="spark"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <Spark />
               </React.Suspense>
             }
           />

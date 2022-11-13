@@ -28,10 +28,10 @@ const Home = () => {
       <HighlightProject projectList={designProjectList} project="HANA" />
 
       <CardCarousel projectList={designProjectList} title={"Design Projects"} />
-      <CardCarousel
+      {/* <CardCarousel
         projectList={graphicProjectList}
         title={"Graphic Projects"}
-      />
+      /> */}
       <CardCarousel projectList={videoProjectList} title={"Videography"} />
     </>
   );
