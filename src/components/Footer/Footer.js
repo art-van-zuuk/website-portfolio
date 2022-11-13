@@ -15,7 +15,7 @@ const Footer = () => {
             <Col>
               <>
                 <p className="text-center text-muted">
-                  A portfolio website by Art van Zuuk
+                  Don't hesitate to get in contact!
                 </p>
                 <Row className="align-items-center justify-content-center gx-5">
                   <Col

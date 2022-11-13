@@ -10,14 +10,14 @@ export const photos = [
     width: 2000,
     height: 1125,
   },
-  {
-    src: "rotary_top.png",
-    width: 2000,
-    height: 1125,
-  },
-  {
-    src: "holding.png",
-    width: 2000,
-    height: 1125,
-  },
+  // {
+  //   src: "rotary_top.png",
+  //   width: 2000,
+  //   height: 1125,
+  // },
+  // {
+  //   src: "holding.png",
+  //   width: 2000,
+  //   height: 1125,
+  // },
 ];

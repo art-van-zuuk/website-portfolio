@@ -43,7 +43,8 @@ const DustBuster = React.lazy(() =>
 
 const Posters = React.lazy(() => import("./pages/graphicProjects/Posters"));
 
-const TestCompany = React.lazy(() => import("./pages/company/TestCompany"));
+// Companies
+const MMID = React.lazy(() => import("./pages/company/MMID"));
 
 const App = () => {
 
@@ -179,10 +180,10 @@ const App = () => {
 
           {/* Companies */}
           <Route
-            path="test-company"
+            path="mmid"
             element={
               <React.Suspense fallback={<>...</>}>
-                <TestCompany />
+                <MMID />
               </React.Suspense>
             }
           />

@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 
+import { photos } from "../../components/ProjectComponents/ImageGallery/IGBraunParch";
 import ImageGallery from "../../components/ProjectComponents/ImageGallery/ImageGallery";
 import FullWidthImage from "../../components/ProjectComponents/InformationStrip/FullWidthImage";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
@@ -9,7 +10,6 @@ import SkillImages from "../../components/ProjectComponents/SkillImages/SkillIma
 
 import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
 import FullWidthVideo from "../../components/ProjectComponents/FullWidthVideo/FullWidthVideo";
-import { photos } from "../../components/ProjectComponents/ImageGallery/IGBraunParch";
 import Title from "../../components/ProjectComponents/Title/Title";
 import designProjectList from "../../information/DesignProjects";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
@@ -19,6 +19,9 @@ const BraunParch = () => {
 
   //gets information about project
   var projectInfo = GetProjectInfo(designProjectList, "Braun Parch");
+
+  console.log('BP')
+  console.log(photos)
 
   return (
     <>
@@ -41,7 +44,7 @@ const BraunParch = () => {
         text="An ancient but mostly forgotten method to preserve food is dehydration. Braun Parch brings new life to the world of food dehydration at home by using a vacuum."
         image="Braun Parch/GoodTaste.jpg"
         padding="top-bottom-padding"
-        rounded={true}
+        rounded={true} 
         reverse={true}
       />
       <Title

@@ -18,7 +18,7 @@ import Title from "../../components/ProjectComponents/Title/Title";
 import designProjectList from "../../information/DesignProjects";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 
-const HANA = () => {
+const HANA = () => { 
 
   //gets information about project
   var projectInfo = GetProjectInfo(designProjectList, "HANA");

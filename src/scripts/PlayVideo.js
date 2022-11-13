@@ -1,28 +1,36 @@
 import ReactPlayer from 'react-player';
+import PropTypes from 'prop-types'
 
-function PlayVideo(props) {
-
+//Function that shows video 
+function PlayVideo({video, rounded = false, aspectRatio = '16/9', controls = true}) {
 
   return (
     <div
-      className={props.rounded ? "rounded-element" : ""}
+      className={rounded ? "rounded-element" : ""}
       style={{
         overflow: "hidden",
         width: "100%",
-        aspectRatio: props.aspectRatio == null ? "16/9" : props.aspectRatio,
+        aspectRatio: aspectRatio,
       }}
     >
       <ReactPlayer
-        url={"https://www.youtube.com/embed/" + props.video}
+        url={"https://www.youtube.com/embed/" + video}
         width="100%"
         height="100%"
         muted
         playing
-        controls
+        controls = {controls}
         loop
       />
     </div>
   );
+}
+
+PlayVideo.propTypes = {
+  video: PropTypes.string.isRequired,
+  rounded: PropTypes.bool,
+  aspectRatio: PropTypes.string,
+  controls: PropTypes.bool,
 }
 
 export default PlayVideo;

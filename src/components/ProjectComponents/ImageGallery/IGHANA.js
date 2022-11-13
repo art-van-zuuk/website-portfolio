@@ -5,7 +5,6 @@ export const photos = [
     width: 800,
     height: 600,
   },
-
   {
     src: "ExplodedView.jpg",
     width: 618,
