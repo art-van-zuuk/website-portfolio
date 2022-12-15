@@ -1,7 +1,7 @@
 import ReactPlayer from 'react-player';
 import PropTypes from 'prop-types'
 
-//Function that shows video 
+//Function that shows video  
 function PlayVideo({video, rounded = false, aspectRatio = '16/9', controls = true}) {
 
   return (
@@ -26,6 +26,7 @@ function PlayVideo({video, rounded = false, aspectRatio = '16/9', controls = tru
   );
 }
 
+// Decribe variable type and required
 PlayVideo.propTypes = {
   video: PropTypes.string.isRequired,
   rounded: PropTypes.bool,

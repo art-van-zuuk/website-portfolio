@@ -111,7 +111,13 @@ function HighlightProject(props) {
                   </b>
                   <p> </p>
                   <div
-                    style={{ color: projectInfo.textColor === undefined? "black" : projectInfo.textColor, borderColor: projectInfo.textColor }}
+                    style={{
+                      color:
+                        projectInfo.textColor === undefined
+                          ? "black"
+                          : projectInfo.textColor,
+                      borderColor: projectInfo.textColor,
+                    }}
                     className="outline-button"
                     onClick={() => HandleURL(projectInfo.name)}
                   >

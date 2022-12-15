@@ -1,54 +1,40 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
 
+import "./App.css";
+
+// This page is loaded when index.js
+// Here all pages are lazy loaded (only loads when page is opened) and initialized for routing (page opens in new URL)
+// How to: When adding new directory page to website, add lazy load initialization 
+
+// Initialize lazy load pages
 const Home = React.lazy(() => import("./pages/Home"));
+
+// Design Projects
 const BraunParch = React.lazy(() => import("./pages/designProjects/BraunParch"));
-const SlideToLight = React.lazy(() =>
-  import("./pages/designProjects/SlideToLight")
-);
-const Chessboard = React.lazy(() =>
-  import("./pages/designProjects/Chessboard")
-);
-const MARCHVII = React.lazy(() =>
-  import("./pages/designProjects/MARCHVII")
-);
-const InputDevice = React.lazy(() =>
-  import("./pages/designProjects/InputDevice")
-);
-const CameraSlider = React.lazy(() =>
-  import("./pages/designProjects/CameraSlider")
-);
-const HANA = React.lazy(() =>
-  import("./pages/designProjects/HANA")
-);
+const SlideToLight = React.lazy(() => import("./pages/designProjects/SlideToLight"));
+const Chessboard = React.lazy(() => import("./pages/designProjects/Chessboard"));
+const MARCHVII = React.lazy(() => import("./pages/designProjects/MARCHVII"));
+const InputDevice = React.lazy(() => import("./pages/designProjects/InputDevice"));
+const CameraSlider = React.lazy(() => import("./pages/designProjects/CameraSlider"));
+const HANA = React.lazy(() => import("./pages/designProjects/HANA"));
 const LaSelce = React.lazy(() => import("./pages/designProjects/LaSelce"));
-const WebsiteIOFestival = React.lazy(() => import("./pages/graphicProjects/WebsiteIOFestival"));
-const OnLocked = React.lazy(() =>
-  import("./pages/graphicProjects/OnLocked")
-);
-
 const BandAidDispenser = React.lazy(() => import("./pages/designProjects/BandAidDispenser"));
-const Speech = React.lazy(() =>
-  import("./pages/designProjects/Speech")
-);
-const DustBuster = React.lazy(() =>
-  import("./pages/designProjects/DustBuster")
-);
+const Speech = React.lazy(() => import("./pages/designProjects/Speech"));
+const DustBuster = React.lazy(() => import("./pages/designProjects/DustBuster"));
 
-
-
+// Graphic Projects
 const Posters = React.lazy(() => import("./pages/graphicProjects/Posters"));
+const OnLocked = React.lazy(() => import("./pages/graphicProjects/OnLocked"));
 
 // Companies
 const MMID = React.lazy(() => import("./pages/company/MMID"));
 const Spark = React.lazy(() => import("./pages/company/Spark"));
 
 const App = () => {
-
   return (
     <>
       <NavBar />
@@ -167,14 +153,6 @@ const App = () => {
             element={
               <React.Suspense fallback={<>...</>}>
                 <Posters />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path="website-iofestival"
-            element={
-              <React.Suspense fallback={<>...</>}>
-                <WebsiteIOFestival />
               </React.Suspense>
             }
           />

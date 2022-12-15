@@ -32,7 +32,7 @@ const Home = () => {
         projectList={graphicProjectList}
         title={"Graphic Projects"}
       /> */}
-      <CardCarousel projectList={videoProjectList} title={"Videography"} />
+      {/* <CardCarousel projectList={videoProjectList} title={"Videography"} /> */}
     </>
   );
 }

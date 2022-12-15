@@ -6,6 +6,7 @@ import {
   StickyIn,
   ZoomIn,
 } from "react-scroll-motion";
+import PropTypes from "prop-types";
 
 import PlayVideo from "../../scripts/PlayVideo";
 import "../../style.css";
@@ -66,9 +67,10 @@ function PageScroll(){
 
 }
 
-//Full size video banner with animated text. Requires: company
-function SiteVideoBanner(props) {
+//Full size video banner with animated text
+function SiteVideoBanner({video, title, text}) {
 
+  // Transparancy of video while scrolling
   var transparancy = ScrollDownTransparency();
   
   return (
@@ -80,7 +82,7 @@ function SiteVideoBanner(props) {
           key={0}
           style={{ opacity: transparancy }}
         >
-          <PlayVideo video={props.video} controls={false} />
+          <PlayVideo video={video} controls={false} />
           {/* Scroll down image */}
           <img
             alt=""
@@ -112,14 +114,14 @@ function SiteVideoBanner(props) {
                 style={{ width: "500px", maxWidth: "90vw" }}
               >
                 <h2 className="text-white text-center">
-                  {props.title === "" || props.title === undefined
+                  {title === "" || title === undefined
                     ? "A portfolio by Art"
-                    : props.title}
+                    : title}
                 </h2>
                 <p className="text-white text-center">
-                  {props.text === "" || props.text === undefined
+                  {text === "" || text === undefined
                     ? "This is my portfolio website. Here I showcase all of the project that I am proud of. A few projects are highlighted and I would love you to see them. But if you are interested to see more, feel free to look around."
-                    : props.text}
+                    : text}
                 </p>
               </Col>
             </Row>
@@ -130,4 +132,11 @@ function SiteVideoBanner(props) {
   );
 };
 
+PlayVideo.propTypes = {
+  video: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  text: PropTypes.string,
+};
+
 export default SiteVideoBanner;
+
