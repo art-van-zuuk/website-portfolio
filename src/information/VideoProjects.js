@@ -57,5 +57,21 @@ videoProjectList.push({
 	video: true,
 	url: "https://youtu.be/UiML66TdE9c",
 });
+videoProjectList.push({
+	name: "Weerwater Track App",
+	type: "Work project",
+	year: "2023",
+	backgroundColor: "#000",
+	video: true,
+	url: "https://youtu.be/xSj5mr6vJgw",
+});
+videoProjectList.push({
+	name: "Up to You Yoga",
+	type: "Work project",
+	year: "2023",
+	backgroundColor: "#000",
+	video: true,
+	url: "https://youtu.be/xSj5mr6vJgw",
+});
 
 export default videoProjectList;

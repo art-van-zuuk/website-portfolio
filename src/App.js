@@ -28,8 +28,9 @@ const DustBuster = React.lazy(() => import("./pages/designProjects/DustBuster"))
 const Lotus = React.lazy(() => import("./pages/designProjects/Lotus"));
 const Sculp = React.lazy(() => import("./pages/designProjects/Sculp"));
 const WeerwaterTrack = React.lazy(() => import("./pages/designProjects/WeerwaterTrack"));
+// Insert project path above
 
-// Graphic Projects
+// Graphic projects
 const Posters = React.lazy(() => import("./pages/graphicProjects/Posters"));
 const OnLocked = React.lazy(() => import("./pages/graphicProjects/OnLocked"));
 
@@ -37,6 +38,10 @@ const OnLocked = React.lazy(() => import("./pages/graphicProjects/OnLocked"));
 const MMID = React.lazy(() => import("./pages/company/MMID"));
 const Spark = React.lazy(() => import("./pages/company/Spark"));
 const Manometric = React.lazy(() => import("./pages/company/Manometric"));
+const BBB = React.lazy(() => import("./pages/company/BBB"));
+const Brabantia = React.lazy(() => import("./pages/company/Brabantia"));
+const Tarnoc = React.lazy(() => import("./pages/company/Tarnoc"));
+// Insert company above
 
 const App = () => {
 	return (
@@ -184,6 +189,7 @@ const App = () => {
 							</React.Suspense>
 						}
 					/>
+					{/* Insert project route above */}
 
 					{/* Companies */}
 					<Route
@@ -207,6 +213,30 @@ const App = () => {
 						element={
 							<React.Suspense fallback={<>...</>}>
 								<Manometric />
+							</React.Suspense>
+						}
+					/>
+					<Route
+						path="bbb"
+						element={
+							<React.Suspense fallback={<>...</>}>
+								<BBB />
+							</React.Suspense>
+						}
+					/>
+					<Route
+						path="Tarnoc"
+						element={
+							<React.Suspense fallback={<>...</>}>
+								<Tarnoc />
+							</React.Suspense>
+						}
+					/>
+					<Route
+						path="brabantia"
+						element={
+							<React.Suspense fallback={<>...</>}>
+								<Brabantia />
 							</React.Suspense>
 						}
 					/>
