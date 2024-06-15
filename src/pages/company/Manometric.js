@@ -7,7 +7,7 @@ import CV from "../../components/CV/CV";
 import HighlightProject from "../../components/HighlightProject/HighlightProject";
 import SiteVideoBanner from "../../components/SiteVideoBanner/SiteVideoBanner";
 import videoProjectList from "../../information/VideoProjects";
-import designProjectList from "../../information/DesignProjects";
+import projectList from "../../information/projects";
 
 const Manometric = () => {
 	return (
@@ -18,12 +18,12 @@ const Manometric = () => {
 				text="Welcome to my portfolio website! Below, you'll find my CV and four highlighted projects that showcase my skills in human-centred design, engineering, CAD, and prototyping — qualities I believe fit to the work at Manometric. If you're interested in exploring more or viewing some of my video work, feel free to check out the bottom of the page. Enjoy reading!"
 			/>
 			<CV />
-			<HighlightProject projectList={designProjectList} project="Sculp" />
-			<HighlightProject projectList={designProjectList} project="Lotus" />
-			<HighlightProject projectList={designProjectList} project="MARCH VII" />
-			<HighlightProject projectList={designProjectList} project="Input Device" />
+			<HighlightProject projectList={projectList} project="Sculp" />
+			<HighlightProject projectList={projectList} project="Lotus" />
+			<HighlightProject projectList={projectList} project="MARCH VII" />
+			<HighlightProject projectList={projectList} project="Input Device" />
 
-			<CardCarousel projectList={designProjectList} title={"Design Projects"} />
+			<CardCarousel projectList={projectList} title={"Design Projects"} />
 			<CardCarousel projectList={videoProjectList} title={"Videography"} />
 		</>
 	);

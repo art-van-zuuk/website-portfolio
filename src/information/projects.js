@@ -1,6 +1,12 @@
 ///List with design projects
-var designProjectList = [];
-designProjectList.push({
+var projectList = [];
+projectList.push({
+	name: "Posters",
+	type: "Multiple types of projects",
+	year: "",
+	backgroundColor: "#eee",
+});
+projectList.push({
 	name: "Slide to Light",
 	description: "A puzzle game about closing the circuit",
 	explanation:
@@ -10,7 +16,14 @@ designProjectList.push({
 	team: "Individual project",
 	backgroundColor: "#D7D6CA",
 });
-designProjectList.push({
+projectList.push({
+	name: "Website IOFestival",
+	type: "Individual Project",
+	year: "2019",
+	backgroundColor: "#36b18d",
+	url: "https://iofestival.com/2019/",
+});
+projectList.push({
 	name: "Speech",
 	description: "Helps refugees integrate using speech",
 	explanation:
@@ -21,7 +34,7 @@ designProjectList.push({
 	team: "Group project",
 	backgroundColor: "#f8f8f8",
 });
-designProjectList.push({
+projectList.push({
 	name: "Band Aid Dispenser",
 	description: "A focus on user interaction",
 	explanation:
@@ -33,7 +46,14 @@ designProjectList.push({
 	textColor: "white",
 	backgroundColor: "#1d2b1f",
 });
-designProjectList.push({
+projectList.push({
+	name: "Website René van Zuuk Architects",
+	type: "Work Project",
+	year: "2020",
+	backgroundColor: "#eee",
+	url: "https://renevanzuuk.nl",
+});
+projectList.push({
 	name: "Braun Parch",
 	description: "Quick Food Dehydration using vacuum",
 	explanation:
@@ -43,7 +63,7 @@ designProjectList.push({
 	team: "Individual project",
 	backgroundColor: "#eee",
 });
-designProjectList.push({
+projectList.push({
 	name: "Chessboard",
 	description: "A Chessboard as a birthday gift for my sister",
 	explanation:
@@ -53,7 +73,7 @@ designProjectList.push({
 	team: "Individual project",
 	backgroundColor: "#eee",
 });
-designProjectList.push({
+projectList.push({
 	name: "HANA",
 	description: "Giving the visually impaired direction",
 	explanation:
@@ -64,7 +84,7 @@ designProjectList.push({
 	backgroundColor: "#d0e3f2",
 	backgroundColor2: "#adcfea",
 });
-designProjectList.push({
+projectList.push({
 	name: "La Selce",
 	description: "Brings back passion in the future kitchen",
 	explanation:
@@ -77,7 +97,14 @@ designProjectList.push({
 	backgroundColor: "#000",
 	backgroundColor2: "#161617",
 });
-designProjectList.push({
+// projectList.push({
+// 	name: "Website DARE",
+// 	type: "Project MARCH",
+// 	year: "2021",
+// 	backgroundColor: "#e6e6e6",
+// 	url: "https://www.dare-info.com/",
+// });
+projectList.push({
 	name: "Input Device",
 	description: "Controlling an exoskeleton with a single hand",
 	explanation:
@@ -88,7 +115,7 @@ designProjectList.push({
 	team: "Team Project",
 	backgroundColor: "#e5e5de",
 });
-designProjectList.push({
+projectList.push({
 	name: "MARCH VII",
 	description: "Covering up an exoskeleton",
 	explanation:
@@ -101,7 +128,7 @@ designProjectList.push({
 	backgroundColor: "#d5dfe6",
 	backgroundColor2: "#cad2d9",
 });
-designProjectList.push({
+projectList.push({
 	name: "Lotus",
 	description: "A context-aware lamp",
 	explanation:
@@ -113,7 +140,7 @@ designProjectList.push({
 	textColor: "white",
 	backgroundColor: "#000000",
 });
-designProjectList.push({
+projectList.push({
 	name: "Weerwater Track",
 	description: "An activity app for the municipality of Almere",
 	explanation:
@@ -125,7 +152,7 @@ designProjectList.push({
 	team: "Team Project",
 	backgroundColor: "#eeeeee",
 });
-designProjectList.push({
+projectList.push({
 	name: "Sculp",
 	description: "A variable profile bicycle saddle",
 	explanation:
@@ -157,4 +184,4 @@ designProjectList.push({
 //   backgroundColor: "#e4e2e9",
 // });
 
-export default designProjectList;
+export default projectList;

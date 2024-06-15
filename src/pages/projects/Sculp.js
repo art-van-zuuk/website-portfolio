@@ -9,18 +9,18 @@ import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
 import TextVideoStrip from "../../components/ProjectComponents/InformationStrip/TextVideoStrip";
 import Title from "../../components/ProjectComponents/Title/Title";
-import designProjectList from "../../information/DesignProjects";
+import projectList from "../../information/projects";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 import HorizonalImageTextCard from "../../components/ProjectComponents/Card/HorizontalImageTextCard";
 import SectionLine from "../../components/ProjectComponents/SectionLine/SectionLine";
 
 const Sculp = () => {
 	//gets information about project
-	var projectInfo = GetProjectInfo(designProjectList, "Sculp");
+	var projectInfo = GetProjectInfo(projectList, "Sculp");
 
 	return (
 		<>
-			<ProjectBanner projectList={designProjectList} project={projectInfo.name} textColor="white" />
+			<ProjectBanner projectList={projectList} project={projectInfo.name} textColor="white" />
 			<SkillImages
 				skills={["userresearch", "indesign", "solidworks", "blender", "grasshopper", "3dprinting", "building"]}
 			/>

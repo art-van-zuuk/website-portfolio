@@ -14,25 +14,22 @@ import "./App.css";
 const Home = React.lazy(() => import("./pages/Home"));
 
 // Design Projects
-const BraunParch = React.lazy(() => import("./pages/designProjects/BraunParch"));
-const SlideToLight = React.lazy(() => import("./pages/designProjects/SlideToLight"));
-const Chessboard = React.lazy(() => import("./pages/designProjects/Chessboard"));
-const MARCHVII = React.lazy(() => import("./pages/designProjects/MARCHVII"));
-const InputDevice = React.lazy(() => import("./pages/designProjects/InputDevice"));
-const CameraSlider = React.lazy(() => import("./pages/designProjects/CameraSlider"));
-const HANA = React.lazy(() => import("./pages/designProjects/HANA"));
-const LaSelce = React.lazy(() => import("./pages/designProjects/LaSelce"));
-const BandAidDispenser = React.lazy(() => import("./pages/designProjects/BandAidDispenser"));
-const Speech = React.lazy(() => import("./pages/designProjects/Speech"));
-const DustBuster = React.lazy(() => import("./pages/designProjects/DustBuster"));
-const Lotus = React.lazy(() => import("./pages/designProjects/Lotus"));
-const Sculp = React.lazy(() => import("./pages/designProjects/Sculp"));
-const WeerwaterTrack = React.lazy(() => import("./pages/designProjects/WeerwaterTrack"));
+const Posters = React.lazy(() => import("./pages/projects/Posters"));
+const BraunParch = React.lazy(() => import("./pages/projects/BraunParch"));
+const SlideToLight = React.lazy(() => import("./pages/projects/SlideToLight"));
+const Chessboard = React.lazy(() => import("./pages/projects/Chessboard"));
+const MARCHVII = React.lazy(() => import("./pages/projects/MARCHVII"));
+const InputDevice = React.lazy(() => import("./pages/projects/InputDevice"));
+const CameraSlider = React.lazy(() => import("./pages/projects/CameraSlider"));
+const HANA = React.lazy(() => import("./pages/projects/HANA"));
+const LaSelce = React.lazy(() => import("./pages/projects/LaSelce"));
+const BandAidDispenser = React.lazy(() => import("./pages/projects/BandAidDispenser"));
+const Speech = React.lazy(() => import("./pages/projects/Speech"));
+const DustBuster = React.lazy(() => import("./pages/projects/DustBuster"));
+const Lotus = React.lazy(() => import("./pages/projects/Lotus"));
+const Sculp = React.lazy(() => import("./pages/projects/Sculp"));
+const WeerwaterTrack = React.lazy(() => import("./pages/projects/WeerwaterTrack"));
 // Insert project path above
-
-// Graphic projects
-const Posters = React.lazy(() => import("./pages/graphicProjects/Posters"));
-const OnLocked = React.lazy(() => import("./pages/graphicProjects/OnLocked"));
 
 // Companies
 const MMID = React.lazy(() => import("./pages/company/MMID"));
@@ -145,15 +142,6 @@ const App = () => {
 						element={
 							<React.Suspense fallback={<>...</>}>
 								<DustBuster />
-							</React.Suspense>
-						}
-					/>
-
-					<Route
-						path="onlocked"
-						element={
-							<React.Suspense fallback={<>...</>}>
-								<OnLocked />
 							</React.Suspense>
 						}
 					/>

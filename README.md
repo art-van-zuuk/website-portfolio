@@ -36,3 +36,11 @@ This function:
 - Change page itself on src/pages/designProjects
 
 To change the template of the project go to src/components/PageTemplate/projectTemplate.js
+
+
+## TO DO FOR ME!
+
+- Change image of Rene van Zuuk Architects Website Thumbnail
+- Add page for Website of DARE
+- Change renders of SCULP
+- Add thumbnails for 2 videos

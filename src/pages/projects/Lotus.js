@@ -10,18 +10,18 @@ import CardColumns from "../../components/ProjectComponents/Card/CardColumns";
 import TextImageStrip from "../../components/ProjectComponents/InformationStrip/TextImageStrip";
 import TextVideoStrip from "../../components/ProjectComponents/InformationStrip/TextVideoStrip";
 import Title from "../../components/ProjectComponents/Title/Title";
-import designProjectList from "../../information/DesignProjects";
+import projectList from "../../information/projects";
 import GetProjectInfo from "../../scripts/GetProjectInfo";
 import HorizonalImageTextCard from "../../components/ProjectComponents/Card/HorizontalImageTextCard";
 import TextColumns from "../../components/ProjectComponents/InformationStrip/TextColumns";
 
 const Lotus = () => {
 	//gets information about project
-	var projectInfo = GetProjectInfo(designProjectList, "Lotus");
+	var projectInfo = GetProjectInfo(projectList, "Lotus");
 
 	return (
 		<>
-			<ProjectBanner projectList={designProjectList} project={projectInfo.name} textColor="white" />
+			<ProjectBanner projectList={projectList} project={projectInfo.name} textColor="white" />
 			<SkillImages skills={["solidworks", "lasercutting", "building", "arduino", "python"]} />
 			<HorizonalImageTextCard
 				title="Barbapapa"
