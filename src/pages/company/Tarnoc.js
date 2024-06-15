@@ -6,7 +6,7 @@ import CardCarousel from "../../components/CardCarousel/CardCarousel";
 import CV from "../../components/CV/CV";
 import HighlightProject from "../../components/HighlightProject/HighlightProject";
 import SiteVideoBanner from "../../components/SiteVideoBanner/SiteVideoBanner";
-import videoProjectList from "../../information/VideoProjects";
+import videoList from "../../information/VideoProjects";
 import projectList from "../../information/projects";
 
 const Tarnoc = () => {
@@ -25,7 +25,7 @@ const Tarnoc = () => {
 			<HighlightProject projectList={projectList} project="La Selce" />
 
 			<CardCarousel projectList={projectList} title={"Design Projects"} />
-			<CardCarousel projectList={videoProjectList} title={"Videography"} />
+			<CardCarousel projectList={videoList} title={"Videography"} />
 		</>
 	);
 };

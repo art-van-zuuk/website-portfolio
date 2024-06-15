@@ -9,20 +9,15 @@ import SiteVideoBanner from "../../components/SiteVideoBanner/SiteVideoBanner";
 import videoList from "../../information/VideoProjects";
 import projectList from "../../information/projects";
 
-const Brabantia = () => {
+const npk = () => {
 	return (
 		<>
-			<SiteVideoBanner
-				video="Z3PsFc2NEXI"
-				title="Hallo Brabantia!"
-				text="Welkom op mijn portfolio website! Hier beneden vind je mijn CV en een aantal projecten die ik graag aan jullie laat zien. Ik hoop hiermee mijn skills in mensgericht ontwerpen, techniek, CAD, prototypen en meer te kunnen laten zien. Als je interesse hebt om meer projecten te zien, of wat van mijn videografie werk, scroll naar beneden. Veel leesplezier!"
-			/>
+			<SiteVideoBanner video="Z3PsFc2NEXI" title="Hi [NAME]!" text="[TEXT]" />
 			<CV />
 			<HighlightProject projectList={projectList} project="Sculp" />
 			<HighlightProject projectList={projectList} project="Lotus" />
 			<HighlightProject projectList={projectList} project="MARCH VII" />
 			<HighlightProject projectList={projectList} project="Input Device" />
-			<HighlightProject projectList={projectList} project="La Selce" />
 
 			<CardCarousel projectList={projectList} title={"Design Projects"} />
 			<CardCarousel projectList={videoList} title={"Videography"} />
@@ -30,4 +25,4 @@ const Brabantia = () => {
 	);
 };
 
-export default Brabantia;
+export default npk;

@@ -38,7 +38,8 @@ const Manometric = React.lazy(() => import("./pages/company/Manometric"));
 const BBB = React.lazy(() => import("./pages/company/BBB"));
 const Brabantia = React.lazy(() => import("./pages/company/Brabantia"));
 const Tarnoc = React.lazy(() => import("./pages/company/Tarnoc"));
-// Insert company above
+const Npk = React.lazy(() => import("./pages/company/npk"));
+// Insert company path above
 
 const App = () => {
 	return (
@@ -228,6 +229,15 @@ const App = () => {
 							</React.Suspense>
 						}
 					/>
+					<Route
+						path="npk"
+						element={
+							<React.Suspense fallback={<>...</>}>
+								<Npk />
+							</React.Suspense>
+						}
+					/>
+					{/* Insert company route above */}
 				</Routes>
 			</Router>
 			<Footer />

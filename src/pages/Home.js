@@ -7,8 +7,7 @@ import CV from "../components/CV/CV";
 import HighlightProject from "../components/HighlightProject/HighlightProject";
 import SiteVideoBanner from "../components/SiteVideoBanner/SiteVideoBanner";
 import projectList from "../information/projects";
-import videoProjectList from "../information/VideoProjects";
-import graphicProjectList from "../information/GraphicProjects";
+import videoList from "../information/VideoProjects";
 
 const Home = () => {
 	return (
@@ -21,11 +20,7 @@ const Home = () => {
 			<HighlightProject projectList={projectList} project="Input Device" />
 
 			<CardCarousel projectList={projectList} title={"Design Projects"} />
-			{/* <CardCarousel
-        projectList={graphicProjectList}
-        title={"Graphic Projects"}
-      /> */}
-			<CardCarousel projectList={videoProjectList} title={"Videography"} />
+			<CardCarousel projectList={videoList} title={"Videography"} />
 		</>
 	);
 };
