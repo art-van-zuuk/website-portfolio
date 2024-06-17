@@ -46,13 +46,13 @@ projectList.push({
 	textColor: "white",
 	backgroundColor: "#1d2b1f",
 });
-projectList.push({
-	name: "Website René van Zuuk Architects",
-	type: "Work Project",
-	year: "2020",
-	backgroundColor: "#eee",
-	url: "https://renevanzuuk.nl",
-});
+// projectList.push({
+// 	name: "Website René van Zuuk Architects",
+// 	type: "Work Project",
+// 	year: "2020",
+// 	backgroundColor: "#eee",
+// 	url: "https://renevanzuuk.nl",
+// });
 projectList.push({
 	name: "Braun Parch",
 	description: "Quick Food Dehydration using vacuum",
@@ -141,7 +141,7 @@ projectList.push({
 	backgroundColor: "#000000",
 });
 projectList.push({
-	name: "Weerwater Track",
+	name: "Weerwater Track App",
 	description: "An activity app for the municipality of Almere",
 	explanation:
 		"The Weerwater Track app is an iPhone and Android application that lets people sport and explore around Weerwater. This can be done by a challenge, set of workouts or audio tour.",

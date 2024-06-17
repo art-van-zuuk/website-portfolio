@@ -12,7 +12,11 @@ import projectList from "../../information/projects";
 const npk = () => {
 	return (
 		<>
-			<SiteVideoBanner video="Z3PsFc2NEXI" title="Hi [NAME]!" text="[TEXT]" />
+			<SiteVideoBanner
+				video="Z3PsFc2NEXI"
+				title="Hallo npk!"
+				text="Welkom op mijn portfolio website! Hier beneden vind je mijn CV en een aantal projecten die ik graag aan jullie laat zien. Ik hoop hiermee mijn skills in mensgericht ontwerpen, techniek, CAD, prototypen en meer te kunnen laten zien. Beneden aan de website zijn meer projecten te zien en een aantal video’s, waaronder, de render video’s ‘MARCH VII Render’ en ‘Marple’. Veel leesplezier!"
+			/>
 			<CV />
 			<HighlightProject projectList={projectList} project="Sculp" />
 			<HighlightProject projectList={projectList} project="Lotus" />

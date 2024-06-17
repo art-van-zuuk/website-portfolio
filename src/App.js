@@ -28,7 +28,7 @@ const Speech = React.lazy(() => import("./pages/projects/Speech"));
 const DustBuster = React.lazy(() => import("./pages/projects/DustBuster"));
 const Lotus = React.lazy(() => import("./pages/projects/Lotus"));
 const Sculp = React.lazy(() => import("./pages/projects/Sculp"));
-const WeerwaterTrack = React.lazy(() => import("./pages/projects/WeerwaterTrack"));
+const WeerwaterTrackApp = React.lazy(() => import("./pages/projects/WeerwaterTrackApp"));
 // Insert project path above
 
 // Companies
@@ -171,10 +171,10 @@ const App = () => {
 						}
 					/>
 					<Route
-						path="weerwater-track"
+						path="weerwater-track-app"
 						element={
 							<React.Suspense fallback={<>...</>}>
-								<WeerwaterTrack />
+								<WeerwaterTrackApp />
 							</React.Suspense>
 						}
 					/>
