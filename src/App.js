@@ -39,6 +39,8 @@ const BBB = React.lazy(() => import("./pages/company/BBB"));
 const Brabantia = React.lazy(() => import("./pages/company/Brabantia"));
 const Tarnoc = React.lazy(() => import("./pages/company/Tarnoc"));
 const Npk = React.lazy(() => import("./pages/company/npk"));
+const Slamorthopedic = React.lazy(() => import("./pages/company/SLAMOrthopedic"));
+const Snoeks = React.lazy(() => import("./pages/company/Snoeks"));
 // Insert company path above
 
 const App = () => {
@@ -234,6 +236,22 @@ const App = () => {
 						element={
 							<React.Suspense fallback={<>...</>}>
 								<Npk />
+							</React.Suspense>
+						}
+					/>
+					<Route
+						path="SLAM-Orthopedic"
+						element={
+							<React.Suspense fallback={<>...</>}>
+								<Slamorthopedic />
+							</React.Suspense>
+						}
+					/>
+					<Route
+						path="Snoeks"
+						element={
+							<React.Suspense fallback={<>...</>}>
+								<Snoeks />
 							</React.Suspense>
 						}
 					/>

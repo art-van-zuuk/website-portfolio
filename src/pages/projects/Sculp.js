@@ -94,8 +94,13 @@ const Sculp = () => {
 				alignment="center"
 				padding=""
 			/>
-			<FullWidthImage project={projectInfo.name} image="Sideview.jpg" padding="bottom-padding" />
-			<FullWidthImage project={projectInfo.name} image="ExplodedView.jpg" padding="bottom-padding" />
+			<FullWidthImage project={projectInfo.name} image="Sideview.jpg" padding="bottom-padding" rounded="true" />
+			<FullWidthImage
+				project={projectInfo.name}
+				image="ExplodedView.jpg"
+				padding="bottom-padding"
+				rounded="true"
+			/>
 			<TextImageStrip
 				title="Educating the user"
 				text="To maximize the effectiveness of the product, it's essential to ensure a proper bicycle and saddle fit. Therefore, a Fit Kit has been created. This kit includes a guide and tools that streamline the fitting process, making it easy for users to achieve an optimal fit at home based on established literature."

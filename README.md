@@ -71,3 +71,10 @@ To change the template of the project go to src/components/PageTemplate/companyT
 - Add page for Website of DARE
 - Change renders of SCULP
 - Add thumbnails for 2 videos
+
+## Upload to Hosinger
+
+- Open hostinger.com and login with Google 
+- Navigate to Websites > Dashboard > Bestandbeheer
+- After 'npm run build' copy all files from build folder into public_html (replacing it)
+  NOTE: don't delete htaccess file
